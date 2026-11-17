@@ -43,17 +43,39 @@ class SearchResult:
 def normalize_query(query_string: str) -> str:
     # "Emilia-Romagna" non deve diventare "Emilia NOT Romagna": il trattino tra
     # due lettere e' parte della parola; l'esclusione vale solo a inizio termine.
-    return re.sub(r"(?<=\w)-(?=\w)", " ", query_string)
-
-
-# Termini negati ("-Roma", '-"banca centrale"'): con default_operator "or", simple_query_string
-# li legge come "oppure non contiene...", quindi vanno estratti e messi in un must_not.
-NEGATION = re.compile(r'(?:(?<=\s)|^)-("[^"]+"|\S+)')
+    parts = re.split(r'("(?:\\.|[^"\\])*"|\\.)', query_string)
+    return "".join(part if part.startswith(('"', '\\')) else
+                   re.sub(r"(?<=\w)-(?=\w)", " ", part) for part in parts)
 
 
 def split_negations(query_string: str) -> tuple[str, list[str]]:
-    negatives = [m.group(1) for m in NEGATION.finditer(query_string)]
-    return NEGATION.sub(" ", query_string).strip(), negatives
+    # Solo esclusioni autonome al livello esterno. Virgolette, escape e gruppi
+    # restano al parser Lucene: una regex globale corrompeva '"Roma -Milano"'.
+    positive, negatives = [], []
+    i, depth, quoted = 0, 0, False
+    while i < len(query_string):
+        char = query_string[i]
+        if char == "\\" and i + 1 < len(query_string):
+            positive.append(query_string[i:i + 2])
+            i += 2
+            continue
+        if char == '"':
+            quoted = not quoted
+        if not quoted:
+            if char == "(":
+                depth += 1
+            elif char == ")":
+                depth = max(0, depth - 1)
+            if char == "-" and depth == 0 and (i == 0 or query_string[i - 1].isspace()):
+                match = re.match(r'-("(?:\\.|[^"\\])+"(?:~\d+)?|[^\s"()|+]+)', query_string[i:])
+                if match:
+                    negatives.append(match.group(1))
+                    positive.append(" ")
+                    i += len(match.group())
+                    continue
+        positive.append(char)
+        i += 1
+    return "".join(positive).strip(), negatives
 
 
 def build_body(query_string: str, page: int, page_size: int, category: str | None = None,
@@ -68,7 +90,7 @@ def build_body(query_string: str, page: int, page_size: int, category: str | Non
     text = normalize_query(positive).strip()
     if text:
         # simple_query_string non genera mai errori di sintassi: supporta
-        # "frase", +and, |or, prefisso*, (gruppi), parola~1
+        # "frase", a + b (AND), a | b (OR), prefisso*, (gruppi), parola~1
         must = [{"simple_query_string": {"query": text, "fields": FIELDS,
                                          "default_operator": "or", "lenient": True}}]
     else:
@@ -92,7 +114,9 @@ def build_body(query_string: str, page: int, page_size: int, category: str | Non
         },
     }
     if sort == "date":
-        body["sort"] = [{"date": {"order": "desc", "missing": "_last"}}, "_score"]
+        body["sort"] = [{"date": {"order": "desc", "missing": "_last"}}, "_score", {"article_id": "asc"}]
+    else:
+        body["sort"] = ["_score", {"article_id": "asc"}]
     return body
 
 
@@ -115,7 +139,7 @@ def parse_response(response: dict, query_string: str, page: int, page_size: int)
     aggs = response.get("aggregations", {})
     return SearchResult(
         query=query_string, total=total, page=page, page_size=page_size,
-        page_count=math.ceil(total / page_size) if total else 0, hits=hits,
+        page_count=min(math.ceil(total / page_size), MAX_WINDOW // page_size) if total else 0, hits=hits,
         categories=[(b["key"], b["doc_count"]) for b in aggs.get("categories", {}).get("buckets", [])],
         years=[(b["key"], b["doc_count"]) for b in aggs.get("years", {}).get("buckets", [])],
     )

@@ -7,24 +7,35 @@ import logging
 import tarfile
 from pathlib import Path
 from typing import BinaryIO, Iterator
+from .statistics import IndexStats
 
 log = logging.getLogger(__name__)
 
 
-def _json_lines(stream: BinaryIO) -> Iterator[dict]:
+def _json_lines(stream: BinaryIO, stats: IndexStats | None = None) -> Iterator[dict]:
     # Si leggono righe in byte: i flussi tar in streaming non sono "seekable",
     # quindi non si puo' usare io.TextIOWrapper.
     for lineno, raw in enumerate(stream, start=1):
         raw = raw.strip()
         if not raw:
             continue
+        if stats is not None:
+            stats.records_read += 1
         try:
-            yield json.loads(raw.decode("utf-8"))
+            record = json.loads(raw.decode("utf-8"))
         except (json.JSONDecodeError, UnicodeDecodeError):
+            if stats is not None:
+                stats.discarded["invalid_json"] += 1
             log.warning("Riga %d non valida, saltata", lineno)
+            continue
+        if not isinstance(record, dict):
+            if stats is not None:
+                stats.discarded["invalid_record"] += 1
+            continue
+        yield record
 
 
-def iter_records(path: str | Path) -> Iterator[dict]:
+def iter_records(path: str | Path, stats: IndexStats | None = None) -> Iterator[dict]:
     """Restituisce i record JSON del dump senza caricarlo tutto in memoria.
 
     Formati supportati: .tar.gz / .tgz / .tar (ogni file e' NDJSON),
@@ -40,10 +51,11 @@ def iter_records(path: str | Path) -> Iterator[dict]:
                     continue
                 stream = tar.extractfile(member)
                 if stream is not None:
-                    yield from _json_lines(stream)
+                    with stream:
+                        yield from _json_lines(stream, stats)
     elif name.endswith(".gz"):
         with gzip.open(path, "rb") as stream:
-            yield from _json_lines(stream)
+            yield from _json_lines(stream, stats)
     else:
         with open(path, "rb") as stream:
-            yield from _json_lines(stream)
+            yield from _json_lines(stream, stats)

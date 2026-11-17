@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import logging
 import os
+import time
 from itertools import islice
 from pathlib import Path
 from typing import Iterable, Iterator
@@ -12,6 +13,7 @@ from elasticsearch import Elasticsearch, helpers
 from .config import DEFAULT_ES_URL, DEFAULT_INDEX
 from .dump import iter_records
 from .parsing import Article, record_to_article
+from .statistics import IndexStats
 
 log = logging.getLogger(__name__)
 
@@ -48,6 +50,7 @@ MAPPINGS = {
         "category": {"type": "keyword"},               # array di categorie
         "date": {"type": "date"},
         "year": {"type": "keyword"},
+        "article_id": {"type": "keyword"},  # spareggio stabile; _id non e' ordinabile
     },
 }
 
@@ -60,15 +63,16 @@ def make_client(url: str | None = None) -> Elasticsearch:
     return Elasticsearch(url or DEFAULT_ES_URL, request_timeout=60, **kwargs)
 
 
-def iter_articles(dump_path: str | Path) -> Iterator[Article]:
-    for record in iter_records(dump_path):
-        article = record_to_article(record)
+def iter_articles(dump_path: str | Path, stats: IndexStats | None = None) -> Iterator[Article]:
+    for record in iter_records(dump_path, stats):
+        article = record_to_article(record, stats)
         if article is not None:
             yield article
 
 
 def article_to_source(article: Article) -> dict:
     source = {
+        "article_id": article.id,
         "title": article.title,
         "body": article.body,
         "lead": article.body[:240],
@@ -81,16 +85,16 @@ def article_to_source(article: Article) -> dict:
     return source
 
 
-def create_index(es: Elasticsearch, index_name: str) -> None:
+def create_index(es: Elasticsearch, index_name: str, *, mappings=None) -> None:
     """Ricrea l'indice da zero."""
     if es.indices.exists(index=index_name):
         es.indices.delete(index=index_name)
-    es.indices.create(index=index_name, settings=SETTINGS, mappings=MAPPINGS)
+    es.indices.create(index=index_name, settings=SETTINGS, mappings=mappings or MAPPINGS)
 
 
 def build_index(es: Elasticsearch, articles: Iterable[Article], index_name: str = DEFAULT_INDEX,
-                chunk_size: int = 500) -> int:
-    create_index(es, index_name)
+                chunk_size: int = 500, *, stats: IndexStats | None = None, mappings=None) -> int:
+    create_index(es, index_name, mappings=mappings)
     counter = 0
 
     def actions():
@@ -101,15 +105,34 @@ def build_index(es: Elasticsearch, articles: Iterable[Article], index_name: str 
                 log.info("%d articoli letti...", counter)
             yield {"_index": index_name, "_id": article.id, "_source": article_to_source(article)}
 
-    success, _ = helpers.bulk(es.options(request_timeout=120), actions(), chunk_size=chunk_size)
+    success = 0
+    for ok, item in helpers.streaming_bulk(es.options(request_timeout=120), actions(),
+                                           chunk_size=chunk_size, raise_on_error=False):
+        if ok:
+            success += 1
+            if stats is not None:
+                stats.indexed_operations += 1
+        else:
+            if stats is not None:
+                stats.indexing_errors += 1
+            log.error("Errore bulk: %s", item)
     es.indices.refresh(index=index_name)
+    if stats is not None:
+        stats.indexed_documents = es.count(index=index_name)["count"]
     return success
 
 
 def index_dump(dump_path, es: Elasticsearch | None = None, index_name: str = DEFAULT_INDEX,
-               limit: int | None = None) -> int:
+               limit: int | None = None, *, stats: IndexStats | None = None, mappings=None) -> int:
+    if limit is not None and limit <= 0:
+        raise ValueError("limit deve essere positivo")
+    started = time.perf_counter()
     es = es or make_client()
-    articles = iter_articles(dump_path)
+    articles = iter_articles(dump_path, stats)
     if limit:
         articles = islice(articles, limit)
-    return build_index(es, articles, index_name)
+    try:
+        return build_index(es, articles, index_name, stats=stats, mappings=mappings)
+    finally:
+        if stats is not None:
+            stats.elapsed_seconds = time.perf_counter() - started

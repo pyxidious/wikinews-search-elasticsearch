@@ -15,6 +15,13 @@ def test_download_from_file_url_and_skip_existing(sample_dump, tmp_path, capsys)
     assert "gia' presente" in capsys.readouterr().out
 
 
+def test_force_download_replaces_existing_file_on_windows(sample_dump, tmp_path):
+    dest = tmp_path / "dump.json.tar.gz"
+    dest.write_bytes(b"versione precedente")
+    download(sample_dump.as_uri(), dest, force=True)
+    assert dest.read_bytes() == sample_dump.read_bytes()
+
+
 @pytest.mark.elasticsearch
 def test_index_then_stats(es, sample_dump, capsys):
     name = "itwikinews_test_cli"

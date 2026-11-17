@@ -1,0 +1,323 @@
+{
+  "metadata": {
+    "records": 12261,
+    "date_created": 242,
+    "date_modified": 12261,
+    "categories": 12238,
+    "redirects": 1721,
+    "duplicate_ids": 48
+  },
+  "newly_included": [
+    {
+      "id": 7740,
+      "title": "Speciale Campionato mondiale di pallacanestro maschile 2006/Girone D"
+    },
+    {
+      "id": 29564,
+      "title": "Speciale Campionato mondiale di calcio 2010/Gruppo H"
+    },
+    {
+      "id": 29575,
+      "title": "Speciale Campionato mondiale di calcio 2010/Quarti di finale"
+    },
+    {
+      "id": 29574,
+      "title": "Speciale Campionato mondiale di calcio 2010/Ottavi di finale"
+    },
+    {
+      "id": 7736,
+      "title": "Speciale Campionato mondiale di pallacanestro maschile 2006/Girone A"
+    },
+    {
+      "id": 7739,
+      "title": "Speciale Campionato mondiale di pallacanestro maschile 2006/Girone C"
+    },
+    {
+      "id": 7752,
+      "title": "Speciale Campionato mondiale di pallacanestro maschile 2006/Nazioni"
+    },
+    {
+      "id": 29576,
+      "title": "Speciale Campionato mondiale di calcio 2010/Semifinali"
+    },
+    {
+      "id": 7738,
+      "title": "Speciale Campionato mondiale di pallacanestro maschile 2006/Girone B"
+    },
+    {
+      "id": 19210,
+      "title": "Calcio Italia campionato nazionale Serie A 2007-2008 6° giornata ritorno"
+    },
+    {
+      "id": 5984,
+      "title": "Speciale Campionato del mondo di calcio 2006/Girone E"
+    },
+    {
+      "id": 5977,
+      "title": "Speciale Campionato del mondo di calcio 2006/Girone A"
+    },
+    {
+      "id": 5981,
+      "title": "Speciale Campionato del mondo di calcio 2006/Girone D"
+    },
+    {
+      "id": 5986,
+      "title": "Speciale Campionato del mondo di calcio 2006/Girone G"
+    },
+    {
+      "id": 5980,
+      "title": "Speciale Campionato del mondo di calcio 2006/Girone C"
+    },
+    {
+      "id": 5985,
+      "title": "Speciale Campionato del mondo di calcio 2006/Girone F"
+    },
+    {
+      "id": 5987,
+      "title": "Speciale Campionato del mondo di calcio 2006/Girone H"
+    },
+    {
+      "id": 5979,
+      "title": "Speciale Campionato del mondo di calcio 2006/Girone B"
+    },
+    {
+      "id": 4675,
+      "title": "Olimpiadi invernali 2006/Medagliere"
+    },
+    {
+      "id": 4671,
+      "title": "Olimpiadi invernali 2006/Calendario"
+    },
+    {
+      "id": 15879,
+      "title": "Speciale Omicidio Chiara Poggi"
+    },
+    {
+      "id": 16209,
+      "title": "Speciale Campionato europeo di calcio 2008/Girone A"
+    },
+    {
+      "id": 16508,
+      "title": "Speciale Campionato europeo di calcio 2008/Partite quarti"
+    },
+    {
+      "id": 16210,
+      "title": "Speciale Campionato europeo di calcio 2008/Girone B"
+    },
+    {
+      "id": 20795,
+      "title": "Speciale Campionato europeo di calcio 2008/Girone C"
+    },
+    {
+      "id": 20796,
+      "title": "Speciale Campionato europeo di calcio 2008/Girone D"
+    },
+    {
+      "id": 20800,
+      "title": "Speciale Campionato europeo di calcio 2008/Partite finali"
+    },
+    {
+      "id": 16509,
+      "title": "Speciale Campionato europeo di calcio 2008/Partite semifinali"
+    },
+    {
+      "id": 16510,
+      "title": "Speciale Campionato europeo di calcio 2008/Marcatori"
+    },
+    {
+      "id": 5193,
+      "title": "Sport/Formula 1/Campionato 2006/Gran Premio d'Europa 2006"
+    },
+    {
+      "id": 5203,
+      "title": "Sport/Formula 1/Campionato 2006/Gran Premio d'Italia 2006"
+    },
+    {
+      "id": 5201,
+      "title": "Sport/Formula 1/Campionato 2006/Gran Premio d'Ungheria 2006"
+    },
+    {
+      "id": 5197,
+      "title": "Sport/Formula 1/Campionato 2006/Gran Premio del Canada 2006"
+    },
+    {
+      "id": 5100,
+      "title": "Sport/Formula 1/Campionato 2006/Classifiche"
+    },
+    {
+      "id": 5206,
+      "title": "Sport/Formula 1/Campionato 2006/Gran Premio del Brasile 2006"
+    },
+    {
+      "id": 29599,
+      "title": "Calcio Italia campionato nazionale Serie A 2009-2010 16° giornata ritorno"
+    },
+    {
+      "id": 27614,
+      "title": "Serie A 2009-10"
+    },
+    {
+      "id": 39926,
+      "title": "Speciale Elezioni europee 2014/Partiti"
+    },
+    {
+      "id": 30962,
+      "title": "Speciale Elezioni USA 2010/Governatori"
+    },
+    {
+      "id": 39923,
+      "title": "Speciale Elezioni europee 2014/Affluenza"
+    },
+    {
+      "id": 21594,
+      "title": "Speciale XXIX Olimpiade estiva/Fuso orario"
+    },
+    {
+      "id": 21603,
+      "title": "Speciale XXIX Olimpiade estiva/Paesi partecipanti"
+    },
+    {
+      "id": 5200,
+      "title": "Sport/Formula 1/Campionato 2006/Gran Premio di Germania 2006"
+    },
+    {
+      "id": 5196,
+      "title": "Sport/Formula 1/Campionato 2006/Gran Premio di Gran bretagna 2006"
+    },
+    {
+      "id": 5202,
+      "title": "Sport/Formula 1/Campionato 2006/Gran Premio di Turchia 2006"
+    },
+    {
+      "id": 5205,
+      "title": "Sport/Formula 1/Campionato 2006/Gran Premio del Giappone 2006"
+    },
+    {
+      "id": 5083,
+      "title": "Sport/Formula 1/Campionato 2006/Gran Premio della Malesia 2006"
+    },
+    {
+      "id": 5170,
+      "title": "Sport/Formula 1/Campionato 2006/Gran Premio di San Marino 2006"
+    },
+    {
+      "id": 5199,
+      "title": "Sport/Formula 1/Campionato 2006/Gran Premio di Francia 2006"
+    },
+    {
+      "id": 5195,
+      "title": "Sport/Formula 1/Campionato 2006/Gran Premio di Monaco 2006"
+    },
+    {
+      "id": 5194,
+      "title": "Sport/Formula 1/Campionato 2006/Gran Premio di Spagna 2006"
+    },
+    {
+      "id": 37021,
+      "title": "Speciale Elezioni politiche italiane 2013/Affluenza"
+    },
+    {
+      "id": 7753,
+      "title": "Speciale Campionato mondiale di pallacanestro maschile 2006/Stadi"
+    },
+    {
+      "id": 7845,
+      "title": "Speciale Campionato mondiale di pallacanestro maschile 2006/Tabellone"
+    },
+    {
+      "id": 7847,
+      "title": "Speciale Campionato mondiale di pallacanestro maschile 2006/Tabellone5-8"
+    },
+    {
+      "id": 20245,
+      "title": "Speciale Giro d'Italia 2008/Percorso"
+    },
+    {
+      "id": 13083,
+      "title": "Speciale Giro d'Italia 2007/Percorso"
+    },
+    {
+      "id": 31616,
+      "title": "Calcio, Serie A 2010-2011: 15ª giornata"
+    },
+    {
+      "id": 29517,
+      "title": "Speciale Campionato mondiale di calcio 2010"
+    },
+    {
+      "id": 29514,
+      "title": "Speciale Campionato mondiale di calcio 2010/Gruppo A"
+    },
+    {
+      "id": 29523,
+      "title": "Speciale Campionato mondiale di calcio 2010/Gruppo C"
+    },
+    {
+      "id": 29528,
+      "title": "Speciale Campionato mondiale di calcio 2010/Gruppo D"
+    },
+    {
+      "id": 29551,
+      "title": "Speciale Campionato mondiale di calcio 2010/Gruppo E"
+    },
+    {
+      "id": 29545,
+      "title": "Speciale Campionato mondiale di calcio 2010/Gruppo F"
+    },
+    {
+      "id": 29552,
+      "title": "Speciale Campionato mondiale di calcio 2010/Gruppo G"
+    },
+    {
+      "id": 29522,
+      "title": "Speciale Campionato mondiale di calcio 2010/Gruppo B"
+    },
+    {
+      "id": 5973,
+      "title": "Speciale Campionato del mondo di calcio 2006/Classifiche"
+    },
+    {
+      "id": 18114,
+      "title": "Speciale Primarie USA 2008/Partito Democratico"
+    },
+    {
+      "id": 18155,
+      "title": "Speciale Primarie USA 2008/Partito Repubblicano"
+    },
+    {
+      "id": 18110,
+      "title": "Speciale Primarie USA 2008"
+    },
+    {
+      "id": 6269,
+      "title": "Speciale Campionato del mondo di calcio 2006/Partite ottavi"
+    },
+    {
+      "id": 6277,
+      "title": "Speciale Campionato del mondo di calcio 2006/Partite quarti"
+    },
+    {
+      "id": 6463,
+      "title": "Speciale Campionato del mondo di calcio 2006/Partite finali"
+    },
+    {
+      "id": 6204,
+      "title": "Speciale Campionato del mondo di calcio 2006/Marcatori"
+    },
+    {
+      "id": 6462,
+      "title": "Speciale Campionato del mondo di calcio 2006/Partite semifinali"
+    }
+  ],
+  "softredirect": [
+    {
+      "id": 44564,
+      "old_valid": false,
+      "new_valid": false,
+      "reason": {
+        "redirect": 1
+      }
+    }
+  ],
+  "original_commit": "48def15"
+}

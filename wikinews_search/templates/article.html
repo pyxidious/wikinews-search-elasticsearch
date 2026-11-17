@@ -7,6 +7,7 @@
   <p class="meta">{{ doc.date|data_it }}
     {% for c in doc.categories %}<a class="cat" href="{{ url_for('home', category=c) }}">{{ c }}</a>{% endfor %}</p>
   {% for p in paragraphs %}{% if p.strip() %}<p>{{ p }}</p>{% endif %}{% endfor %}
-  {% if doc.url %}<p class="source"><a href="{{ doc.url }}">Leggi l'originale su Wikinotizie</a></p>{% endif %}
+  {% set source_url = doc.url|external_url %}
+  {% if source_url %}<p class="source"><a href="{{ source_url }}">Leggi l'originale su Wikinotizie</a></p>{% endif %}
 </article>
 {% endblock %}

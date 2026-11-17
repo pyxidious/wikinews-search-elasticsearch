@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import re
+from urllib.parse import urlsplit
 
 from flask import Flask, abort, jsonify, render_template, request, url_for
 
@@ -38,6 +39,17 @@ def create_app(client=None, index_name: str | None = None, es_url: str | None = 
         raise LookupError(f"Indice '{index_name}' non trovato. Eseguire prima: python -m wikinews_search index")
 
     app = Flask(__name__)
+
+    @app.template_filter("external_url")
+    def external_url(value):
+        # L'escape HTML da solo non blocca URL javascript: nei dati indicizzati.
+        if not isinstance(value, str) or any(ord(char) < 32 for char in value):
+            return ""
+        try:
+            url = urlsplit(value)
+            return value if url.scheme.lower() in {"http", "https"} and url.hostname else ""
+        except ValueError:
+            return ""
 
     @app.template_filter("data_it")
     def data_it(value):

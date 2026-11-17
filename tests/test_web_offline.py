@@ -4,6 +4,8 @@ import pytest
 from wikinews_search.webapp import create_app
 
 from .fakes import FakeES
+from .fakes import ARTICLE, RESPONSE
+from copy import deepcopy
 
 
 def test_home_page(fake_client):
@@ -61,3 +63,19 @@ def test_clear_errors_when_elasticsearch_is_down_or_index_missing():
         create_app(client=FakeES(reachable=False))
     with pytest.raises(LookupError, match="python -m wikinews_search index"):
         create_app(client=FakeES(index_exists=False))
+
+
+@pytest.mark.parametrize("url", ["javascript:alert(1)", "data:text/html,test", "https://[broken", "https://example.org/\npath"])
+def test_article_source_does_not_allow_active_or_malformed_urls(fake_client, monkeypatch, url):
+    monkeypatch.setitem(ARTICLE, "url", url)
+    html = fake_client.get("/article/1002").get_data(as_text=True)
+    assert "Leggi l'originale" not in html
+
+
+def test_web_page_limit_is_visible_and_has_no_unreachable_next_link(fake_client, fake_es, monkeypatch):
+    response = deepcopy(RESPONSE)
+    response["hits"]["total"]["value"] = 25001
+    monkeypatch.setattr(fake_es, "search", lambda **kw: response)
+    html = fake_client.get("/?q=notizia&page=100000").get_data(as_text=True)
+    assert "Pagina 1000 di 1000" in html and 'rel="next"' not in html
+    assert "Sono navigabili solo le prime 10000" in html

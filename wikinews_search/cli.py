@@ -1,8 +1,10 @@
-"""Riga di comando: download, index, serve, stats."""
+"""Riga di comando: download, index, validate-dump, serve, stats."""
 from __future__ import annotations
 
 import argparse
 import logging
+import json
+import time
 import sys
 import urllib.request
 from pathlib import Path
@@ -26,7 +28,7 @@ def download(url: str, dest: Path, force: bool = False) -> Path:
             done += len(chunk)
             if total:
                 print(f"\rScaricati {done / 1e6:.0f}/{total / 1e6:.0f} MB", end="", file=sys.stderr)
-    part.rename(dest)
+    part.replace(dest)
     print(f"\nSalvato in {dest}")
     return dest
 
@@ -47,7 +49,12 @@ def main(argv=None) -> None:
     p = sub.add_parser("index", help="crea l'indice Elasticsearch dal dump")
     p.add_argument("--dump", type=Path, default=DEFAULT_DUMP_PATH)
     p.add_argument("--limit", type=int, default=None, help="indicizza solo i primi N articoli (debug)")
+    p.add_argument("--report", type=Path, help="salva statistiche JSON")
     add_es_options(p)
+
+    p = sub.add_parser("validate-dump", help="valida tutto il dump in streaming senza Elasticsearch")
+    p.add_argument("--dump", type=Path, default=DEFAULT_DUMP_PATH)
+    p.add_argument("--report", type=Path)
 
     p = sub.add_parser("serve", help="avvia l'interfaccia web")
     p.add_argument("--host", default="127.0.0.1")
@@ -64,8 +71,30 @@ def main(argv=None) -> None:
         download(args.url, args.dest, args.force)
     elif args.command == "index":
         from .indexer import index_dump, make_client
-        count = index_dump(args.dump, make_client(args.es_url), args.index_name, args.limit)
+        from .statistics import IndexStats
+        stats = IndexStats()
+        try:
+            count = index_dump(args.dump, make_client(args.es_url), args.index_name, args.limit, stats=stats)
+        finally:
+            report = json.dumps(stats.to_dict(), ensure_ascii=False, indent=2)
+            print(report)
+            if args.report:
+                args.report.write_text(report, encoding="utf-8")
         print(f"Indicizzati {count} articoli nell'indice '{args.index_name}'")
+        if stats.indexing_errors:
+            raise SystemExit(1)
+    elif args.command == "validate-dump":
+        from .indexer import iter_articles
+        from .statistics import IndexStats
+        stats = IndexStats()
+        started = time.perf_counter()
+        for _ in iter_articles(args.dump, stats):
+            pass
+        stats.elapsed_seconds = time.perf_counter() - started
+        report = json.dumps(stats.to_dict(), ensure_ascii=False, indent=2)
+        print(report)
+        if args.report:
+            args.report.write_text(report, encoding="utf-8")
     elif args.command == "serve":
         from .webapp import create_app
         create_app(index_name=args.index_name, es_url=args.es_url).run(host=args.host, port=args.port)

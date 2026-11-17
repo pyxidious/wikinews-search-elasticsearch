@@ -29,7 +29,7 @@ def test_filters_only_use_match_all():
 
 
 def test_sort_by_date_and_default_relevance():
-    assert "sort" not in build_body("x", 1, 10)
+    assert build_body("x", 1, 10)["sort"] == ["_score", {"article_id": "asc"}]
     assert build_body("x", 1, 10, sort="date")["sort"][0] == {"date": {"order": "desc", "missing": "_last"}}
 
 

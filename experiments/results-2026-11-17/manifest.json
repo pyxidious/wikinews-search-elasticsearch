@@ -1,0 +1,58 @@
+{
+  "dump": "itwikinews-NS0-20250320-ENTERPRISE-HTML.json.tar.gz",
+  "sha256": "d2c00ef9d7c3db5a3f26adb85b07055673b30b2417653374ada52b7174df474d",
+  "python": "3.10.0",
+  "elasticsearch": {
+    "name": "35f11e7ea42b",
+    "cluster_name": "docker-cluster",
+    "cluster_uuid": "D3l3RGCZQHmXbXQBpS_C2A",
+    "version": {
+      "number": "8.15.0",
+      "build_flavor": "default",
+      "build_type": "docker",
+      "build_hash": "1a77947f34deddb41af25e6f0ddb8e830159c179",
+      "build_date": "2024-08-05T10:05:34.233336849Z",
+      "build_snapshot": false,
+      "lucene_version": "9.11.1",
+      "minimum_wire_compatibility_version": "7.17.0",
+      "minimum_index_compatibility_version": "7.0.0"
+    },
+    "tagline": "You Know, for Search"
+  },
+  "indices": {
+    "standard": {
+      "name": "itwikinews_hw4_standard",
+      "uuid": "x-vIliR-SR-80ygBWss7FQ",
+      "stats": {
+        "records_read": 12261,
+        "valid_articles": 12257,
+        "discarded": {
+          "short_text": 3,
+          "redirect": 1
+        },
+        "indexed_operations": 12257,
+        "indexed_documents": 12209,
+        "indexing_errors": 0,
+        "elapsed_seconds": 275.1678710000124
+      },
+      "store_bytes": 29146730
+    },
+    "italiano": {
+      "name": "itwikinews_hw4_italiano",
+      "uuid": "HOHk1UTyS-q1PgetBbfaOQ",
+      "stats": {
+        "records_read": 12261,
+        "valid_articles": 12257,
+        "discarded": {
+          "short_text": 3,
+          "redirect": 1
+        },
+        "indexed_operations": 12257,
+        "indexed_documents": 12209,
+        "indexing_errors": 0,
+        "elapsed_seconds": 319.0990668000013
+      },
+      "store_bytes": 27564353
+    }
+  }
+}

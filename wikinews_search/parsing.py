@@ -6,14 +6,16 @@ from dataclasses import dataclass, field
 from datetime import datetime
 
 from bs4 import BeautifulSoup
+from .statistics import IndexStats
 
 # Elementi HTML che non fanno parte del testo della notizia.
 REMOVE_SELECTORS = [
-    "head", "script", "style", "link", "meta", "sup", "table", "figure",
+    "head", "script", "style", "link", "meta", "sup",
+    "table.metadata", "table.navbox", "table.infobox", "table.toc", "table.avviso",
     "span.mw-editsection", ".noprint", ".reflist", ".references",
     "[typeof~='mw:Extension/references']",
 ]
-BLOCK_TAGS = ["p", "li", "div", "section", "br", "h1", "h2", "h3", "h4", "h5", "h6", "blockquote"]
+BLOCK_TAGS = ["p", "li", "div", "section", "br", "h1", "h2", "h3", "h4", "h5", "h6", "blockquote", "tr", "td", "th", "figcaption"]
 # Categorie di servizio (minuscole) che non aiutano la navigazione.
 IGNORED_CATEGORIES = {"pubblicati", "archiviati", "ricerche originali", "box wikivoyage probabilmente da rimuovere"}
 # Prefissi (minuscoli) delle categorie di manutenzione: "Articoli da controllare per l'archiviazione",
@@ -21,7 +23,7 @@ IGNORED_CATEGORIES = {"pubblicati", "archiviati", "ricerche originali", "box wik
 IGNORED_PREFIXES = ("articol", "notizie per wikivoyage", "box wikivoyage")
 # Categorie che sono solo una data ("3 aprile 2008"): non servono come filtro.
 DATE_CATEGORY = re.compile(r"^\d{1,2} [^\W\d_]+ \d{4}$")
-MIN_TEXT_CHARS = 40  # scarta redirect e pagine vuote
+MIN_TEXT_CHARS = 40  # euristica per pagine troppo brevi, non prova di redirect
 
 
 @dataclass
@@ -34,9 +36,9 @@ class Article:
     date: datetime | None = None
 
 
-def html_to_text(html: str) -> str:
+def html_to_text(html: str | BeautifulSoup) -> str:
     """Estrae il testo da HTML, un paragrafo per riga."""
-    soup = BeautifulSoup(html, "lxml")
+    soup = html if isinstance(html, BeautifulSoup) else BeautifulSoup(html, "lxml")
     for selector in REMOVE_SELECTORS:
         for element in soup.select(selector):
             element.decompose()
@@ -60,6 +62,8 @@ def parse_date(value) -> datetime | None:
 
 def clean_categories(raw) -> list[str]:
     result: list[str] = []
+    if not isinstance(raw, list):
+        return result
     for item in raw or []:
         name = item.get("name") if isinstance(item, dict) else item
         if not name:
@@ -75,19 +79,39 @@ def clean_categories(raw) -> list[str]:
     return result
 
 
-def record_to_article(record: dict) -> Article | None:
+def record_to_article(record: dict, stats: IndexStats | None = None) -> Article | None:
     """Converte un record del dump in Article; None se non e' una notizia indicizzabile."""
+    def reject(reason):
+        if stats is not None:
+            stats.discarded[reason] += 1
+        return None
+
+    if not isinstance(record, dict):
+        return reject("invalid_record")
     namespace = record.get("namespace")
-    if isinstance(namespace, dict) and namespace.get("identifier", 0) != 0:
-        return None
-    title = (record.get("name") or "").strip()
+    namespace = namespace.get("identifier") if isinstance(namespace, dict) else namespace
+    if namespace not in (None, 0, "0"):
+        return reject("namespace")
+    # `redirects` elenca pagine che puntano a QUESTA pagina: non va scartata.
+    title = record.get("name")
     identifier = record.get("identifier")
-    html = (record.get("article_body") or {}).get("html") or ""
-    if not title or identifier is None or not html:
-        return None
-    body = html_to_text(html)
+    article_body = record.get("article_body")
+    if not isinstance(title, str) or not isinstance(article_body, dict):
+        return reject("invalid_fields")
+    title = title.strip()
+    html = article_body.get("html")
+    if not title or not isinstance(identifier, (str, int)) or isinstance(identifier, bool) or not str(identifier).strip():
+        return reject("missing_identity")
+    if not isinstance(html, str) or not html.strip():
+        return reject("missing_html")
+    soup = BeautifulSoup(html, "lxml")
+    if soup.select_one('#softredirect, link[rel~="mw:PageProp/redirect"]'):
+        return reject("redirect")
+    body = html_to_text(soup)
     if len(body) < MIN_TEXT_CHARS:
-        return None
+        return reject("short_text")
+    if stats is not None:
+        stats.valid_articles += 1
     return Article(
         id=str(identifier),
         title=title,

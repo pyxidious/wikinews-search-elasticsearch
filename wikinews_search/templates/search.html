@@ -22,7 +22,8 @@
       <a href="{{ link(q='elezioni') }}">elezioni</a> o
       <a href="{{ link(q='calcio') }}">calcio</a>.</p>
     <p class="hint">Si possono usare le virgolette per una frase esatta (<code>"banca centrale"</code>),
-      <code>+parola</code> per richiederla, <code>-parola</code> per escluderla e <code>|</code> per indicare un'alternativa.</p>
+      <code>Roma + Milano</code> per AND, <code>-parola</code> per escluderla e <code>|</code> per OR (anche implicito tra spazi).
+      Sono disponibili <code>prefisso*</code> e <code>parola~1</code>; la frase usa lo stesso analyzer dei documenti.</p>
   </section>
 {% else %}
   <div class="layout">
@@ -37,6 +38,9 @@
           {% if category %}· categoria <b>{{ category }}</b> <a href="{{ link(category=None) }}">rimuovi</a>{% endif %}
           {% if year %}· anno <b>{{ year }}</b> <a href="{{ link(year=None) }}">rimuovi</a>{% endif %}
         </p>
+        {% if result.total > result.page_count * result.page_size %}
+        <p class="hint">Sono navigabili solo le prime {{ result.page_count * result.page_size }} corrispondenze. Restringere la ricerca con parole o filtri.</p>
+        {% endif %}
         <p class="sort">Ordina per
           {% if sort == 'relevance' %}<b>rilevanza</b>{% else %}<a href="{{ link(sort=None) }}">rilevanza</a>{% endif %} |
           {% if sort == 'date' %}<b>data</b>{% else %}<a href="{{ link(sort='date') }}">data</a>{% endif %}
