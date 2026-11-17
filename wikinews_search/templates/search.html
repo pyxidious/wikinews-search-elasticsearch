@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}{% if q %}{{ q }}{% else %}Cerca nelle notizie{% endif %}{% endblock %}
+{% block content %}
+<form class="search" action="{{ url_for('home') }}" method="get" role="search">
+  <label for="q">Cerca nelle notizie</label>
+  <div class="field">
+    <input id="q" name="q" type="search" value="{{ q }}" autofocus autocomplete="off"
+           placeholder="Per esempio: terremoto, elezioni, campionato">
+    {% if sort != 'relevance' %}<input type="hidden" name="sort" value="{{ sort }}">{% endif %}
+    <button type="submit">Cerca</button>
+  </div>
+</form>
+
+{% if not_found %}
+  <p class="notice">Questa pagina non esiste. Cerca una notizia con il campo qui sopra.</p>
+{% endif %}
+
+{% if not searching %}
+  <section class="intro">
+    <p><strong>{{ "{:,}".format(doc_count).replace(",", ".") }}</strong> notizie indicizzate. Prova con
+      <a href="{{ link(q='terremoto') }}">terremoto</a>,
+      <a href="{{ link(q='elezioni') }}">elezioni</a> o
+      <a href="{{ link(q='calcio') }}">calcio</a>.</p>
+    <p class="hint">Si possono usare le virgolette per una frase esatta (<code>"banca centrale"</code>),
+      <code>+parola</code> per richiederla, <code>-parola</code> per escluderla e <code>|</code> per indicare un'alternativa.</p>
+  </section>
+{% else %}
+  <div class="layout">
+    <section class="results" aria-live="polite">
+      {% if result.total == 0 %}
+        <p class="notice">Nessun risultato{% if q %} per «{{ q }}»{% endif %}.
+          Prova con meno parole{% if category or year %} o <a href="{{ link(category=None, year=None) }}">togli i filtri</a>{% endif %}.</p>
+      {% else %}
+        <p class="summary">{{ "{:,}".format(result.total).replace(",", ".") }}
+          {{ "risultato" if result.total == 1 else "risultati" }}
+          <span class="muted">({{ "%.0f"|format(result.elapsed_ms) }} ms)</span>
+          {% if category %}· categoria <b>{{ category }}</b> <a href="{{ link(category=None) }}">rimuovi</a>{% endif %}
+          {% if year %}· anno <b>{{ year }}</b> <a href="{{ link(year=None) }}">rimuovi</a>{% endif %}
+        </p>
+        <p class="sort">Ordina per
+          {% if sort == 'relevance' %}<b>rilevanza</b>{% else %}<a href="{{ link(sort=None) }}">rilevanza</a>{% endif %} |
+          {% if sort == 'date' %}<b>data</b>{% else %}<a href="{{ link(sort='date') }}">data</a>{% endif %}
+        </p>
+        <ol class="hits">
+          {% for hit in result.hits %}
+          <li>
+            <h2><a href="{{ url_for('article', article_id=hit.id) }}">{{ hit.title }}</a></h2>
+            <p class="meta">{{ hit.date|data_it }}
+              {% for c in hit.categories %}<a class="cat" href="{{ link(category=c) }}">{{ c }}</a>{% endfor %}</p>
+            <p class="snippet">{{ hit.snippet|safe }}</p>
+          </li>
+          {% endfor %}
+        </ol>
+        {% if result.page_count > 1 %}
+        <nav class="pager" aria-label="Pagine dei risultati">
+          {% if result.page > 1 %}<a href="{{ link(page=result.page - 1) }}" rel="prev">Pagina precedente</a>{% endif %}
+          <span>Pagina {{ result.page }} di {{ result.page_count }}</span>
+          {% if result.page < result.page_count %}<a href="{{ link(page=result.page + 1) }}" rel="next">Pagina successiva</a>{% endif %}
+        </nav>
+        {% endif %}
+      {% endif %}
+    </section>
+
+    {% if result.total > 0 %}
+    <aside class="facets" aria-label="Filtri">
+      {% if result.categories and not category %}
+      <h3>Categorie</h3>
+      <ul>{% for name, n in result.categories %}<li><a href="{{ link(category=name) }}">{{ name }}</a> <span class="muted">{{ n }}</span></li>{% endfor %}</ul>
+      {% endif %}
+      {% if result.years and not year %}
+      <h3>Anno</h3>
+      <ul>{% for name, n in result.years %}<li><a href="{{ link(year=name) }}">{{ name }}</a> <span class="muted">{{ n }}</span></li>{% endfor %}</ul>
+      {% endif %}
+    </aside>
+    {% endif %}
+  </div>
+{% endif %}
+{% endblock %}

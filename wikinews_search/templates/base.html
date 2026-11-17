@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Cerca nelle notizie{% endblock %} · Wikinotizie</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="{{ url_for('home') }}">Wikinotizie</a>
+    <span class="tag">Ricerca nell'archivio delle notizie</span>
+  </header>
+  <main>{% block content %}{% endblock %}</main>
+  <footer>Testi tratti da <a href="https://it.wikinews.org/">it.wikinews.org</a>, disponibili con licenza CC BY 2.5.</footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+  {"query": "terremoto Turchia", "expected": "1002"},
+  {"query": "finale europei calcio", "expected": "1003"},
+  {"query": "vaccino EMA", "expected": "1004"},
+  {"query": "inflazione", "expected": "1005"},
+  {"query": "sciopero treni", "expected": "1006"},
+  {"query": "telescopio", "expected": "1007"},
+  {"query": "alluvione", "expected": "1008"},
+  {"query": "Macron", "expected": "1009"},
+  {"query": "elezioni Roma", "expected": "1001"},
+  {"query": "tassi di interesse", "expected": "1005"},
+  {"query": "soccorsi macerie", "expected": "1002"},
+  {"query": "pendolari Milano", "expected": "1006"}
+]
