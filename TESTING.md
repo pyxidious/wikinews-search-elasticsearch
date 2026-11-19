@@ -64,7 +64,7 @@ Non si interpreta `redirects` come flag: sono pagine che rimandano all'articolo
 Il dump reale contiene molti metadati opzionali: non si inventano date mancanti o categorie.
 La pulizia HTML resta euristica: ispezionare ancora un campione di pagine sportive, elettorali, tabelle e citazioni.
 
-## Esperimenti consolidati: ricalcolo offline
+## Integrità e ricalcolo offline degli esperimenti
 
 La valutazione corrente è **AI-only**, su 18 query e 244 coppie, con etichette separate GPT-6 e Claude Opus 5.5.
 Non è una valutazione human-confirmed e non si usa `--human-confirmed` per questi CSV.
@@ -78,8 +78,10 @@ python -B experiments/performance-20261118/recompute.py --raw-archive /path/perf
 ```
 
 Questi comandi non invocano LLM e non accedono agli indici. Il secondo ricalcolo legge le misure originali,
-non esegue un nuovo benchmark. Per dipendenze, recupero dell'archivio e verifica dei risultati:
-[valutazione AI](experiments/llm-evaluation/README.md), [prestazioni](experiments/performance-20261118/README.md).
+non esegue un nuovo benchmark. Per una panoramica di metodi e risultati consultare l'[indice degli esperimenti](experiments/README.md).
+Dipendenze, recupero dell'archivio e verifica dei risultati sono descritti nei protocolli di
+[valutazione della rilevanza AI-only](experiments/llm-evaluation/README.md) e
+[benchmark di prestazioni](experiments/performance-20261118/README.md).
 Non eseguire i test di integrazione sopra durante un consolidamento che richiede indici immutati.
 La verifica conclusiva usa inoltre una nuova copia dei soli file pubblicabili, controllata integralmente
 con SHA-256 prima dell'esecuzione, e un ambiente Python separato. La vecchia copia temporanea con tre
@@ -169,5 +171,5 @@ I contatori distinguono operazioni riuscite e documenti unici: `_id` stabile ren
 caricare tutti gli identificatori in memoria. Le righe bianche non sono record; JSON o UTF-8 malformati sono scarti.
 Le eccezioni di trasporto o archivio interrompono l'esecuzione: un report parziale non prova un caricamento completo.
 
-I risultati effettivamente ottenuti e i limiti della prima esecuzione sono in [experiments/RESULTS.md](experiments/RESULTS.md),
+I risultati e i limiti della fase esplorativa sono nel [rapporto su dump, indicizzazione e latenze A/B/C](experiments/RESULTS.md),
 con manifest e run storici. La nuova analisi AI-only è documentata separatamente; la validazione umana resta assente.

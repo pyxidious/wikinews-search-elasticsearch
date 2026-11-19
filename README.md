@@ -1,4 +1,4 @@
-# Wikinotizie Search (versione Elasticsearch)
+# Wikinotizie Search: ricerca full-text con Elasticsearch
 
 Motore di ricerca con interfaccia web per le notizie in italiano di [it.wikinews.org](https://it.wikinews.org/),
 costruito a partire dal dump Wikimedia Enterprise HTML del 20 marzo 2025
@@ -112,7 +112,7 @@ Pagina e dimensione sono limitate prima della richiesta. Nessun PIT o `search_af
 per vedere altri risultati restringere query e filtri. Lo spareggio per `article_id` stabilizza l'ordinamento su un indice
 invariato; durante modifiche concorrenti dei documenti non si garantisce una fotografia immutabile dei risultati.
 
-### Validazione del dump e valutazione A/B/C
+### Validazione e indicizzazione del dump
 
 ```bash
 python -m wikinews_search validate-dump --dump data/itwikinews-NS0-20250320-ENTERPRISE-HTML.json.tar.gz --report data/validation.json
@@ -125,6 +125,8 @@ ID ripetuti sovrascrivono il documento precedente: le operazioni riuscite posson
 Nella sola validazione `indexed_documents` e' `null`, non un conteggio stimato. Con `--limit` il report riguarda il solo prefisso letto.
 Gli errori bulk sono registrati e fanno terminare il comando `index` con exit code 1; gli errori di trasporto interrompono il comando.
 
+### Valutazione della rilevanza: confronto A/B/C
+
 Il confronto Standard/BM25, italiano/BM25, italiano/BM25 con `title^3` usa gli indici separati
 `itwikinews_hw4_standard` e `itwikinews_hw4_italiano`. `prepare` ricrea solo questi due indici.
 Le 27 query e il protocollo manuale in [TESTING.md](TESTING.md) appartengono alla fase esplorativa storica.
@@ -133,11 +135,16 @@ GPT-6 e Claude Opus 5.5: **nessuna validazione umana**. Input congelati, annotaz
 provenienza e ricalcolo offline sono in [experiments/llm-evaluation/README.md](experiments/llm-evaluation/README.md).
 Il calcolo delle metriche non richiede Elasticsearch né chiamate ai modelli.
 
-I benchmark del 18 novembre 2026 sono separati dai giudizi di rilevanza:
+### Benchmark di prestazioni: latenza, capacità e indicizzazione
+
+I benchmark misurano i percorsi Elasticsearch diretto e HTTP Flask, con carico controllato e prove di capacità:
 94 query sintetiche, 240 celle, cinque repliche per condizione, 1.336.275 richieste e 20 prove di indicizzazione.
-Vedere [experiments/performance-20261118/README.md](experiments/performance-20261118/README.md)
-per ambiente originale, dati grezzi, checksum e ricalcolo delle statistiche **senza rilanciare le prove**.
-Il [rapporto di consolidamento](experiments/llm-evaluation/FINAL_REPORT.md) distingue calcolo verificabile,
+Le misure sono indipendenti dai giudizi di rilevanza. L'[indice degli esperimenti](experiments/README.md)
+presenta metodologia, risultati e provenienza della campagna del 18 novembre 2026.
+Il [protocollo prestazionale](experiments/performance-20261118/README.md) documenta ambiente originale,
+dati grezzi, checksum e ricalcolo delle statistiche **senza rilanciare le prove**.
+
+Il [rapporto di verifica scientifica](experiments/llm-evaluation/FINAL_REPORT.md) distingue calcolo verificabile,
 annotazioni non completamente replicabili e limiti di generalizzabilità. L'accordo fra LLM non prova la correttezza umana.
 Il [kit e gli asset per la pubblicazione manuale](experiments/RELEASE_ASSETS.md) permettono il ricalcolo
 anche senza una copia Git del progetto. La consegna è locale: nessun caricamento remoto automatico.

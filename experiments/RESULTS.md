@@ -1,7 +1,11 @@
-# Verifiche sul dump e prima esecuzione A/B/C — 17 novembre 2026
+# Verifica del dump, indicizzazione e latenze esplorative A/B/C
 
-Questi sono risultati effettivamente misurati. **Non sono ancora disponibili giudizi manuali di rilevanza**, quindi
-non si riportano P@5, MRR@10 o nDCG@10 del corpus reale. Il protocollo e i comandi sono in `TESTING.md`.
+Questo rapporto documenta la prima esecuzione A/B/C del **17 novembre 2026**: verifica del corpus,
+indicizzazione completa e latenze con cache calda. Alla data dell'esperimento **non erano ancora disponibili
+giudizi manuali di rilevanza**, quindi non si riportano P@5, MRR@10 o nDCG@10 del corpus reale.
+Il [protocollo esplorativo e i comandi](../TESTING.md#protocollo-storico-esplorativo-sul-corpus-reale-27-query)
+sono conservati in TESTING.md. L'[indice degli esperimenti](README.md) collega questa fase alla valutazione
+AI-only e ai benchmark prestazionali separati.
 
 ## Dati e ambiente
 
@@ -48,7 +52,7 @@ non isolano il costo dell'analyzer e non giustificano conclusioni sulle prestazi
 Le dimensioni sono fotografie dello store dopo flush, non risultati di un force merge.
 L'indice applicativo `itwikinews` non e' stato creato, cancellato o modificato dagli esperimenti.
 
-## Pool e latenze
+## Pool di candidati e latenza delle query
 
 Eseguite tutte le 27 query di `queries.json`, con identici intenti e corpus. A/B/C hanno prodotto risultati per tutte le query;
 questo **non dimostra la rilevanza** dei risultati. Il pool contiene 354 coppie query/documento da giudicare.
@@ -68,7 +72,7 @@ Queste latenze sono una misura locale con cache calda, non un test di carico o u
 Il calcolo della qualita' e' predisposto e verificato su giudizi sintetici controllati nei test unitari;
 il CSV reale resta intenzionalmente vuoto e `evaluate` rifiuta di trattarlo come ground truth.
 
-## Verifiche e lavoro umano residuo
+## Verifiche eseguite e attività residue della fase esplorativa
 
 Suite finale eseguita con:
 

@@ -1,4 +1,8 @@
-# Consegna scientifica e GitHub Release manuale
+# Kit di riproducibilità, dati grezzi e distribuzione manuale
+
+Il kit raccoglie i sorgenti e gli esperimenti descritti nell'[indice tecnico](README.md); l'asset dei dati
+grezzi permette il ricalcolo delle statistiche prestazionali. Questa guida descrive verifica dei checksum,
+preparazione locale e distribuzione manuale.
 
 Directory permanente prevista per questa consegna:
 `C:\Users\proti\Desktop\wikinews-benchmark-publication\`.
@@ -57,7 +61,7 @@ python -B experiments/prepare_publication.py --snapshot-only --destination C:/pa
 Il sorgente automatico ZIP/TAR che GitHub associa a un tag non sostituisce l'asset dei raw.
 Riferimento: [gestione delle release GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository).
 
-## Ricercatore esterno: ricalcolo
+## Ricalcolo offline da kit e dati grezzi
 
 Scaricare kit, raw e `SHA256SUMS` dalla release che il pubblicatore renderà disponibile.
 Verificare prima gli hash, ad esempio in PowerShell:
