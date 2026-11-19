@@ -1,0 +1,8 @@
+{
+  "numeric_values_checked": 345,
+  "absolute_tolerance": 1e-12,
+  "relative_tolerance": 1e-12,
+  "mismatches": [],
+  "passed": true,
+  "references_used_as_inputs_to_metrics": false
+}

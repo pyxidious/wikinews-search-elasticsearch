@@ -1,0 +1,245 @@
+query_id,candidate_id,grade,assessor,note
+v07,8cea367a62e94769,2,LLM-SECOND-JUDGE,
+v12,131c0d891a619bb1,0,LLM-SECOND-JUDGE,Aneddoto goliardico durante una conferenza a Yale; l'università è solo il luogo
+v03,7ffadedbd8486603,2,LLM-SECOND-JUDGE,
+v06,66869e6ef7045a0f,2,LLM-SECOND-JUDGE,
+v03,9f5d307d49fd0a60,0,LLM-SECOND-JUDGE,Terremoto in Messico 2020
+v08,483f92a76a50e0ff,1,LLM-SECOND-JUDGE,Centrato sul grattacielo; c'è una sezione sulle violazioni dei diritti dei lavoratori edili immigrati
+v06,4ac6e41e0f847773,2,LLM-SECOND-JUDGE,
+v11,83aac7f0f0340957,1,LLM-SECOND-JUDGE,Centrato sulla sospensione della docente; la libertà di pensiero degli studenti è un aspetto secondario
+v15,fac9e6203b1ddc2b,2,LLM-SECOND-JUDGE,
+v03,d27afab2f0523c96,1,LLM-SECOND-JUDGE,"Epidemia di colera nei campi post-sisma; il terremoto è contesto, non tema centrale"
+v12,90b2303451fecb89,2,LLM-SECOND-JUDGE,
+v07,6529a1c5fb33451b,1,LLM-SECOND-JUDGE,Rassegna di novità 2008; l'entrata in vigore di Kyoto è un paragrafo
+v18,885639ad16915f05,1,LLM-SECOND-JUDGE,"Fusione societaria tra borse; riguarda l'assetto proprietario, non l'andamento dei mercati"
+v16,c173f75847bd407e,2,LLM-SECOND-JUDGE,
+v13,fd049f9b086c2bb4,2,LLM-SECOND-JUDGE,
+v12,91634ee579121195,2,LLM-SECOND-JUDGE,
+v03,83ededfce07e278a,0,LLM-SECOND-JUDGE,"Rapimento ad Haiti nel 2006, nessun legame col sisma"
+v06,759716428b1aa644,2,LLM-SECOND-JUDGE,
+v16,89a1e341e4fa3879,1,LLM-SECOND-JUDGE,Calciopoli: centrato sull'indagine giudiziaria più che su competizioni e risultati
+v01,6dafed2d16900872,2,LLM-SECOND-JUDGE,"Polemica politica in cui Napolitano è protagonista, con la sua difesa dei senatori a vita"
+v09,0afd8f0874181927,2,LLM-SECOND-JUDGE,
+v10,74dac8e45c829f02,1,LLM-SECOND-JUDGE,Episodio disciplinare con un aspetto normativo (prima applicazione della legge sulla privacy a scuola)
+v13,f974fe759d1e4c6f,0,LLM-SECOND-JUDGE,"Intervista sulla vicenda giudiziaria del presidente dell'UNITRE, associazione culturale e non istituzione universitaria"
+v16,fd982b1f175344be,2,LLM-SECOND-JUDGE,
+v06,af746af786829b5a,1,LLM-SECOND-JUDGE,Centrato sull'inflazione; il dato sulla disoccupazione è una riga
+v05,8f283de228fa8416,0,LLM-SECOND-JUDGE,Referendum comunale su Ortonovo/Luni
+v16,d491c785fb4989aa,1,LLM-SECOND-JUDGE,Fallimento e arresti legati a una società calcistica; aspetto giudiziario-finanziario
+v03,5025d8ea88ddba53,0,LLM-SECOND-JUDGE,Forniture alla polizia haitiana nel 2022
+v11,e1acc6ee11fdf5de,1,LLM-SECOND-JUDGE,Studenti universitari morti nel sisma; centrato sulla polemica per la laurea honoris causa
+v08,a3265c5e1b1c6209,1,LLM-SECOND-JUDGE,Decreto flussi sull'ingresso di lavoratori stranieri; condizioni e diritti trattati solo nei commenti
+v17,62efbce4e16b4027,2,LLM-SECOND-JUDGE,
+v17,a315a7de5f5fe4a0,2,LLM-SECOND-JUDGE,
+v14,7d56b19761ab2fa5,2,LLM-SECOND-JUDGE,
+v12,cc4705c4eb98cbfd,2,LLM-SECOND-JUDGE,
+v08,1c48fb3920878be5,2,LLM-SECOND-JUDGE,
+v10,a527af04e1440958,2,LLM-SECOND-JUDGE,
+v08,e8481ade50ba4f6a,2,LLM-SECOND-JUDGE,
+v17,d99dc905f3a4831a,2,LLM-SECOND-JUDGE,
+v02,27d011f773e768ff,1,LLM-SECOND-JUDGE,Dichiarazione del portavoce di Merkel; l'articolo è centrato sulle riforme di Renzi
+v01,8d3fe0308fb5ac5a,1,LLM-SECOND-JUDGE,Centrato sulle dichiarazioni di Storace; Napolitano è parte lesa nella vicenda
+v04,619c5f667bb99bc4,0,LLM-SECOND-JUDGE,Corsa ciclistica Parigi-Roubaix
+v11,89d832c769840101,0,LLM-SECOND-JUDGE,Episodio disciplinare individuale senza aspetti su condizioni o diritti
+v12,f5e18e60063750a6,2,LLM-SECOND-JUDGE,
+v08,2f0b6fa3a3f17cea,2,LLM-SECOND-JUDGE,
+v03,f585e2ac939aa1d3,0,LLM-SECOND-JUDGE,Assassinio del presidente Moïse nel 2021
+v11,984e9f1ae10f1319,2,LLM-SECOND-JUDGE,
+v09,0559a0822c4c5636,1,LLM-SECOND-JUDGE,Sciopero interrotto dall'esercito; l'articolo è centrato sulla produzione petrolifera
+v05,2872f44b20dc64d2,0,LLM-SECOND-JUDGE,Referendum italiano sulla devolution
+v10,37b7db81e6487635,0,LLM-SECOND-JUDGE,"Incidente stradale durante una gita; non tratta condizioni, diritti o iniziative degli studenti"
+v05,273dc561608041bb,0,LLM-SECOND-JUDGE,Referendum costituzionale in Venezuela
+v15,4220ea5ce74f9b37,2,LLM-SECOND-JUDGE,
+v12,d223a993d780fd8a,2,LLM-SECOND-JUDGE,
+v05,3e3d41749e337c30,0,LLM-SECOND-JUDGE,Referendum in alta Valmarecchia
+v16,92c8b51878b5e285,2,LLM-SECOND-JUDGE,
+v17,44056001c04fa461,2,LLM-SECOND-JUDGE,
+v09,a16eb39f0e6923b1,2,LLM-SECOND-JUDGE,
+v18,1bc662cbacccf329,2,LLM-SECOND-JUDGE,
+v13,45b909c065dc603f,2,LLM-SECOND-JUDGE,
+v02,ed8c4860d583408f,1,LLM-SECOND-JUDGE,Exit poll europei multi-paese; il risultato CDU di Merkel è un paragrafo
+v09,62a7aacd8a33208b,2,LLM-SECOND-JUDGE,
+v11,17d589ea70f38d10,1,LLM-SECOND-JUDGE,Aggressione a uno studente per una maglietta politica; tocca la libertà di espressione ma è cronaca
+v06,9b18b8a004cbc252,1,LLM-SECOND-JUDGE,Tema centrale la riforma del lavoro per la crescita; la disoccupazione è citata come problema
+v15,987d04e346f7c889,2,LLM-SECOND-JUDGE,
+v06,ee3cd299b83d7a33,1,LLM-SECOND-JUDGE,Centrato sulla reazione delle borse ai dati sulla disoccupazione USA
+v02,7b19660ed1008ece,2,LLM-SECOND-JUDGE,
+v15,7b22cdb1c13d9344,2,LLM-SECOND-JUDGE,
+v12,05e60c4962110e50,0,LLM-SECOND-JUDGE,"Intervista sulla vicenda giudiziaria del presidente dell'UNITRE, associazione culturale e non istituzione universitaria"
+v14,1103608a6d906b27,2,LLM-SECOND-JUDGE,
+v05,df56dbaa0ee66cac,2,LLM-SECOND-JUDGE,
+v16,f6589cafb585f607,1,LLM-SECOND-JUDGE,Necrologio di un ex calciatore e allenatore; tocca squadre ma non competizioni o risultati
+v15,786b60e082439bab,2,LLM-SECOND-JUDGE,
+v06,ac3f8e193b75a2af,1,LLM-SECOND-JUDGE,Economia sudafricana; la disoccupazione è uno dei fattori citati
+v15,fa7675ef27007604,1,LLM-SECOND-JUDGE,"Operazioni a terra prima del lancio; la stazione è la destinazione della missione, non il tema"
+v12,44978325e64c10b5,2,LLM-SECOND-JUDGE,
+v16,a42e4f50468c28b5,2,LLM-SECOND-JUDGE,"Calciopoli, ma con le sanzioni a squadre (retrocessioni, esclusione dalle coppe)"
+v10,3ac90a47f0fd11f5,0,LLM-SECOND-JUDGE,Cronaca di un suicidio senza informazioni su cause o condizioni scolastiche
+v10,f55f7c4d5eec041b,0,LLM-SECOND-JUDGE,Episodio disciplinare individuale senza aspetti su condizioni o diritti
+v13,9a0a0674973ad19f,2,LLM-SECOND-JUDGE,
+v13,278a27cc68b75442,0,LLM-SECOND-JUDGE,Aneddoto goliardico durante una conferenza a Yale; l'università è solo il luogo
+v07,99d7663ebc9cb0b0,1,LLM-SECOND-JUDGE,Incendi in California; il legame col cambiamento climatico è nelle polemiche finali
+v13,585c56b6c8fe78bc,2,LLM-SECOND-JUDGE,
+v17,2b08f2464e0e31bc,2,LLM-SECOND-JUDGE,
+v09,f75c708349cce8ba,1,LLM-SECOND-JUDGE,Decreto flussi sull'ingresso di lavoratori stranieri; condizioni e diritti trattati solo nei commenti
+v14,174b4c99df909cc9,2,LLM-SECOND-JUDGE,
+v18,c5a67f6a2389918e,2,LLM-SECOND-JUDGE,
+v17,3c6ac37df55bf5ee,2,LLM-SECOND-JUDGE,
+v04,7d9aa3aa9321b4ce,0,LLM-SECOND-JUDGE,Attentato a Nassiriya 2006
+v08,63e910941aaccc1a,2,LLM-SECOND-JUDGE,
+v10,4716fa006b7687ff,1,LLM-SECOND-JUDGE,Aggressione a uno studente per una maglietta politica; tocca la libertà di espressione ma è cronaca
+v18,61c6936ead1c148d,1,LLM-SECOND-JUDGE,Centrato sulla fusione bancaria e sulla governance; le quotazioni sono un aspetto secondario
+v01,aa7c98aaad93ba82,2,LLM-SECOND-JUDGE,
+v16,c2690e3dd1a12e09,1,LLM-SECOND-JUDGE,Calciopoli: centrato sul procedimento sportivo più che su competizioni e risultati
+v06,1020f7105bcd7992,2,LLM-SECOND-JUDGE,
+v07,220218bf8ac3271d,2,LLM-SECOND-JUDGE,
+v18,0e9e085ce7d33d46,1,LLM-SECOND-JUDGE,Trasferimento della quotazione FIAT a Wall Street; vicenda societaria più che andamento del mercato
+v10,c52f9a611006d4fc,1,LLM-SECOND-JUDGE,Violenza tra studenti in classe; riguarda la sicurezza a scuola come episodio di cronaca
+v04,d9b5b43272b03379,0,LLM-SECOND-JUDGE,Incendio in un albergo di Parigi 2005
+v08,25f45ac37cf17e00,2,LLM-SECOND-JUDGE,
+v15,33a534c85e831709,2,LLM-SECOND-JUDGE,
+v17,ac67341edec9eb50,2,LLM-SECOND-JUDGE,
+v17,1a2e43362617143e,0,LLM-SECOND-JUDGE,"Camera Bassa giapponese, non la Camera italiana"
+v07,9d81c261e46231dd,2,LLM-SECOND-JUDGE,
+v08,cb0e9708a1765fad,2,LLM-SECOND-JUDGE,
+v14,45634a5df62aa913,2,LLM-SECOND-JUDGE,
+v13,9971fd2ed3342253,2,LLM-SECOND-JUDGE,
+v14,10b79c3a766e464d,2,LLM-SECOND-JUDGE,
+v17,cca784179505c53d,2,LLM-SECOND-JUDGE,
+v02,964f687612d858eb,0,LLM-SECOND-JUDGE,"Mostra su Angelo Barabino, nessuna relazione"
+v18,2ea23b39c0974d1b,0,LLM-SECOND-JUDGE,"Spese della Regione Lazio; ""borsa"" in senso figurato"
+v10,c8ed966672159f0c,2,LLM-SECOND-JUDGE,
+v04,03b82484ca3e699b,0,LLM-SECOND-JUDGE,Incendio di Notre-Dame 2019
+v01,cd783274fb49fd5e,2,LLM-SECOND-JUDGE,
+v10,9342aab85183dfa7,2,LLM-SECOND-JUDGE,
+v02,77fcbff918e6e58a,2,LLM-SECOND-JUDGE,
+v14,004db5fbc2735cda,2,LLM-SECOND-JUDGE,
+v15,125a89c996b01cd1,2,LLM-SECOND-JUDGE,
+v02,2e0dec4ad6935e44,2,LLM-SECOND-JUDGE,
+v18,3799274551e4118b,1,LLM-SECOND-JUDGE,Crollo di un singolo titolo per una notizia falsa; non riguarda l'andamento del mercato nel suo complesso
+v10,93b5216561242b4f,1,LLM-SECOND-JUDGE,Indagine su bullismo legato a un suicidio; il clima scolastico è trattato come cronaca giudiziaria
+v03,ff3e6c60df909823,0,LLM-SECOND-JUDGE,Terremoto in Sicilia
+v02,b8558921dd478bf0,2,LLM-SECOND-JUDGE,
+v11,0c0eb5d4bb4c000d,2,LLM-SECOND-JUDGE,
+v10,43e26ffb421c6345,1,LLM-SECOND-JUDGE,"Strage in una scuola con studenti vittime; cronaca, non analisi delle condizioni"
+v05,f4921bd2a7622037,0,LLM-SECOND-JUDGE,Referendum svizzero sull'immigrazione 2014
+v04,c4f8c41f5d2a1b25,0,LLM-SECOND-JUDGE,Attentati a Bombay 2008
+v02,671d5d8da211ebfc,1,LLM-SECOND-JUDGE,"Vigilia elettorale 2005, parla soprattutto di sondaggi e sistema elettorale"
+v15,4ad126abb6276131,2,LLM-SECOND-JUDGE,
+v04,a41023590cd8686f,0,LLM-SECOND-JUDGE,"Scontri nelle banlieue 2005, non attentati"
+v09,13487a8fb11dd91f,1,LLM-SECOND-JUDGE,Centrato sulla vicenda societaria; il rischio per i dipendenti è un aspetto del tema
+v09,6f63fe27ada25c84,2,LLM-SECOND-JUDGE,
+v04,b115adb6a80a472d,0,LLM-SECOND-JUDGE,Attentati a Bombay 2008
+v17,73a8c305e3dd3d5c,2,LLM-SECOND-JUDGE,
+v08,24f5f54946432d12,1,LLM-SECOND-JUDGE,Protesta contro un appalto a un'azienda straniera; più competizione per il lavoro che condizioni o diritti
+v18,3b26f0c8396d8245,1,LLM-SECOND-JUDGE,Quotazione della Nuova Parmalat; centrato sul singolo titolo e sugli obbligazionisti
+v04,c32609a94b28c49a,0,LLM-SECOND-JUDGE,"Scontri nelle banlieue 2005, non attentati"
+v08,15ffd9e7456b5014,2,LLM-SECOND-JUDGE,
+v10,57594497ec40149d,1,LLM-SECOND-JUDGE,Centrato sulla sospensione della docente; la libertà di pensiero degli studenti è un aspetto secondario
+v07,86bb93b22fc96baa,2,LLM-SECOND-JUDGE,
+v12,163311e1cb90afc6,2,LLM-SECOND-JUDGE,
+v08,dc7a2b19b4d443b6,2,LLM-SECOND-JUDGE,
+v14,d56a9892e3df90de,2,LLM-SECOND-JUDGE,
+v04,91af27f009cdf77e,0,LLM-SECOND-JUDGE,Mostra su Modigliani
+v05,7dfb61b6c3215982,0,LLM-SECOND-JUDGE,Referendum abrogativi italiani 2011
+v11,0735aca058135e42,0,LLM-SECOND-JUDGE,"Sanzione disciplinare a uno studente; non tratta condizioni, diritti o iniziative"
+v03,decdab5b3aa1afee,0,LLM-SECOND-JUDGE,Terremoto in Iran
+v07,3ce62f6643ad817b,0,LLM-SECOND-JUDGE,Documentario sulla Generazione Z; il clima è solo uno dei temi citati
+v04,e96d02edee609423,0,LLM-SECOND-JUDGE,"Cellula jihadista a Parigi nel 2012, evento diverso da quelli del 2015"
+v15,0a971439c3c54550,1,LLM-SECOND-JUDGE,"Evento divulgativo per bambini; informazioni generali sulla ISS, non su missioni o attività specifiche"
+v08,0622303223998450,0,LLM-SECOND-JUDGE,"Discorso del Papa; ""lavoratore"" usato in senso figurato"
+v17,1628d9904c3393f8,2,LLM-SECOND-JUDGE,
+v18,9efe361369ac1e2e,1,LLM-SECOND-JUDGE,Sospensione di singoli titoli; informazione limitata a una società
+v11,69f1964686102d41,1,LLM-SECOND-JUDGE,Contestazione studentesca a un comizio; iniziativa politica di studenti trattata come cronaca
+v12,36a966ae0f5d3e52,2,LLM-SECOND-JUDGE,
+v04,06ad6370af0b9792,0,LLM-SECOND-JUDGE,Attentati a Baghdad
+v09,720284ac80bf1b8b,2,LLM-SECOND-JUDGE,
+v10,3298dd08231f1ca6,1,LLM-SECOND-JUDGE,Contestazione studentesca a un comizio; iniziativa politica di studenti trattata come cronaca
+v08,cf0599f9c8a21d7e,0,LLM-SECOND-JUDGE,"Nomina di un ministro; ""lavoratore"" usato come autodefinizione"
+v07,bdea3d49816025e6,1,LLM-SECOND-JUDGE,Alluvioni in Pakistan; il cambiamento climatico compare nell'appello finale
+v03,4f53091c7b319d00,2,LLM-SECOND-JUDGE,
+v04,db611e0fa6bd9146,0,LLM-SECOND-JUDGE,Attentati ad Algeri
+v18,36e00e780884f4fa,1,LLM-SECOND-JUDGE,"Cambio degli indici di Piazza Affari; aspetto tecnico-organizzativo, non andamento"
+v05,ad7abc14b938819c,0,LLM-SECOND-JUDGE,Firme per referendum sulla legge elettorale italiana
+v11,4903c862e487f925,0,LLM-SECOND-JUDGE,"Incidente stradale durante una gita; non tratta condizioni, diritti o iniziative degli studenti"
+v07,2d2ef93be7abe5be,1,LLM-SECOND-JUDGE,Invasione di cavallette; il clima è indicato come fattore favorente in una frase
+v04,02b05c0ce96cffcd,0,LLM-SECOND-JUDGE,Attentato nello Xinjiang
+v16,41408687f2c6a245,2,LLM-SECOND-JUDGE,
+v04,610b26eb2c7c4c8f,0,LLM-SECOND-JUDGE,"Pacco bomba a Parigi nel 2007, evento diverso"
+v04,7c38aa7ed2a3c04d,0,LLM-SECOND-JUDGE,Rapina con ostaggi vicino Parigi 2007
+v05,bbd4e0a47dfb2992,0,LLM-SECOND-JUDGE,Referendum italiano sulle trivellazioni
+v10,01cab6807ae7b183,2,LLM-SECOND-JUDGE,
+v16,ac78aa4ae56552a3,2,LLM-SECOND-JUDGE,
+v05,c72ed43a96096742,0,LLM-SECOND-JUDGE,Referendum costituzionale italiano 2020
+v08,4aa31ca44040f488,1,LLM-SECOND-JUDGE,Centrato sulla vicenda societaria; il rischio per i dipendenti è un aspetto del tema
+v11,9306805cdb5f43a8,2,LLM-SECOND-JUDGE,
+v08,7470b7ef5f658693,1,LLM-SECOND-JUDGE,Rassegna di misure di governo; le parti sui diritti dei precari sono sostanziali ma l'articolo è multi-tema
+v08,be09e294552b89c8,1,LLM-SECOND-JUDGE,Sciopero interrotto dall'esercito; l'articolo è centrato sulla produzione petrolifera
+v05,3c68adca09acf9cb,0,LLM-SECOND-JUDGE,Referendum italiano sulla devolution
+v01,88f9a423f8c1ebe5,1,LLM-SECOND-JUDGE,"Solo auguri di compleanno, poca informazione su attività e vicende"
+v11,dcf5fee918661757,2,LLM-SECOND-JUDGE,
+v13,3daed844ec067aa0,1,LLM-SECOND-JUDGE,Contestazione politica in occasione dell'inaugurazione dell'anno accademico; il tema è la politica iraniana
+v16,f63b6e4018953125,1,LLM-SECOND-JUDGE,"Calciopoli: diffusione delle intercettazioni, aspetto giudiziario"
+v08,dc7e76707f8b755d,2,LLM-SECOND-JUDGE,
+v08,ffdf7ddee109a868,2,LLM-SECOND-JUDGE,
+v04,9fa2eb399d8dfa9a,2,LLM-SECOND-JUDGE,
+v11,7b110308074e7d1d,1,LLM-SECOND-JUDGE,Norma nordcoreana sul taglio di capelli; riguarda gli studenti ma il testo la estende agli uomini in generale ed è scarno
+v10,7af8c986b91ff207,0,LLM-SECOND-JUDGE,"Sanzione disciplinare a uno studente; non tratta condizioni, diritti o iniziative"
+v07,ddbf66f3d96d4891,2,LLM-SECOND-JUDGE,
+v09,cdea9da7a1f2d824,1,LLM-SECOND-JUDGE,Necrologio di Gino Giugni; lo Statuto dei lavoratori è citato come parte della biografia
+v04,387cdde3a28d333c,0,LLM-SECOND-JUDGE,Corsa ciclistica Parigi-Nizza
+v06,cb1fb869e6df1faa,2,LLM-SECOND-JUDGE,
+v02,3957111168f53e07,2,LLM-SECOND-JUDGE,
+v07,9c7d9b8b2c9d8b83,1,LLM-SECOND-JUDGE,"Appello generico ai leader, con poca informazione concreta su cause, conseguenze o politiche"
+v13,c3165c6e92a115d9,2,LLM-SECOND-JUDGE,
+v11,0a7da89166b7cbe7,2,LLM-SECOND-JUDGE,
+v02,108cfdff570edfc4,2,LLM-SECOND-JUDGE,
+v06,5d6dddbc60968e11,2,LLM-SECOND-JUDGE,
+v18,19900a0617118d7a,2,LLM-SECOND-JUDGE,
+v01,63332d0750eaf92a,2,LLM-SECOND-JUDGE,
+v16,eae2827a7ac1b62d,1,LLM-SECOND-JUDGE,"Calciopoli: interrogatorio di Moggi, aspetto giudiziario"
+v12,db746066718fbb59,1,LLM-SECOND-JUDGE,Contestazione politica in occasione dell'inaugurazione dell'anno accademico; il tema è la politica iraniana
+v16,8f698f79da331e82,2,LLM-SECOND-JUDGE,
+v07,50fb8cb41b82785c,2,LLM-SECOND-JUDGE,
+v14,650da1d9d6576822,2,LLM-SECOND-JUDGE,
+v03,0b3fdcf5cbe577fa,0,LLM-SECOND-JUDGE,"Rapimento ad Haiti nel 2006, nessun legame col sisma"
+v18,00dfdb107fec8805,2,LLM-SECOND-JUDGE,
+v16,67de9bf8e9ae19f1,1,LLM-SECOND-JUDGE,"Calciopoli: riepilogo dell'inchiesta, aspetto giudiziario"
+v04,52cf38809873b980,0,LLM-SECOND-JUDGE,Attentati in Iraq
+v17,1709d7edc39c3667,2,LLM-SECOND-JUDGE,
+v13,809c08042e022bc0,2,LLM-SECOND-JUDGE,
+v09,62f87f82c44b2a1e,1,LLM-SECOND-JUDGE,Protesta contro un appalto a un'azienda straniera; più competizione per il lavoro che condizioni o diritti
+v10,cc628a8e321bb774,2,LLM-SECOND-JUDGE,
+v01,070717d948728096,2,LLM-SECOND-JUDGE,Necrologio con ricostruzione del ruolo istituzionale
+v14,a23ea3a97582bdbd,2,LLM-SECOND-JUDGE,
+v01,edf6ca650fb1a0a5,1,LLM-SECOND-JUDGE,Centrato sull'indagine a Storace; Napolitano è parte lesa
+v05,fe731c173d3f5076,0,LLM-SECOND-JUDGE,Referendum in Groenlandia 2008; l'uscita dalla CEE del 1982 è solo citata
+v04,51b462e0b9848191,0,LLM-SECOND-JUDGE,Attentati in Assam
+v12,314b7e1359f8a434,2,LLM-SECOND-JUDGE,
+v16,c4bd256b1b88d982,2,LLM-SECOND-JUDGE,
+v04,bf652d40eccd3a73,0,LLM-SECOND-JUDGE,Processo per gli attentati dell'11 settembre
+v02,b0f5956f20b42e01,0,LLM-SECOND-JUDGE,"Morte di Angela Lansbury, omonimia sul nome"
+v14,d340207b53e46e41,1,LLM-SECOND-JUDGE,Riapertura delle università afghane; i diritti delle donne sono un aspetto trattato nella parte finale
+v07,d189bb7efc3de199,2,LLM-SECOND-JUDGE,
+v02,c8fedcbb28ff11e9,0,LLM-SECOND-JUDGE,"Caso Angela Celentano, omonimia sul nome"
+v07,55227d37b73e82bf,1,LLM-SECOND-JUDGE,Elezione di Lula; l'impegno sul clima è una dichiarazione secondaria
+v07,a3813a3e7dffe33c,2,LLM-SECOND-JUDGE,
+v18,cd07e8639e3cb9c2,1,LLM-SECOND-JUDGE,Andamento di un singolo titolo
+v17,77711a46e2ebeaa3,2,LLM-SECOND-JUDGE,
+v08,eaccd676f419a8ae,2,LLM-SECOND-JUDGE,
+v07,bd5ac18a1490f17f,0,LLM-SECOND-JUDGE,Campagna contro la caccia alle balene; il clima è citato di passaggio
+v15,ca55acd1b735dd29,1,LLM-SECOND-JUDGE,Centrato sui preparativi dello Shuttle dopo il Columbia; il modulo per la ISS è un aspetto secondario
+v12,0ffb61a4692ffdf9,2,LLM-SECOND-JUDGE,
+v07,67bd972d166215aa,0,LLM-SECOND-JUDGE,Lavatrice a basso consumo; il clima è solo la premessa
+v11,9a7b2c5ae9f38fb9,2,LLM-SECOND-JUDGE,
+v18,9f5ec4086a330129,1,LLM-SECOND-JUDGE,Rialzo di un singolo titolo legato a voci di acquisizione
+v09,649b5a3e673f033d,2,LLM-SECOND-JUDGE,
+v13,f771f99a8bdc512f,2,LLM-SECOND-JUDGE,
+v17,974678594aacb087,2,LLM-SECOND-JUDGE,
+v10,2edd64e3e1427a81,2,LLM-SECOND-JUDGE,
+v03,511f98a95242d558,0,LLM-SECOND-JUDGE,Terremoto nel salernitano
+v01,5492ccac81da9b3b,2,LLM-SECOND-JUDGE,
+v01,3b50ec810191af52,2,LLM-SECOND-JUDGE,
+v17,772402e8b2a988be,2,LLM-SECOND-JUDGE,
+v15,ad4887353fe0186c,2,LLM-SECOND-JUDGE,
+v01,930be6c934f40d48,2,LLM-SECOND-JUDGE,

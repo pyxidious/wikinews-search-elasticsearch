@@ -1,0 +1,12 @@
+{
+  "changed_files": [],
+  "source_files_checked": 15,
+  "original_artifacts_checked": 8,
+  "no_git_commands_used": true,
+  "input_checks": {
+    "dump_unchanged": true,
+    "preprocessed_unchanged": true,
+    "workload_unchanged": true,
+    "harness_unchanged": true
+  }
+}

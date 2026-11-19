@@ -6,3 +6,7 @@ htmlcov/
 .venv/
 data/*
 !data/.gitkeep
+
+# Temporary source archives and local reproduction outputs, not publication artifacts.
+/experiments/reproducibility-inputs/
+/.reproduction/

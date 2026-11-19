@@ -1,0 +1,2180 @@
+{
+  "wnbench_20261118_147ab2c31d1b_standard": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_147ab2c31d1b_standard",
+        "creation_date": "1795005571697",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "VpY-3kqfRaC27BLZzNrniQ",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_189b17f4df22_standard": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_189b17f4df22_standard",
+        "creation_date": "1795003463902",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "t9ZJsDbgS4mm1yWRdUj1JQ",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_4a2a91c73ecd_italiano": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_4a2a91c73ecd_italiano",
+        "creation_date": "1795005045413",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "DErgcTnvQGq7nxWnwIPy4g",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_4edd6b9d09cb_standard": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_4edd6b9d09cb_standard",
+        "creation_date": "1795006124861",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "KA7CCHfwTXicaePNCxpKKA",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_5f8564901253_standard": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_5f8564901253_standard",
+        "creation_date": "1795006110377",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "TxNI4ZDvScKAqik3vz2YoQ",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_605cd0821adf_italiano": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_605cd0821adf_italiano",
+        "creation_date": "1795006120961",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "le1xX6lwQOGdgDJ6qFsj0g",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_6130c72186f3_standard": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_6130c72186f3_standard",
+        "creation_date": "1795004517806",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "CC73U5ikQ_6sfQT96jbTZw",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_6ba27121ab35_italiano": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_6ba27121ab35_italiano",
+        "creation_date": "1795003993603",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "G40JeicJTVuO78KsmQ3uIw",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_849457d754e8_italiano": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_849457d754e8_italiano",
+        "creation_date": "1795006106596",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "a7lRRtxISCSFIZSSEB0kwA",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_95fd0d56bceb_italiano": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_95fd0d56bceb_italiano",
+        "creation_date": "1795006117159",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "iJy3Wk2QQGC5ep380wI9sA",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_a3c0132fd637_italiano": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_a3c0132fd637_italiano",
+        "creation_date": "1795005834933",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "pqJu9ENnT-uPNlZSJyF69Q",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_ad764b509519_standard": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_ad764b509519_standard",
+        "creation_date": "1795006128661",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "wWZ4bL4MQPe_-zgzqzBWrA",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_c60941972ca5_standard": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_c60941972ca5_standard",
+        "creation_date": "1795004255318",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "PPs2qs8_Q0aol75Susbpng",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_d37e21952ca2_standard": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_d37e21952ca2_standard",
+        "creation_date": "1795006098454",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "hOlfJ4AcRoGq-JkwjBi7Ng",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_d8826e198afc_italiano": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_d8826e198afc_italiano",
+        "creation_date": "1795006102652",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "CJzxCloqQMGz1E_0FYemIg",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_d92192c478a4_standard": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_d92192c478a4_standard",
+        "creation_date": "1795005308792",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "r2NCyTGPSCWt0FZt3gtmcw",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_e000a67b11d2_italiano": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_e000a67b11d2_italiano",
+        "creation_date": "1795006132373",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "IsrsnA8mTM-mGnIhpYk-Mg",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_e26c7b712e41_standard": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_e26c7b712e41_standard",
+        "creation_date": "1795006113302",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "uAFf4vODRl2O7tvYQyOUrg",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_ebeb9719afc6_italiano": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "verified_before_close": "true",
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_ebeb9719afc6_italiano",
+        "creation_date": "1795004782133",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "0tfmpNIERlWO7foCS5RLHA",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  },
+  "wnbench_20261118_f95e789fb769_italiano": {
+    "aliases": {},
+    "mappings": {
+      "dynamic": "strict",
+      "properties": {
+        "article_id": {
+          "type": "keyword"
+        },
+        "body": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "lead": {
+          "type": "text",
+          "index": false
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "italiano"
+        },
+        "url": {
+          "type": "keyword",
+          "index": false,
+          "doc_values": false
+        },
+        "year": {
+          "type": "keyword"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "refresh_interval": "1s",
+        "number_of_shards": "1",
+        "provided_name": "wnbench_20261118_f95e789fb769_italiano",
+        "creation_date": "1795003729226",
+        "analysis": {
+          "filter": {
+            "italian_light_stemmer": {
+              "type": "stemmer",
+              "language": "light_italian"
+            },
+            "italian_elision": {
+              "type": "elision",
+              "articles": [
+                "c",
+                "l",
+                "all",
+                "dall",
+                "dell",
+                "nell",
+                "sull",
+                "coll",
+                "pell",
+                "gl",
+                "agl",
+                "dagl",
+                "degl",
+                "negl",
+                "sugl",
+                "un",
+                "m",
+                "t",
+                "s",
+                "v",
+                "d"
+              ],
+              "articles_case": "true"
+            },
+            "italian_stop": {
+              "type": "stop",
+              "stopwords": "_italian_"
+            }
+          },
+          "analyzer": {
+            "italiano": {
+              "filter": [
+                "italian_elision",
+                "lowercase",
+                "italian_stop",
+                "asciifolding",
+                "italian_light_stemmer"
+              ],
+              "tokenizer": "standard"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "Z5deIFsORq-PIh83i6xmiw",
+        "version": {
+          "created": "8512000"
+        }
+      }
+    }
+  }
+}

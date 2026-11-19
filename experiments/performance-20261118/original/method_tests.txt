@@ -1,0 +1,14 @@
+﻿test_bootstrap_group_constant (__main__.Methods) ... ok
+test_exact_metrics (__main__.Methods) ... ok
+test_kappa (__main__.Methods) ... ok
+test_no_relevant (__main__.Methods) ... ok
+test_payload (__main__.Methods) ... ok
+test_schedule (__main__.Methods) ... ok
+test_short_precision_denominator (__main__.Methods) ... ok
+test_unjudged_rejected (__main__.Methods) ... ok
+test_workload_frozen (__main__.Methods) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.008s
+
+OK

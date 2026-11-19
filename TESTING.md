@@ -64,7 +64,28 @@ Non si interpreta `redirects` come flag: sono pagine che rimandano all'articolo
 Il dump reale contiene molti metadati opzionali: non si inventano date mancanti o categorie.
 La pulizia HTML resta euristica: ispezionare ancora un campione di pagine sportive, elettorali, tabelle e citazioni.
 
-## Protocollo sperimentale sul corpus reale
+## Esperimenti consolidati: ricalcolo offline
+
+La valutazione corrente è **AI-only**, su 18 query e 244 coppie, con etichette separate GPT-6 e Claude Opus 5.5.
+Non è una valutazione human-confirmed e non si usa `--human-confirmed` per questi CSV.
+Il vecchio script umano è conservato con la sua protezione; il percorso AI è indipendente.
+
+```bash
+python -m pip install -r experiments/llm-evaluation/requirements-reproduction.txt
+python -B -m unittest discover -s experiments/llm-evaluation/tests -v
+python -B experiments/llm-evaluation/reproduce.py --out .reproduction/llm
+python -B experiments/performance-20261118/recompute.py --raw-archive /path/performance-raw-20261118.zip --out .reproduction/performance
+```
+
+Questi comandi non invocano LLM e non accedono agli indici. Il secondo ricalcolo legge le misure originali,
+non esegue un nuovo benchmark. Per dipendenze, recupero dell'archivio e verifica dei risultati:
+[valutazione AI](experiments/llm-evaluation/README.md), [prestazioni](experiments/performance-20261118/README.md).
+Non eseguire i test di integrazione sopra durante un consolidamento che richiede indici immutati.
+
+## Protocollo storico esplorativo sul corpus reale (27 query)
+
+La sezione seguente conserva il protocollo precedente, non descrive l'annotazione definitiva AI-only.
+I comandi `prepare`/`index` sono distruttivi sui loro indici di destinazione e **non sono stati eseguiti nel consolidamento**.
 
 Il test di ranking preesistente (11 documenti sintetici, P@1 e MRR) resta una regressione;
 non misura la qualita' delle 12 mila pagine reali. Il confronto reale usa:
@@ -127,7 +148,8 @@ Confrontare B-A per l'analyzer e C-B per il boost. Riportare anche differenze pe
 hardware, carico, versioni e dimensione del corpus. Cache calda e ordine di costruzione degli indici influenzano i tempi:
 non attribuire differenze minime a un miglioramento generale. Non si calcolano recall o significativita' statistica.
 Il pooling puo' perdere rilevanti non recuperati da nessuna configurazione; una nuova configurazione richiede nuovo pooling
-e nuovi giudizi. Nessuna metrica di qualita' reale e' disponibile finche' non si completa il lavoro umano.
+e nuovi giudizi. Alla data della fase esplorativa non erano disponibili giudizi umani completi.
+Le successive metriche AI-only non sostituiscono quella validazione umana: sono un riferimento distinto.
 
 ## Comandi Windows per il dump reale
 
@@ -144,4 +166,4 @@ caricare tutti gli identificatori in memoria. Le righe bianche non sono record; 
 Le eccezioni di trasporto o archivio interrompono l'esecuzione: un report parziale non prova un caricamento completo.
 
 I risultati effettivamente ottenuti e i limiti della prima esecuzione sono in [experiments/RESULTS.md](experiments/RESULTS.md),
-con manifest e run versionati. I giudizi reali restano da completare.
+con manifest e run storici. La nuova analisi AI-only è documentata separatamente; la validazione umana resta assente.

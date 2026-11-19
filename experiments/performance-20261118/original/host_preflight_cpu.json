@@ -1,0 +1,212 @@
+[
+  {
+    "Name": "Code",
+    "Id": 13752,
+    "CpuSecondsDelta": 0.1875,
+    "HostCpuPercent": 0.78125,
+    "WorkingSet": 140337152
+  },
+  {
+    "Name": "ThPanel",
+    "Id": 10808,
+    "CpuSecondsDelta": 0.078125,
+    "HostCpuPercent": 0.3255208333333333,
+    "WorkingSet": 17203200
+  },
+  {
+    "Name": "pwsh",
+    "Id": 2040,
+    "CpuSecondsDelta": 0.078125,
+    "HostCpuPercent": 0.3255208333333333,
+    "WorkingSet": 92626944
+  },
+  {
+    "Name": "com.docker.backend",
+    "Id": 13508,
+    "CpuSecondsDelta": 0.03125,
+    "HostCpuPercent": 0.13020833333333334,
+    "WorkingSet": 160133120
+  },
+  {
+    "Name": "audiodg",
+    "Id": 4804,
+    "CpuSecondsDelta": 0.03125,
+    "HostCpuPercent": 0.13020833333333334,
+    "WorkingSet": 18567168
+  },
+  {
+    "Name": "Discord",
+    "Id": 10928,
+    "CpuSecondsDelta": 0.015625,
+    "HostCpuPercent": 0.06510416666666667,
+    "WorkingSet": 101924864
+  },
+  {
+    "Name": "Docker Desktop",
+    "Id": 29952,
+    "CpuSecondsDelta": 0.015625,
+    "HostCpuPercent": 0.06510416666666667,
+    "WorkingSet": 148758528
+  },
+  {
+    "Name": "Code",
+    "Id": 5480,
+    "CpuSecondsDelta": 0.015625,
+    "HostCpuPercent": 0.06510416666666667,
+    "WorkingSet": 229777408
+  },
+  {
+    "Name": "firefox",
+    "Id": 25524,
+    "CpuSecondsDelta": 0.015625,
+    "HostCpuPercent": 0.06510416666666667,
+    "WorkingSet": 428900352
+  },
+  {
+    "Name": "wallpaper32",
+    "Id": 9820,
+    "CpuSecondsDelta": 0.015625,
+    "HostCpuPercent": 0.06510416666666667,
+    "WorkingSet": 121786368
+  },
+  {
+    "Name": "OneDrive",
+    "Id": 21256,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 138678272
+  },
+  {
+    "Name": "node_repl",
+    "Id": 29980,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 11423744
+  },
+  {
+    "Name": "node_repl",
+    "Id": 9300,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 11726848
+  },
+  {
+    "Name": "nvcontainer",
+    "Id": 13984,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 73207808
+  },
+  {
+    "Name": "node",
+    "Id": 24452,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 48082944
+  },
+  {
+    "Name": "node",
+    "Id": 19828,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 40632320
+  },
+  {
+    "Name": "ActionLauncher",
+    "Id": 12420,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 3039232
+  },
+  {
+    "Name": "OpenConsole",
+    "Id": 6524,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 10723328
+  },
+  {
+    "Name": "OpenConsole",
+    "Id": 17464,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 10428416
+  },
+  {
+    "Name": "OpenConsole",
+    "Id": 19012,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 10448896
+  },
+  {
+    "Name": "pet",
+    "Id": 20404,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 6852608
+  },
+  {
+    "Name": "POWERPNT",
+    "Id": 3824,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 296116224
+  },
+  {
+    "Name": "pwsh",
+    "Id": 15804,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 82927616
+  },
+  {
+    "Name": "pwsh",
+    "Id": 25256,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 93417472
+  },
+  {
+    "Name": "RtkAudUService64",
+    "Id": 9244,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 11665408
+  },
+  {
+    "Name": "RuntimeBroker",
+    "Id": 6652,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 31748096
+  },
+  {
+    "Name": "RuntimeBroker",
+    "Id": 9424,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 25821184
+  },
+  {
+    "Name": "RuntimeBroker",
+    "Id": 12128,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 17227776
+  },
+  {
+    "Name": "OneDrive.Sync.Service",
+    "Id": 20748,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 52748288
+  },
+  {
+    "Name": "msrdc",
+    "Id": 30280,
+    "CpuSecondsDelta": 0.0,
+    "HostCpuPercent": 0.0,
+    "WorkingSet": 54120448
+  }
+]

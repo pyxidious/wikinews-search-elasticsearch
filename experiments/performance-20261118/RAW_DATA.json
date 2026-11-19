@@ -1,0 +1,20 @@
+{
+  "archive_name": "performance-raw-20261118.zip",
+  "archive_sha256": "464c3438507d53de3c4f430ea42b03271de3843ca667827afc5bd007d11f97c9",
+  "archive_bytes": 58175169,
+  "download_url": null,
+  "distribution_status": "prepared locally; not uploaded",
+  "recommended_distribution": "manual GitHub Release asset or archival repository deposit; do not add raw CSV to ordinary repository files",
+  "raw_files": {
+    "search_raw.csv": {
+      "sha256": "533bc5127fc55a5f1aaf44b9136d116832d807b9c22fedcafb3756691061cbba",
+      "bytes": 223634590
+    },
+    "telemetry.jsonl": {
+      "sha256": "6ebc1c41e8e8d237722c3705c4ab3d5014681b40a32418bb8f67f1c1fa252965",
+      "bytes": 30870892
+    }
+  },
+  "source_original_archive_sha256": "411aad94a24efeea17f08057c9d2bf82eb12a39dc72c71b7eadc0ce7009bd973",
+  "contains_full_article_texts": false
+}

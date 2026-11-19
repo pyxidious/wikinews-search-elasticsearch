@@ -1,0 +1,1 @@
+Current offline results. RESULTS_INDEX.json maps every selected output to its canonical file; byte-identical reference files are reused rather than duplicated. The qualitative classifications are fixed analyst outputs, not new qrels or human adjudication.

@@ -1,0 +1,202 @@
+[
+  {
+    "index": "wnbench_20261118_189b17f4df22_standard",
+    "mode": "pipeline",
+    "analyzer": "standard",
+    "replicate": 1,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": true
+  },
+  {
+    "index": "wnbench_20261118_f95e789fb769_italiano",
+    "mode": "pipeline",
+    "analyzer": "italiano",
+    "replicate": 1,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": true
+  },
+  {
+    "index": "wnbench_20261118_6ba27121ab35_italiano",
+    "mode": "pipeline",
+    "analyzer": "italiano",
+    "replicate": 2,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_c60941972ca5_standard",
+    "mode": "pipeline",
+    "analyzer": "standard",
+    "replicate": 2,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_6130c72186f3_standard",
+    "mode": "pipeline",
+    "analyzer": "standard",
+    "replicate": 3,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_ebeb9719afc6_italiano",
+    "mode": "pipeline",
+    "analyzer": "italiano",
+    "replicate": 3,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_4a2a91c73ecd_italiano",
+    "mode": "pipeline",
+    "analyzer": "italiano",
+    "replicate": 4,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_d92192c478a4_standard",
+    "mode": "pipeline",
+    "analyzer": "standard",
+    "replicate": 4,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_147ab2c31d1b_standard",
+    "mode": "pipeline",
+    "analyzer": "standard",
+    "replicate": 5,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_a3c0132fd637_italiano",
+    "mode": "pipeline",
+    "analyzer": "italiano",
+    "replicate": 5,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_d37e21952ca2_standard",
+    "mode": "preprocessed",
+    "analyzer": "standard",
+    "replicate": 1,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_d8826e198afc_italiano",
+    "mode": "preprocessed",
+    "analyzer": "italiano",
+    "replicate": 1,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_849457d754e8_italiano",
+    "mode": "preprocessed",
+    "analyzer": "italiano",
+    "replicate": 2,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_5f8564901253_standard",
+    "mode": "preprocessed",
+    "analyzer": "standard",
+    "replicate": 2,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_e26c7b712e41_standard",
+    "mode": "preprocessed",
+    "analyzer": "standard",
+    "replicate": 3,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_95fd0d56bceb_italiano",
+    "mode": "preprocessed",
+    "analyzer": "italiano",
+    "replicate": 3,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_605cd0821adf_italiano",
+    "mode": "preprocessed",
+    "analyzer": "italiano",
+    "replicate": 4,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_4edd6b9d09cb_standard",
+    "mode": "preprocessed",
+    "analyzer": "standard",
+    "replicate": 4,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_ad764b509519_standard",
+    "mode": "preprocessed",
+    "analyzer": "standard",
+    "replicate": 5,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  },
+  {
+    "index": "wnbench_20261118_e000a67b11d2_italiano",
+    "mode": "preprocessed",
+    "analyzer": "italiano",
+    "replicate": 5,
+    "documents": 12209,
+    "source_sha256": "7eafec55ee1582821ee26b476fede62516d3095a511bd360249c40fad5dc374e",
+    "matches_search_corpus": true,
+    "initially_open": false
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "official_dump_url": "https://dumps.wikimedia.org/other/enterprise_html/runs/20250320/itwikinews-NS0-20250320-ENTERPRISE-HTML.json.tar.gz",
+  "dump_sha256": "d2c00ef9d7c3db5a3f26adb85b07055673b30b2417653374ada52b7174df474d",
+  "original_blind_candidates_sha256": "5a8e255c6028f73e5aa9092b7ebd8c6191743d8b14134f883de59d46c6aa6d4e",
+  "original_validation_queries_sha256": "ac660adfcc25d325a7dca3f76f483ff52e82f2707e85025f36bbfe6791c2addd",
+  "original_rankings_sha256": "5ffe0ee0bd04eb919ebf2585f1d9f3fcd2069f3811eacba16207d9173ab8f622",
+  "preprocessed_sha256": "05478325f03155e68eda84515b76e6610b77911eaa78aea9ac0e4870220396e9",
+  "body_redistribution": false,
+  "reason": "Per-article license metadata and current site licensing differ; publish identifiers, hashes and reconstruction tools, not full texts.",
+  "original_parser_sha256": {
+    "wikinews_search\\cli.py": "aaed32bcb8f5d9490c29a944cfde84170eec84aad1d84abfa6db6c5baab0ddf8",
+    "wikinews_search\\config.py": "15bf8f4799828c7dc90e76753f80f9e772c7c2cd16a684c9fe88bcb53117c865",
+    "wikinews_search\\dump.py": "ddc34ac8ea27cb168e8f4045fc201de2e6bc137e4e1d4367a26b755e6636d3c2",
+    "wikinews_search\\evaluation.py": "9b528388e954a2adcc7dc63fae508060800f98dca698612896e7753aa31628a3",
+    "wikinews_search\\indexer.py": "fb0d126983daa3a9f752ddbf688a8924aa64fe161386aa781fb8ab7ff13ce474",
+    "wikinews_search\\parsing.py": "d081f7c159f0120937fe5852de6aa7cda05eb6d81b6e340b4d98a6456178689e",
+    "wikinews_search\\searcher.py": "a438d960bfe9e9d6aa20edc0ddc05ffb2bf90324cbb0c3f25c38886e21969caa",
+    "wikinews_search\\statistics.py": "910674f8b167de7930f61bad7471f856a9f0ba3b14dfba77cc9b49ff027fa1ff",
+    "wikinews_search\\webapp.py": "53441add429f716b1fa32babb753cb2d18447faee50766e63abb54087ad58c65",
+    "wikinews_search\\__init__.py": "ed330dac9532e92a3289dd628701de9e4990e9592b50924f5eec4e6767e71d43",
+    "wikinews_search\\__main__.py": "102942c02cdbea1e98069b7486b9c6e21d2694d84d78fca0ff104d352566d68b",
+    "wikinews_search\\static\\style.css": "4a8ec352bb50cdec08d065b32b920185e293fe9feff22129165f95ef3087aecc",
+    "wikinews_search\\templates\\article.html": "0809c052c1c1ec4c8e008d7739ec8a33b113af231b38623debf5ea9b6252f3f0",
+    "wikinews_search\\templates\\base.html": "34b128f1f838dac9f58989ffb14413c01719ed33639286325bc9f265e4055e89",
+    "wikinews_search\\templates\\search.html": "247af1f99ae60e93b01a8a10ac9feae50aa8ac6e15302a7ca89073f0dede03f2"
+  },
+  "original_line_ending": "CRLF"
+}

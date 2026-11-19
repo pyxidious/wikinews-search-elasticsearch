@@ -1,0 +1,17 @@
+{
+  "duration_s": 266.7254559000012,
+  "operations": 12257,
+  "stats": {
+    "records_read": 12261,
+    "valid_articles": 12257,
+    "discarded": {
+      "short_text": 3,
+      "redirect": 1
+    },
+    "indexed_operations": 0,
+    "indexed_documents": null,
+    "indexing_errors": 0,
+    "elapsed_seconds": 0.0
+  },
+  "sha256": "05478325f03155e68eda84515b76e6610b77911eaa78aea9ac0e4870220396e9"
+}

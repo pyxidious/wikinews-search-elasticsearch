@@ -1,0 +1,123 @@
+{
+  "consolidation_date": "2026-11-19",
+  "judges": {
+    "gpt6": {
+      "annotation_date": {
+        "value": null,
+        "status": "non registrato"
+      },
+      "original_prompt": {
+        "value": null,
+        "status": "non disponibile"
+      },
+      "system_messages": {
+        "value": null,
+        "status": "non disponibile"
+      },
+      "temperature": {
+        "value": null,
+        "status": "non registrato"
+      },
+      "top_p": {
+        "value": null,
+        "status": "non registrato"
+      },
+      "annotation_seed": {
+        "value": null,
+        "status": "non registrato"
+      },
+      "token_limits": {
+        "value": null,
+        "status": "non registrato"
+      },
+      "tools_batches_retry_call_count": {
+        "value": null,
+        "status": "non registrato"
+      },
+      "per_document_read_spans": {
+        "value": null,
+        "status": "non registrato"
+      },
+      "human_confirmed": false,
+      "independence": "reported by user and comparison report; no invocation logs to independently audit",
+      "input_blind_candidates_sha256": "5a8e255c6028f73e5aa9092b7ebd8c6191743d8b14134f883de59d46c6aa6d4e",
+      "input_queries_sha256": "ac660adfcc25d325a7dca3f76f483ff52e82f2707e85025f36bbfe6791c2addd",
+      "provider": "OpenAI",
+      "reported_model_name": "GPT-6",
+      "reported_model_identifier": null,
+      "identifier_evidence": "display name only; exact API identifier unavailable",
+      "served_snapshot": null,
+      "reasoning_mode_reported": null,
+      "output_path": "data/qrels_gpt6.original.csv",
+      "output_sha256": "3be1358b9bea74270286e1a30beb404ead497f6adac24093ecc3e099ed317452",
+      "reading_scope_reported": "selective reading of some long articles: title, introduction and pertinent passages; individual spans unknown",
+      "source_evidence": [
+        "user request 2026-11-19",
+        "historical/comparison_report.md",
+        "historical/gpt6_annotation_protocol.md",
+        "historical/gpt6_metadata.json"
+      ],
+      "input_checksum_evidence": "Recorded in original historical/gpt6_metadata.json; matches the frozen corpus"
+    },
+    "claude": {
+      "annotation_date": {
+        "value": null,
+        "status": "non registrato"
+      },
+      "original_prompt": {
+        "value": null,
+        "status": "non disponibile"
+      },
+      "system_messages": {
+        "value": null,
+        "status": "non disponibile"
+      },
+      "temperature": {
+        "value": null,
+        "status": "non registrato"
+      },
+      "top_p": {
+        "value": null,
+        "status": "non registrato"
+      },
+      "annotation_seed": {
+        "value": null,
+        "status": "non registrato"
+      },
+      "token_limits": {
+        "value": null,
+        "status": "non registrato"
+      },
+      "tools_batches_retry_call_count": {
+        "value": null,
+        "status": "non registrato"
+      },
+      "per_document_read_spans": {
+        "value": null,
+        "status": "non registrato"
+      },
+      "human_confirmed": false,
+      "independence": "reported by user and comparison report; no invocation logs to independently audit",
+      "input_blind_candidates_sha256": "5a8e255c6028f73e5aa9092b7ebd8c6191743d8b14134f883de59d46c6aa6d4e",
+      "input_queries_sha256": "ac660adfcc25d325a7dca3f76f483ff52e82f2707e85025f36bbfe6791c2addd",
+      "provider": "Anthropic",
+      "reported_model_name": "Claude Opus 5.5",
+      "reported_model_identifier": "claude-opus-5-5",
+      "identifier_evidence": "user report; raw API payload unavailable",
+      "served_snapshot": null,
+      "reasoning_mode_reported": "High",
+      "output_path": "data/qrels_claude.original.csv",
+      "output_sha256": "8001cd894c92cd34b4ed550fd7a92152f95397b5f5fe92a61e66c7ac808c344b",
+      "reading_scope_reported": "selective reading of some long articles: title, introduction and pertinent passages; individual spans unknown",
+      "source_evidence": [
+        "user request 2026-11-19",
+        "historical/comparison_report.md"
+      ],
+      "input_checksum_evidence": "Checksum identifies the canonical pool declared common to both judges; no original Claude request/attachment log is available"
+    }
+  },
+  "rubric_record": "ANNOTATION_GUIDE.md; original wording in historical/gpt6_annotation_protocol.md is protocol narrative, not a recovered original prompt",
+  "reconstructed_prompt_provided": false,
+  "statistical_seed_not_llm_seed": 20261118,
+  "qualitative_audit_producer_model": "non registrato; not a third independent judge"
+}

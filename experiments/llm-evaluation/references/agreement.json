@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "source_first": "/mnt/data/wikinews_llm_reference_18q/qrels_llm_only.csv",
+    "source_second": "/mnt/data/qrels_second_llm.csv",
+    "sha256_first": "3be1358b9bea74270286e1a30beb404ead497f6adac24093ecc3e099ed317452",
+    "sha256_second": "8001cd894c92cd34b4ed550fd7a92152f95397b5f5fe92a61e66c7ac808c344b",
+    "source_rankings": "ranking_private.json in /mnt/data/results.zip",
+    "run_count": 18,
+    "n_groups": 15,
+    "n_candidates": 244,
+    "first_assessor_label": "GPT-6-LLM-only",
+    "second_assessor_label": "LLM-SECOND-JUDGE",
+    "seed": 20261118,
+    "n_bootstrap": 10000,
+    "human_confirmed": false
+  },
+  "confusion_rows_GPT6_cols_Claude": [
+    [
+      45,
+      0,
+      0
+    ],
+    [
+      10,
+      25,
+      2
+    ],
+    [
+      4,
+      37,
+      121
+    ]
+  ],
+  "exact": 0.7827868852459017,
+  "exact_ci95_group_bootstrap": [
+    0.6643598615916955,
+    0.8987854251012146
+  ],
+  "binary_agreement_relevant_grade_ge_1": 0.9426229508196722,
+  "binary_ci95_group_bootstrap": [
+    0.8884892086330936,
+    1.0
+  ],
+  "quadratic_weighted_kappa": 0.8016012009006754,
+  "quadratic_kappa_ci95_group_bootstrap": [
+    0.5633516961438098,
+    0.9349059542026081
+  ],
+  "linear_weighted_kappa": 0.7204646862563814,
+  "grades_first": {
+    "2": 162,
+    "1": 37,
+    "0": 45
+  },
+  "grades_second": {
+    "2": 123,
+    "0": 59,
+    "1": 62
+  },
+  "disagreements": 53,
+  "morphology_inconsistencies": [],
+  "cross_judge_effect_stability": [
+    {
+      "contrast": "B-A",
+      "difference_claude_minus_gpt6": -0.0056032033150905415,
+      "ci95_low": -0.033387541541883684,
+      "ci95_high": 0.020161885871886304
+    },
+    {
+      "contrast": "C-B",
+      "difference_claude_minus_gpt6": -0.0041860482239479075,
+      "ci95_low": -0.02501711573168959,
+      "ci95_high": 0.014630916374522154
+    }
+  ]
+}

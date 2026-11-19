@@ -1,0 +1,17 @@
+judge,contrast,condition,n_queries,mean_delta_ndcg10
+GPT-6,B-A,all,18,0.07791789704207287
+GPT-6,B-A,exclude_Brexit_v05,17,0.0825013027504301
+GPT-6,B-A,exclude_accents_v12_v13,16,0.044435270362305095
+GPT-6,B-A,exclude_Brexit_and_accents,15,0.0473976217197921
+GPT-6,C-B,all,18,-0.06810328238516007
+GPT-6,C-B,exclude_Brexit_v05,17,-0.013285828407816551
+GPT-6,C-B,exclude_accents_v12_v13,16,-0.06963260729620449
+GPT-6,C-B,exclude_Brexit_and_accents,15,-0.007608114449284783
+Claude-Opus-5.5,B-A,all,18,0.07231469372698233
+Claude-Opus-5.5,B-A,exclude_Brexit_v05,17,0.07656849924033424
+Claude-Opus-5.5,B-A,exclude_accents_v12_v13,16,0.04355516315424418
+Claude-Opus-5.5,B-A,exclude_Brexit_and_accents,15,0.04645884069786046
+Claude-Opus-5.5,C-B,all,18,-0.07228933060910799
+Claude-Opus-5.5,C-B,exclude_Brexit_v05,17,-0.017718114762584922
+Claude-Opus-5.5,C-B,exclude_accents_v12_v13,16,-0.07353098611474942
+Claude-Opus-5.5,C-B,exclude_Brexit_and_accents,15,-0.011766385189066047

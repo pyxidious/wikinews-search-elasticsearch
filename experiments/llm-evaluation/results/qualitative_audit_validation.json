@@ -1,0 +1,12 @@
+{
+  "pairs": 53,
+  "distinct_titles": 42,
+  "category_counts": {
+    "Possibile sottostima GPT-6": 2,
+    "Criterio 1/2 o ambiguita dell’intento": 26,
+    "Possibile sottostima Claude": 12,
+    "Possibile sovrastima GPT-6": 13
+  },
+  "new_judgments_generated": false,
+  "human_adjudication": false
+}

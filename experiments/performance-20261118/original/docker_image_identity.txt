@@ -1,0 +1,1 @@
+"sha256:aad4eb9589824d4a5e579b7535fe0f2711c95b6d4626ce54f627af8cd641e78e" "docker.elastic.co/elasticsearch/elasticsearch:8.15.0"

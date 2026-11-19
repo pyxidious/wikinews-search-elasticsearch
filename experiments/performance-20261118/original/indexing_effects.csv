@@ -1,0 +1,7 @@
+mode,contrast,metric,paired_replicates,difference,ci95_low,ci95_high
+pipeline,italiano-standard,duration_s,5,-0.38900509999984934,-0.9413792399995146,0.16336903999981586
+pipeline,italiano-standard,docs_s,5,0.06835875135023883,-0.028654342552405863,0.16537184525288354
+pipeline,italiano-standard,store_bytes,5,-2287573.4,-3255232.2,-1803744.0
+preprocessed,italiano-standard,duration_s,5,-0.02902315999926941,-0.13894983999925897,0.0635258000002068
+preprocessed,italiano-standard,docs_s,5,24.203713736714963,-68.87885919496884,129.33766024165033
+preprocessed,italiano-standard,store_bytes,5,-3964815.8,-7797359.4,-2048544.0

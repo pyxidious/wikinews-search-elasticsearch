@@ -1,0 +1,626 @@
+{
+  "consolidation_date": "2026-11-19",
+  "sources": [
+    {
+      "path": "experiments/reproducibility-inputs/wikinews_audit_qualitativo_53_disaccordi.zip",
+      "sha256": "4cc48b170e7e897a4959e7c7d1ed189d5f8348f7663ea023b5e484c6230502a7",
+      "bytes": 23009,
+      "crc_valid": true,
+      "members": [
+        {
+          "name": "bootstrap_senza_accenti.csv",
+          "bytes": 660,
+          "sha256": "2dda0288acf7bf4daa7cd72b361392852b9e7422039b2ba485f7b1ea78507fa1",
+          "published_path": "experiments/llm-evaluation/references/bootstrap_senza_accenti.csv",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            16,
+            25,
+            34
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "REPORT_AUDIT_53.md",
+          "bytes": 8210,
+          "sha256": "53131e66146e98a063a432f359b1fee4531d5ec453b8a71874377da89af05d7c",
+          "published_path": "experiments/llm-evaluation/historical/qualitative_audit_report.md",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            16,
+            25,
+            34
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "README.md",
+          "bytes": 162,
+          "sha256": "0408c7f858435b914c5cad837f64e0c1021d935d92f75e7f106815cb24a5b05b",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            16,
+            25,
+            34
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "leave_one_group_out.csv",
+          "bytes": 4321,
+          "sha256": "9f0f6d878dae917fc6e5ca42ed976b3e778dcfe9a4456ff363ac5ad69d395e21",
+          "published_path": "experiments/llm-evaluation/references/leave_one_group_out.csv",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            16,
+            25,
+            34
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "audit_53_casi.csv",
+          "bytes": 32972,
+          "sha256": "612b44377dc0ba6f5e7088cf2c3cfb575ebfab70567e5365b58fa6fe7792d93a",
+          "published_path": "experiments/llm-evaluation/data/qualitative_audit_53.original.csv",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            16,
+            25,
+            34
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "build_llm_disagreement_audit.py",
+          "bytes": 19785,
+          "sha256": "18a548da72f60425f0d51699440683d39ed6bc123085d18872f5f3ec9a59a7e3",
+          "published_path": "experiments/llm-evaluation/historical/build_llm_disagreement_audit.py",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            16,
+            25,
+            34
+          ],
+          "timestamp_is_annotation_date": false
+        }
+      ]
+    },
+    {
+      "path": "experiments/reproducibility-inputs/wikinews_confronto_GPT6_Claude_Opus55.zip",
+      "sha256": "37656a37cd81c3a2cdf953ea6efb4b809abc6a8728c4bca944cd2bb1074e52ab",
+      "bytes": 57734,
+      "crc_valid": true,
+      "members": [
+        {
+          "name": "qrels_Claude_Opus55.csv",
+          "bytes": 18781,
+          "sha256": "8001cd894c92cd34b4ed550fd7a92152f95397b5f5fe92a61e66c7ac808c344b",
+          "published_path": "experiments/llm-evaluation/data/qrels_claude.original.csv",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            41,
+            26
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "agreement.json",
+          "bytes": 1843,
+          "sha256": "748846d0aff6a4ff051f15aba44f6190c6a1a6f7c3ef1ec0f45fa90ae82cb45e",
+          "published_path": "experiments/llm-evaluation/references/agreement.json",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            44,
+            46
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "53_disagreements_to_review.csv",
+          "bytes": 18208,
+          "sha256": "5c62ad8a90c323cd369c6cb3ed05a5d273dc472ce9a7540f5d60e570c2aa4f3d",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            44,
+            46
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "validation_queries.json",
+          "bytes": 3459,
+          "sha256": "ac660adfcc25d325a7dca3f76f483ff52e82f2707e85025f36bbfe6791c2addd",
+          "published_path": "experiments/llm-evaluation/data/queries.json",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            46,
+            4
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "qrels_GPT6.csv",
+          "bytes": 22977,
+          "sha256": "3be1358b9bea74270286e1a30beb404ead497f6adac24093ecc3e099ed317452",
+          "published_path": "experiments/llm-evaluation/data/qrels_gpt6.original.csv",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            13,
+            42
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "ranking_per_query_by_judge.csv",
+          "bytes": 7760,
+          "sha256": "4023e0c0aee6c2dc46caf71c7bad1da6fb95793f20425c234bc9dc8c5256790e",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            44,
+            46
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "agreement_by_query.csv",
+          "bytes": 1166,
+          "sha256": "f23a78fe8e1e4e2194e3cec85644ad645ef5081471d6d4b719d1a6e087296db6",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            44,
+            46
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "COMPARISON_REPORT.md",
+          "bytes": 4129,
+          "sha256": "31e8320b838b91c23d77125e8cedd4caec3a8a8612c536b3280e1980739f4276",
+          "published_path": "experiments/llm-evaluation/historical/comparison_report.md",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            44,
+            46
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "cross_judge_effect_stability.csv",
+          "bytes": 199,
+          "sha256": "a0a46db12c7904e2bbb5d747b3974a26535e203bc46c900b97307d5abd90fd1f",
+          "published_path": "experiments/llm-evaluation/references/cross_judge_effect_stability.csv",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            44,
+            46
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "ranking_summary_by_judge.csv",
+          "bytes": 2174,
+          "sha256": "def3e304c661894da4096165e32996bdebe0c809f6d794e89926d3dd4addb05a",
+          "published_path": "experiments/llm-evaluation/references/ranking_summary_by_judge.csv",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            44,
+            46
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "all_244_pairs_side_by_side.csv",
+          "bytes": 69318,
+          "sha256": "5ef809e7e9a6a796395d034eccab5feecfbcd774c0a0a4b877a86af2638cfffa",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            44,
+            46
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "sensitivity.csv",
+          "bytes": 985,
+          "sha256": "84a4a055eb8c6373332575a1b269d9ba8043206e15d4bb96ee4a74c11510e076",
+          "published_path": "experiments/llm-evaluation/references/sensitivity.csv",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            44,
+            46
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "README.txt",
+          "bytes": 313,
+          "sha256": "d0d4cbdf754e48f02ca9f7cdf2fc5d883afe9e25e0963d1d15ac633aa8e0c55b",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            46,
+            4
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "morphology_inconsistencies.csv",
+          "bytes": 32,
+          "sha256": "d18b6673ce51e442b2f7bfccb67206504d1d51d0485ddfc3b4e1506b42291267",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            44,
+            42
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "compare_llm_judges.py",
+          "bytes": 17469,
+          "sha256": "c2b6886baa98879d92b7922c646d5c39a7c3b0bc6d4c972c216149edbe9858cc",
+          "published_path": "experiments/llm-evaluation/historical/compare_llm_judges.py",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            44,
+            40
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "checksums.json",
+          "bytes": 1652,
+          "sha256": "b5a1ba63c6b262ba7ed7166bb6a9126e36d267a400323320865fd48b6c1787fb",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            46,
+            4
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "ranking_private.json",
+          "bytes": 24043,
+          "sha256": "5ffe0ee0bd04eb919ebf2585f1d9f3fcd2069f3811eacba16207d9173ab8f622",
+          "published_path": "experiments/llm-evaluation/data/ranking_private.json",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            46,
+            4
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "ranking_contrasts_by_query.csv",
+          "bytes": 5004,
+          "sha256": "8de31d62c22e49528a1374efab873503d57a9edb9285f0ef1a611f1eabda7a08",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            44,
+            46
+          ],
+          "timestamp_is_annotation_date": false
+        }
+      ]
+    },
+    {
+      "path": "experiments/reproducibility-inputs/wikinews_ground_truth_LLM_only_18query.zip",
+      "sha256": "f886b3d79d88cbd031630cdb5998aebf03bb8cd35fcc89e4e974109a2320815c",
+      "bytes": 31829,
+      "crc_valid": true,
+      "members": [
+        {
+          "name": "qrels_llm_only.csv",
+          "bytes": 22977,
+          "sha256": "3be1358b9bea74270286e1a30beb404ead497f6adac24093ecc3e099ed317452",
+          "published_path": "experiments/llm-evaluation/data/qrels_gpt6.original.csv",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            14,
+            58,
+            30
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "annotation_audit.csv",
+          "bytes": 73402,
+          "sha256": "e0daa67430603fc63ce965c887c2ea9abfb04f6c15c89043c592a12bd37e71c9",
+          "published_path": "experiments/llm-evaluation/historical/gpt6_annotation_audit.csv",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            14,
+            58,
+            30
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "annotation_counts.json",
+          "bytes": 2026,
+          "sha256": "7f5fe506024d331edffb6925834320178ffe92ece23d6d9498be8d7f62a55270",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            14,
+            58,
+            2
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "llm_only_summary.csv",
+          "bytes": 1337,
+          "sha256": "27dd94d9f1a00407a134728617daa9c4cf478797c79b3089569544841bc2f8fe",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            14,
+            58,
+            32
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "llm_only_per_query.csv",
+          "bytes": 2533,
+          "sha256": "564e51a28f0cedc8405ed25c00a97241de21a7a731c0965cfa0f3837aadb77d9",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            14,
+            58,
+            32
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "llm_only_paired_differences.csv",
+          "bytes": 1568,
+          "sha256": "fc09eef918e6e681f0eb25fb3109c59f4e08339d74e0f3aa6f6bae4f70b74d62",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            14,
+            58,
+            32
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "llm_only_no_relevant.json",
+          "bytes": 2,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            14,
+            58,
+            2
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "sensitivity.json",
+          "bytes": 3493,
+          "sha256": "262cf46ac71c52b290a5896ba192fa2f16becfc772379700f95c949c5c51f31e",
+          "published_path": "experiments/llm-evaluation/references/gpt6_sensitivity.json",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            14,
+            59,
+            16
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "metadata.json",
+          "bytes": 1182,
+          "sha256": "1ef83e3d654b35bf99c9b6965bd20e22261c4cb272cc1977f9f382691cec6e6e",
+          "published_path": "experiments/llm-evaluation/historical/gpt6_metadata.json",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            14,
+            58,
+            2
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "ANNOTATION_PROTOCOL.md",
+          "bytes": 4835,
+          "sha256": "05ec060e3f03153559268846e36ff70d80241e10bda1c7d8fbd6ae79932031ef",
+          "published_path": "experiments/llm-evaluation/historical/gpt6_annotation_protocol.md",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            0,
+            34
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "recompute_ai_only.py",
+          "bytes": 1294,
+          "sha256": "306befd6b63ccb5e94a22fff7c48eec603f4f13267ef7f420eb8abe0ca64f0d6",
+          "published_path": null,
+          "disposition": "redundant derived output or archive wrapper; original retained in staging",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            15,
+            0,
+            34
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "ranking_analysis_original.py",
+          "bytes": 6863,
+          "sha256": "460d3b120accee416f023a42175852c2f402fd1aef32531456d11a6385aa7be1",
+          "published_path": "experiments/llm-evaluation/historical/human_ranking_analysis.py",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            14,
+            58,
+            0
+          ],
+          "timestamp_is_annotation_date": false
+        },
+        {
+          "name": "validation_queries.json",
+          "bytes": 3459,
+          "sha256": "ac660adfcc25d325a7dca3f76f483ff52e82f2707e85025f36bbfe6791c2addd",
+          "published_path": "experiments/llm-evaluation/data/queries.json",
+          "disposition": "immutable canonical copy; duplicates share one path",
+          "zip_timestamp": [
+            2026,
+            11,
+            18,
+            14,
+            58,
+            0
+          ],
+          "timestamp_is_annotation_date": false
+        }
+      ]
+    }
+  ],
+  "standalone_qrels_second_llm_csv_found": false,
+  "claude_csv_recovered_from": "wikinews_confronto_GPT6_Claude_Opus55.zip/qrels_Claude_Opus55.csv",
+  "claude_hash_matches_historical_second_input": true,
+  "original_archives_retained": true,
+  "exact_prompts_found": false
+}

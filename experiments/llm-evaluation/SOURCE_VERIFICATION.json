@@ -1,0 +1,13 @@
+{
+  "comparison_archive_member_checksums_verified": 17,
+  "mismatches": [],
+  "all_three_source_zip_crc_valid": true,
+  "benchmark_original_registry_verified": 92,
+  "original_annotation_csv_sha256": {
+    "qrels_gpt6.original.csv": "3be1358b9bea74270286e1a30beb404ead497f6adac24093ecc3e099ed317452",
+    "qrels_claude.original.csv": "8001cd894c92cd34b4ed550fd7a92152f95397b5f5fe92a61e66c7ac808c344b"
+  },
+  "duplicate_gpt6_csv_canonicalized": true,
+  "duplicate_queries_and_rankings_canonicalized": true,
+  "original_inputs_deleted": false
+}

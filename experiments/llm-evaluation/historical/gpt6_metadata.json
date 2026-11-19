@@ -1,0 +1,29 @@
+{
+  "annotation_source": "GPT-6 LLM-generated; NO HUMAN VALIDATION",
+  "assessor": "GPT-6-LLM-only",
+  "blind_candidates_sha256": "5a8e255c6028f73e5aa9092b7ebd8c6191743d8b14134f883de59d46c6aa6d4e",
+  "qrels_sha256": "3be1358b9bea74270286e1a30beb404ead497f6adac24093ecc3e099ed317452",
+  "validation_queries_sha256": "ac660adfcc25d325a7dca3f76f483ff52e82f2707e85025f36bbfe6791c2addd",
+  "data_source": "results.zip/blind_candidates.jsonl, validation_queries.json",
+  "n_queries": 18,
+  "n_query_doc_pairs": 244,
+  "n_grades": {
+    "2": 162,
+    "1": 37,
+    "0": 45
+  },
+  "rubric": {
+    "0": "No connection to the query information need",
+    "1": "The need is a secondary/contextual aspect",
+    "2": "The article directly addresses the need"
+  },
+  "scope": "Exploratory LLM relevance judgments on pooled top-10 results, not validated independent ground truth",
+  "limitations": [
+    "single LLM annotation pass",
+    "no human verification",
+    "possible bias or inconsistent interpretation",
+    "pool may exclude relevant corpus items",
+    "queries are deliberately selected and not random user queries",
+    "bootstrap uncertainty does not capture annotation errors"
+  ]
+}

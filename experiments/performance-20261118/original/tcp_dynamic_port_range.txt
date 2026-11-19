@@ -1,0 +1,6 @@
+﻿
+Intervallo porte dinamiche tcp protocollo
+-------------------------------------------
+Porta iniziale      : 49152
+Numero di porte     : 16384
+

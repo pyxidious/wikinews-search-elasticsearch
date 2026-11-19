@@ -1,0 +1,25 @@
+{
+  "original_results_zip_sha256": "411aad94a24efeea17f08057c9d2bf82eb12a39dc72c71b7eadc0ce7009bd973",
+  "original_results_zip_bytes": 69792908,
+  "source": "local wikinews-benchmark-20261118/results.zip",
+  "original_archive_publication_recommended": false,
+  "reason": "Contains article bodies and obsolete human annotation material; distribute only selected necessary artifacts.",
+  "raw_files": {
+    "search_raw.csv": {
+      "sha256": "533bc5127fc55a5f1aaf44b9136d116832d807b9c22fedcafb3756691061cbba",
+      "bytes": 223634590
+    },
+    "telemetry.jsonl": {
+      "sha256": "6ebc1c41e8e8d237722c3705c4ab3d5014681b40a32418bb8f67f1c1fa252965",
+      "bytes": 30870892
+    }
+  },
+  "excluded_fulltext_files": [
+    "preprocessed.jsonl",
+    "blind_candidates.jsonl",
+    "blind_annotation.html",
+    "blind_assessor_package.zip",
+    "preserved/*/candidates.jsonl"
+  ],
+  "original_checksum_registry_scope": "original/artifact_checksums.json describes the original 92-file archive, not this curated directory"
+}

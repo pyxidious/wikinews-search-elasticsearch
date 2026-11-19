@@ -1,0 +1,11 @@
+{
+  "pairs": 244,
+  "distinct_documents": 210,
+  "original_input_sha256": "5a8e255c6028f73e5aa9092b7ebd8c6191743d8b14134f883de59d46c6aa6d4e",
+  "reconstructed_sha256": "5a8e255c6028f73e5aa9092b7ebd8c6191743d8b14134f883de59d46c6aa6d4e",
+  "byte_identical": true,
+  "script": "reconstruct_candidates.py",
+  "source_dump_sha256": "d2c00ef9d7c3db5a3f26adb85b07055673b30b2417653374ada52b7174df474d",
+  "llm_calls": 0,
+  "elasticsearch_calls": 0
+}

@@ -1,0 +1,283 @@
+query_id,query,category,config,total_hits,returned_hits,timed_out,failed_shards
+w078,"""coppa del mondo""",frasi,A,95,10,False,0
+w078,"""coppa del mondo""",frasi,B,95,10,False,0
+w078,"""coppa del mondo""",frasi,C,95,10,False,0
+w056,migranti,flessioni,A,31,10,False,0
+w056,migranti,flessioni,B,32,10,False,0
+w056,migranti,flessioni,C,32,10,False,0
+w086,camera,ambigue,A,435,10,False,0
+w086,camera,ambigue,B,479,10,False,0
+w086,camera,ambigue,C,479,10,False,0
+w016,terremoto Nepal,eventi,A,170,10,False,0
+w016,terremoto Nepal,eventi,B,172,10,False,0
+w016,terremoto Nepal,eventi,C,172,10,False,0
+w079,"""libertà di stampa""",frasi,A,10,10,False,0
+w079,"""libertà di stampa""",frasi,B,11,10,False,0
+w079,"""libertà di stampa""",frasi,C,11,10,False,0
+w011,Benedetto XVI,nomi_propri,A,182,10,False,0
+w011,Benedetto XVI,nomi_propri,B,227,10,False,0
+w011,Benedetto XVI,nomi_propri,C,227,10,False,0
+w042,giustizia penale,generiche,A,358,10,False,0
+w042,giustizia penale,generiche,B,392,10,False,0
+w042,giustizia penale,generiche,C,392,10,False,0
+w077,"""cambiamento climatico""",frasi,A,16,10,False,0
+w077,"""cambiamento climatico""",frasi,B,33,10,False,0
+w077,"""cambiamento climatico""",frasi,C,33,10,False,0
+w059,perché,accenti,A,826,10,False,0
+w059,perché,accenti,B,0,0,False,0
+w059,perché,accenti,C,0,0,False,0
+w057,università,accenti,A,98,10,False,0
+w057,università,accenti,B,266,10,False,0
+w057,università,accenti,C,266,10,False,0
+w090,opera,ambigue,A,163,10,False,0
+w090,opera,ambigue,B,352,10,False,0
+w090,opera,ambigue,C,352,10,False,0
+w045,studente,flessioni,A,61,10,False,0
+w045,studente,flessioni,B,224,10,False,0
+w045,studente,flessioni,C,224,10,False,0
+w087,lega,ambigue,A,967,10,False,0
+w087,lega,ambigue,B,967,10,False,0
+w087,lega,ambigue,C,967,10,False,0
+w054,sindaci,flessioni,A,52,10,False,0
+w054,sindaci,flessioni,B,455,10,False,0
+w054,sindaci,flessioni,C,455,10,False,0
+w002,Romano Prodi,nomi_propri,A,364,10,False,0
+w002,Romano Prodi,nomi_propri,B,695,10,False,0
+w002,Romano Prodi,nomi_propri,C,695,10,False,0
+w037,trasporto pubblico,generiche,A,663,10,False,0
+w037,trasporto pubblico,generiche,B,1215,10,False,0
+w037,trasporto pubblico,generiche,C,1215,10,False,0
+w009,Giorgia Meloni,nomi_propri,A,47,10,False,0
+w009,Giorgia Meloni,nomi_propri,B,527,10,False,0
+w009,Giorgia Meloni,nomi_propri,C,527,10,False,0
+w076,"""protezione civile""",frasi,A,77,10,False,0
+w076,"""protezione civile""",frasi,B,77,10,False,0
+w076,"""protezione civile""",frasi,C,77,10,False,0
+w033,istruzione scuola,generiche,A,285,10,False,0
+w033,istruzione scuola,generiche,B,433,10,False,0
+w033,istruzione scuola,generiche,C,433,10,False,0
+w062,societa,accenti,A,3,3,False,0
+w062,societa,accenti,B,594,10,False,0
+w062,societa,accenti,C,594,10,False,0
+w015,terremoto Haiti,eventi,A,169,10,False,0
+w015,terremoto Haiti,eventi,B,171,10,False,0
+w015,terremoto Haiti,eventi,C,171,10,False,0
+w035,sicurezza stradale,generiche,A,648,10,False,0
+w035,sicurezza stradale,generiche,B,667,10,False,0
+w035,sicurezza stradale,generiche,C,667,10,False,0
+w060,perche,accenti,A,0,0,False,0
+w060,perche,accenti,B,81,10,False,0
+w060,perche,accenti,C,81,10,False,0
+w020,Brexit referendum,eventi,A,94,10,False,0
+w020,Brexit referendum,eventi,B,94,10,False,0
+w020,Brexit referendum,eventi,C,94,10,False,0
+w024,Festival Sanremo,eventi,A,192,10,False,0
+w024,Festival Sanremo,eventi,B,192,10,False,0
+w024,Festival Sanremo,eventi,C,192,10,False,0
+w089,ponte,ambigue,A,134,10,False,0
+w089,ponte,ambigue,B,134,10,False,0
+w089,ponte,ambigue,C,134,10,False,0
+w032,sanita pubblica,generiche,A,315,10,False,0
+w032,sanita pubblica,generiche,B,1106,10,False,0
+w032,sanita pubblica,generiche,C,1106,10,False,0
+w034,ricerca scientifica,generiche,A,451,10,False,0
+w034,ricerca scientifica,generiche,B,599,10,False,0
+w034,ricerca scientifica,generiche,C,599,10,False,0
+w073,"""corte costituzionale""",frasi,A,52,10,False,0
+w073,"""corte costituzionale""",frasi,B,52,10,False,0
+w073,"""corte costituzionale""",frasi,C,52,10,False,0
+w021,Mondiali Sudafrica,eventi,A,352,10,False,0
+w021,Mondiali Sudafrica,eventi,B,833,10,False,0
+w021,Mondiali Sudafrica,eventi,C,833,10,False,0
+w088,stelle,ambigue,A,136,10,False,0
+w088,stelle,ambigue,B,451,10,False,0
+w088,stelle,ambigue,C,451,10,False,0
+w031,immigrazione,generiche,A,20,10,False,0
+w031,immigrazione,generiche,B,47,10,False,0
+w031,immigrazione,generiche,C,47,10,False,0
+w063,libertà,accenti,A,333,10,False,0
+w063,libertà,accenti,B,336,10,False,0
+w063,libertà,accenti,C,336,10,False,0
+w038,mercati finanziari,generiche,A,93,10,False,0
+w038,mercati finanziari,generiche,B,438,10,False,0
+w038,mercati finanziari,generiche,C,438,10,False,0
+w072,"""consiglio dei ministri""",frasi,A,163,10,False,0
+w072,"""consiglio dei ministri""",frasi,B,165,10,False,0
+w072,"""consiglio dei ministri""",frasi,C,165,10,False,0
+w008,Mario Draghi,nomi_propri,A,618,10,False,0
+w008,Mario Draghi,nomi_propri,B,639,10,False,0
+w008,Mario Draghi,nomi_propri,C,639,10,False,0
+w092,borsa,ambigue,A,83,10,False,0
+w092,borsa,ambigue,B,83,10,False,0
+w092,borsa,ambigue,C,83,10,False,0
+w018,attentati Parigi,eventi,A,285,10,False,0
+w018,attentati Parigi,eventi,B,445,10,False,0
+w018,attentati Parigi,eventi,C,445,10,False,0
+w051,incendio,flessioni,A,116,10,False,0
+w051,incendio,flessioni,B,181,10,False,0
+w051,incendio,flessioni,C,181,10,False,0
+w052,incendi,flessioni,A,45,10,False,0
+w052,incendi,flessioni,B,181,10,False,0
+w052,incendi,flessioni,C,181,10,False,0
+w069,comunità,accenti,A,671,10,False,0
+w069,comunità,accenti,B,672,10,False,0
+w069,comunità,accenti,C,672,10,False,0
+w043,lavoratore,flessioni,A,14,10,False,0
+w043,lavoratore,flessioni,B,133,10,False,0
+w043,lavoratore,flessioni,C,133,10,False,0
+w039,inquinamento atmosferico,generiche,A,30,10,False,0
+w039,inquinamento atmosferico,generiche,B,69,10,False,0
+w039,inquinamento atmosferico,generiche,C,69,10,False,0
+w083,"""pena di morte""",frasi,A,45,10,False,0
+w083,"""pena di morte""",frasi,B,46,10,False,0
+w083,"""pena di morte""",frasi,C,46,10,False,0
+w068,poverta,accenti,A,0,0,False,0
+w068,poverta,accenti,B,27,10,False,0
+w068,poverta,accenti,C,27,10,False,0
+w005,Donald Trump,nomi_propri,A,82,10,False,0
+w005,Donald Trump,nomi_propri,B,82,10,False,0
+w005,Donald Trump,nomi_propri,C,82,10,False,0
+w061,società,accenti,A,592,10,False,0
+w061,società,accenti,B,594,10,False,0
+w061,società,accenti,C,594,10,False,0
+w023,Giro Italia,eventi,A,3961,10,False,0
+w023,Giro Italia,eventi,B,4613,10,False,0
+w023,Giro Italia,eventi,C,4613,10,False,0
+w047,manifestante,flessioni,A,6,6,False,0
+w047,manifestante,flessioni,B,98,10,False,0
+w047,manifestante,flessioni,C,98,10,False,0
+w025,eruzione Etna,eventi,A,10,10,False,0
+w025,eruzione Etna,eventi,B,19,10,False,0
+w025,eruzione Etna,eventi,C,19,10,False,0
+w026,incendio Notre Dame,eventi,A,127,10,False,0
+w026,incendio Notre Dame,eventi,B,192,10,False,0
+w026,incendio Notre Dame,eventi,C,192,10,False,0
+w091,capitale,ambigue,A,520,10,False,0
+w091,capitale,ambigue,B,545,10,False,0
+w091,capitale,ambigue,C,545,10,False,0
+w040,criminalita organizzata,generiche,A,138,10,False,0
+w040,criminalita organizzata,generiche,B,344,10,False,0
+w040,criminalita organizzata,generiche,C,344,10,False,0
+w017,tsunami Giappone,eventi,A,347,10,False,0
+w017,tsunami Giappone,eventi,B,347,10,False,0
+w017,tsunami Giappone,eventi,C,347,10,False,0
+w074,"""diritti umani""",frasi,A,73,10,False,0
+w074,"""diritti umani""",frasi,B,73,10,False,0
+w074,"""diritti umani""",frasi,C,73,10,False,0
+w053,sindaco,flessioni,A,418,10,False,0
+w053,sindaco,flessioni,B,455,10,False,0
+w053,sindaco,flessioni,C,455,10,False,0
+w012,Nelson Mandela,nomi_propri,A,89,10,False,0
+w012,Nelson Mandela,nomi_propri,B,94,10,False,0
+w012,Nelson Mandela,nomi_propri,C,94,10,False,0
+w066,qualita,accenti,A,0,0,False,0
+w066,qualita,accenti,B,178,10,False,0
+w066,qualita,accenti,C,178,10,False,0
+w058,universita,accenti,A,1,1,False,0
+w058,universita,accenti,B,266,10,False,0
+w058,universita,accenti,C,266,10,False,0
+w094,corrente,ambigue,A,64,10,False,0
+w094,corrente,ambigue,B,96,10,False,0
+w094,corrente,ambigue,C,96,10,False,0
+w004,Vladimir Putin,nomi_propri,A,149,10,False,0
+w004,Vladimir Putin,nomi_propri,B,162,10,False,0
+w004,Vladimir Putin,nomi_propri,C,162,10,False,0
+w065,qualità,accenti,A,178,10,False,0
+w065,qualità,accenti,B,178,10,False,0
+w065,qualità,accenti,C,178,10,False,0
+w071,"""unione europea""",frasi,A,46,10,False,0
+w071,"""unione europea""",frasi,B,256,10,False,0
+w071,"""unione europea""",frasi,C,256,10,False,0
+w085,calcio,ambigue,A,2926,10,False,0
+w085,calcio,ambigue,B,2932,10,False,0
+w085,calcio,ambigue,C,2932,10,False,0
+w014,Michael Schumacher,nomi_propri,A,469,10,False,0
+w014,Michael Schumacher,nomi_propri,B,476,10,False,0
+w014,Michael Schumacher,nomi_propri,C,476,10,False,0
+w080,"""forze armate""",frasi,A,68,10,False,0
+w080,"""forze armate""",frasi,B,68,10,False,0
+w080,"""forze armate""",frasi,C,68,10,False,0
+w082,"""salute pubblica""",frasi,A,9,9,False,0
+w082,"""salute pubblica""",frasi,B,9,9,False,0
+w082,"""salute pubblica""",frasi,C,9,9,False,0
+w019,attentati Londra,eventi,A,362,10,False,0
+w019,attentati Londra,eventi,B,521,10,False,0
+w019,attentati Londra,eventi,C,521,10,False,0
+w050,ospedali,flessioni,A,86,10,False,0
+w050,ospedali,flessioni,B,562,10,False,0
+w050,ospedali,flessioni,C,562,10,False,0
+w075,"""stazione spaziale""",frasi,A,37,10,False,0
+w075,"""stazione spaziale""",frasi,B,37,10,False,0
+w075,"""stazione spaziale""",frasi,C,37,10,False,0
+w067,povertà,accenti,A,27,10,False,0
+w067,povertà,accenti,B,27,10,False,0
+w067,povertà,accenti,C,27,10,False,0
+w013,Fidel Castro,nomi_propri,A,86,10,False,0
+w013,Fidel Castro,nomi_propri,B,88,10,False,0
+w013,Fidel Castro,nomi_propri,C,88,10,False,0
+w046,studenti,flessioni,A,186,10,False,0
+w046,studenti,flessioni,B,224,10,False,0
+w046,studenti,flessioni,C,224,10,False,0
+w036,diritti civili,generiche,A,402,10,False,0
+w036,diritti civili,generiche,B,924,10,False,0
+w036,diritti civili,generiche,C,924,10,False,0
+w093,marcia,ambigue,A,85,10,False,0
+w093,marcia,ambigue,B,335,10,False,0
+w093,marcia,ambigue,C,335,10,False,0
+w081,"""stato di emergenza""",frasi,A,33,10,False,0
+w081,"""stato di emergenza""",frasi,B,33,10,False,0
+w081,"""stato di emergenza""",frasi,C,33,10,False,0
+w048,manifestanti,flessioni,A,97,10,False,0
+w048,manifestanti,flessioni,B,98,10,False,0
+w048,manifestanti,flessioni,C,98,10,False,0
+w007,Giuseppe Conte,nomi_propri,A,927,10,False,0
+w007,Giuseppe Conte,nomi_propri,B,958,10,False,0
+w007,Giuseppe Conte,nomi_propri,C,958,10,False,0
+w070,comunita,accenti,A,1,1,False,0
+w070,comunita,accenti,B,672,10,False,0
+w070,comunita,accenti,C,672,10,False,0
+w030,cambiamento climatico,generiche,A,89,10,False,0
+w030,cambiamento climatico,generiche,B,163,10,False,0
+w030,cambiamento climatico,generiche,C,163,10,False,0
+w001,Giorgio Napolitano,nomi_propri,A,510,10,False,0
+w001,Giorgio Napolitano,nomi_propri,B,582,10,False,0
+w001,Giorgio Napolitano,nomi_propri,C,582,10,False,0
+w028,crisi Grecia,eventi,A,549,10,False,0
+w028,crisi Grecia,eventi,B,551,10,False,0
+w028,crisi Grecia,eventi,C,551,10,False,0
+w022,Olimpiadi Londra,eventi,A,447,10,False,0
+w022,Olimpiadi Londra,eventi,B,498,10,False,0
+w022,Olimpiadi Londra,eventi,C,498,10,False,0
+w055,migrante,flessioni,A,2,2,False,0
+w055,migrante,flessioni,B,32,10,False,0
+w055,migrante,flessioni,C,32,10,False,0
+w064,liberta,accenti,A,1,1,False,0
+w064,liberta,accenti,B,336,10,False,0
+w064,liberta,accenti,C,336,10,False,0
+w041,telecomunicazioni,generiche,A,32,10,False,0
+w041,telecomunicazioni,generiche,B,34,10,False,0
+w041,telecomunicazioni,generiche,C,34,10,False,0
+w049,ospedale,flessioni,A,240,10,False,0
+w049,ospedale,flessioni,B,562,10,False,0
+w049,ospedale,flessioni,C,562,10,False,0
+w029,disoccupazione,generiche,A,36,10,False,0
+w029,disoccupazione,generiche,B,36,10,False,0
+w029,disoccupazione,generiche,C,36,10,False,0
+w003,Angela Merkel,nomi_propri,A,64,10,False,0
+w003,Angela Merkel,nomi_propri,B,523,10,False,0
+w003,Angela Merkel,nomi_propri,C,523,10,False,0
+w006,Matteo Renzi,nomi_propri,A,373,10,False,0
+w006,Matteo Renzi,nomi_propri,B,379,10,False,0
+w006,Matteo Renzi,nomi_propri,C,379,10,False,0
+w010,Luigi Di Maio,nomi_propri,A,11089,10,False,0
+w010,Luigi Di Maio,nomi_propri,B,959,10,False,0
+w010,Luigi Di Maio,nomi_propri,C,959,10,False,0
+w044,lavoratori,flessioni,A,124,10,False,0
+w044,lavoratori,flessioni,B,133,10,False,0
+w044,lavoratori,flessioni,C,133,10,False,0
+w027,Expo Milano,eventi,A,1385,10,False,0
+w027,Expo Milano,eventi,B,1824,10,False,0
+w027,Expo Milano,eventi,C,1824,10,False,0
+w084,"""acqua potabile""",frasi,A,8,8,False,0
+w084,"""acqua potabile""",frasi,B,12,10,False,0
+w084,"""acqua potabile""",frasi,C,12,10,False,0

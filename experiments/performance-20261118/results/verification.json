@@ -1,0 +1,16 @@
+{
+  "recomputed_from_raw": true,
+  "measured_requests": 1336275,
+  "errors": 2,
+  "cells": 240,
+  "indexing_runs": 20,
+  "sustainable_cells": 113,
+  "mismatches": [],
+  "passed": true,
+  "absolute_tolerance": 1e-09,
+  "relative_tolerance": 1e-12,
+  "bootstrap_resamples": 10000,
+  "seed": 20261118,
+  "bootstrap_unit": "five experimental replicates, not requests",
+  "elasticsearch_calls": 0
+}

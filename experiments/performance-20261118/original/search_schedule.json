@@ -1,0 +1,1682 @@
+[
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "A",
+    "replicate": 1
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "B",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "C",
+    "replicate": 1
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "C",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "A",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "B",
+    "replicate": 2
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "A",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "C",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "B",
+    "replicate": 3
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "C",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "A",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "B",
+    "replicate": 4
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 1,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 4,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "capacity",
+    "clients": 16,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 4,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 16,
+    "config": "C",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "controlled",
+    "clients": 1,
+    "config": "B",
+    "replicate": 5
+  },
+  {
+    "path": "flask_html",
+    "scenario": "capacity",
+    "clients": 8,
+    "config": "A",
+    "replicate": 5
+  },
+  {
+    "path": "elasticsearch",
+    "scenario": "controlled",
+    "clients": 8,
+    "config": "A",
+    "replicate": 5
+  }
+]

@@ -1,0 +1,245 @@
+﻿query_id,candidate_id,grade,assessor,note
+v01,6dafed2d16900872,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v01,8d3fe0308fb5ac5a,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v01,aa7c98aaad93ba82,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v01,cd783274fb49fd5e,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v01,88f9a423f8c1ebe5,1,GPT-6-LLM-only,"Compleanno e auguri istituzionali: episodio biografico, non decisione politica."
+v01,63332d0750eaf92a,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v01,070717d948728096,1,GPT-6-LLM-only,"Necrologio e reazioni istituzionali: pertinente alla figura, ma non ad attività politica specifica."
+v01,edf6ca650fb1a0a5,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v01,5492ccac81da9b3b,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v01,3b50ec810191af52,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v01,930be6c934f40d48,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v02,27d011f773e768ff,1,GPT-6-LLM-only,Valutazione di Merkel sulla proposta italiana; Merkel non è il tema principale.
+v02,ed8c4860d583408f,1,GPT-6-LLM-only,Merkel è uno dei soggetti citati nel resoconto europeo multi-paese.
+v02,7b19660ed1008ece,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v02,964f687612d858eb,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v02,77fcbff918e6e58a,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v02,2e0dec4ad6935e44,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v02,b8558921dd478bf0,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v02,671d5d8da211ebfc,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v02,3957111168f53e07,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v02,108cfdff570edfc4,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v02,b0f5956f20b42e01,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v02,c8fedcbb28ff11e9,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v03,7ffadedbd8486603,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v03,9f5d307d49fd0a60,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v03,d27afab2f0523c96,1,GPT-6-LLM-only,"Colera dopo il sisma del 2010: conseguenze umanitarie contestualizzate, ma focus sanitario."
+v03,83ededfce07e278a,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v03,5025d8ea88ddba53,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v03,f585e2ac939aa1d3,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v03,ff3e6c60df909823,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v03,decdab5b3aa1afee,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v03,4f53091c7b319d00,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v03,0b3fdcf5cbe577fa,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v03,511f98a95242d558,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,619c5f667bb99bc4,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,7d9aa3aa9321b4ce,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,d9b5b43272b03379,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,03b82484ca3e699b,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,c4f8c41f5d2a1b25,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,a41023590cd8686f,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,b115adb6a80a472d,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,c32609a94b28c49a,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,91af27f009cdf77e,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,e96d02edee609423,0,GPT-6-LLM-only,Cellula jihadista fermata nel 2012: non riguarda gli attentati del 2015.
+v04,06ad6370af0b9792,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,db611e0fa6bd9146,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,02b05c0ce96cffcd,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,610b26eb2c7c4c8f,0,GPT-6-LLM-only,Attentato con pacco bomba del 2007: evento differente dal 2015.
+v04,7c38aa7ed2a3c04d,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,9fa2eb399d8dfa9a,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v04,387cdde3a28d333c,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,52cf38809873b980,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,51b462e0b9848191,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v04,bf652d40eccd3a73,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v05,8f283de228fa8416,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v05,2872f44b20dc64d2,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v05,273dc561608041bb,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v05,3e3d41749e337c30,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v05,df56dbaa0ee66cac,2,GPT-6-LLM-only,Resoconto e risultati del referendum Brexit del 2016.
+v05,f4921bd2a7622037,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v05,7dfb61b6c3215982,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v05,ad7abc14b938819c,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v05,bbd4e0a47dfb2992,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v05,c72ed43a96096742,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v05,3c68adca09acf9cb,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v05,fe731c173d3f5076,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v06,66869e6ef7045a0f,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v06,4ac6e41e0f847773,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v06,759716428b1aa644,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v06,af746af786829b5a,1,GPT-6-LLM-only,Notizia focalizzata sull’inflazione con un dato sulla disoccupazione.
+v06,9b18b8a004cbc252,1,GPT-6-LLM-only,"Riforma del lavoro discussa in relazione alla crescita, non ai dati di disoccupazione."
+v06,ee3cd299b83d7a33,1,GPT-6-LLM-only,"Effetto del dato sulla disoccupazione sulle borse, non analisi principale del lavoro."
+v06,ac3f8e193b75a2af,1,GPT-6-LLM-only,"La disoccupazione è un fattore del peggioramento economico, non l’unico tema."
+v06,1020f7105bcd7992,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v06,cb1fb869e6df1faa,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v06,5d6dddbc60968e11,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v07,8cea367a62e94769,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v07,6529a1c5fb33451b,1,GPT-6-LLM-only,L’intento è trattato come aspetto secondario.
+v07,99d7663ebc9cb0b0,1,GPT-6-LLM-only,"Incendi descritti; cambiamento climatico citato nel dibattito, non fulcro della notizia."
+v07,220218bf8ac3271d,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v07,9d81c261e46231dd,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v07,86bb93b22fc96baa,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v07,3ce62f6643ad817b,1,GPT-6-LLM-only,Il clima è uno dei temi trattati dal documentario sui giovani.
+v07,bdea3d49816025e6,1,GPT-6-LLM-only,"Le alluvioni sono centrali, il cambiamento climatico compare come spiegazione più ampia."
+v07,2d2ef93be7abe5be,1,GPT-6-LLM-only,Invasione di cavallette legata in parte all’aumento delle temperature.
+v07,ddbf66f3d96d4891,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v07,9c7d9b8b2c9d8b83,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v07,50fb8cb41b82785c,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v07,d189bb7efc3de199,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v07,55227d37b73e82bf,1,GPT-6-LLM-only,Lotta al cambiamento climatico citata fra gli impegni del neoeletto Lula.
+v07,a3813a3e7dffe33c,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v07,bd5ac18a1490f17f,1,GPT-6-LLM-only,Il cambiamento climatico compare in introduzione; il focus è la caccia alle balene.
+v07,67bd972d166215aa,1,GPT-6-LLM-only,"Soluzione di risparmio energetico motivata anche dal clima, focus sul dispositivo."
+v08,483f92a76a50e0ff,1,GPT-6-LLM-only,La tutela dei lavoratori edili è una parte della notizia sul record architettonico.
+v08,a3265c5e1b1c6209,1,GPT-6-LLM-only,Decreto sui lavoratori immigrati; pertinente al mercato del lavoro solo indirettamente.
+v08,1c48fb3920878be5,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v08,e8481ade50ba4f6a,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v08,2f0b6fa3a3f17cea,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v08,63e910941aaccc1a,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v08,25f45ac37cf17e00,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v08,cb0e9708a1765fad,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v08,24f5f54946432d12,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v08,15ffd9e7456b5014,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v08,dc7a2b19b4d443b6,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v08,0622303223998450,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v08,cf0599f9c8a21d7e,0,GPT-6-LLM-only,Argomento differente dall’intento esplicito della query.
+v08,4aa31ca44040f488,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v08,7470b7ef5f658693,1,GPT-6-LLM-only,"Rassegna di diversi provvedimenti, incluso lavoro precario."
+v08,be09e294552b89c8,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v08,dc7e76707f8b755d,1,GPT-6-LLM-only,L’intento è trattato come aspetto secondario.
+v08,ffdf7ddee109a868,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v08,eaccd676f419a8ae,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v09,0afd8f0874181927,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v09,0559a0822c4c5636,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v09,a16eb39f0e6923b1,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v09,62a7aacd8a33208b,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v09,f75c708349cce8ba,1,GPT-6-LLM-only,"Decreto sui lavoratori immigrati, non specificamente su diritti o sicurezza."
+v09,13487a8fb11dd91f,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v09,6f63fe27ada25c84,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v09,720284ac80bf1b8b,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v09,cdea9da7a1f2d824,1,GPT-6-LLM-only,Necrologio di giurista legato allo Statuto dei lavoratori.
+v09,62f87f82c44b2a1e,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v09,649b5a3e673f033d,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,74dac8e45c829f02,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,a527af04e1440958,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,37b7db81e6487635,1,GPT-6-LLM-only,Incidente a studenti in gita: la condizione di studenti è circostanziale.
+v10,3ac90a47f0fd11f5,1,GPT-6-LLM-only,"Tragedia durante la scuola, relazione con condizioni di studio solo indiretta."
+v10,f55f7c4d5eec041b,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,4716fa006b7687ff,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,c52f9a611006d4fc,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,c8ed966672159f0c,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,9342aab85183dfa7,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,93b5216561242b4f,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,43e26ffb421c6345,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,57594497ec40149d,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,3298dd08231f1ca6,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,01cab6807ae7b183,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,7af8c986b91ff207,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,cc628a8e321bb774,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v10,2edd64e3e1427a81,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v11,83aac7f0f0340957,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v11,e1acc6ee11fdf5de,1,GPT-6-LLM-only,"Decessi nel terremoto e lauree honoris causa: studenti coinvolti, ma evento sismico centrale."
+v11,89d832c769840101,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v11,984e9f1ae10f1319,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v11,17d589ea70f38d10,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v11,0c0eb5d4bb4c000d,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v11,0735aca058135e42,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v11,69f1964686102d41,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v11,4903c862e487f925,1,GPT-6-LLM-only,"Incidente stradale durante gita di studenti, non iniziativa o politica scolastica."
+v11,9306805cdb5f43a8,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v11,dcf5fee918661757,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v11,7b110308074e7d1d,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v11,0a7da89166b7cbe7,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v11,9a7b2c5ae9f38fb9,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v12,131c0d891a619bb1,1,GPT-6-LLM-only,"Evento su Stallman in un’università, ma focus su una provocazione."
+v12,90b2303451fecb89,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v12,91634ee579121195,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v12,cc4705c4eb98cbfd,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v12,f5e18e60063750a6,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v12,d223a993d780fd8a,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v12,05e60c4962110e50,1,GPT-6-LLM-only,"Intervista biografica al fondatore di UNITRE, meno pertinente all’università accademica."
+v12,44978325e64c10b5,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v12,163311e1cb90afc6,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v12,36a966ae0f5d3e52,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v12,db746066718fbb59,1,GPT-6-LLM-only,"Contestazione politica all’università, ma non è focus sulla sua istituzione."
+v12,314b7e1359f8a434,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v12,0ffb61a4692ffdf9,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v13,fd049f9b086c2bb4,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v13,f974fe759d1e4c6f,1,GPT-6-LLM-only,"Intervista su UNITRE, istituzione educativa extra-accademica."
+v13,45b909c065dc603f,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v13,9a0a0674973ad19f,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v13,278a27cc68b75442,1,GPT-6-LLM-only,"Episodio durante conferenza di Stallman, ateneo solo contesto."
+v13,585c56b6c8fe78bc,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v13,9971fd2ed3342253,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v13,3daed844ec067aa0,1,GPT-6-LLM-only,"Scontri politici di studenti dentro università, l’ateneo è il luogo."
+v13,c3165c6e92a115d9,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v13,809c08042e022bc0,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v13,f771f99a8bdc512f,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v14,7d56b19761ab2fa5,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v14,1103608a6d906b27,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v14,174b4c99df909cc9,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v14,45634a5df62aa913,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v14,10b79c3a766e464d,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v14,004db5fbc2735cda,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v14,d56a9892e3df90de,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v14,650da1d9d6576822,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v14,a23ea3a97582bdbd,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v14,d340207b53e46e41,1,GPT-6-LLM-only,"Riapertura delle università, diritti umani delle donne come tema importante ma secondario."
+v15,fac9e6203b1ddc2b,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v15,4220ea5ce74f9b37,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v15,987d04e346f7c889,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v15,7b22cdb1c13d9344,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v15,786b60e082439bab,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v15,fa7675ef27007604,1,GPT-6-LLM-only,Preparativi lancio Shuttle destinato all’ISS: stazione futura destinazione.
+v15,33a534c85e831709,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v15,125a89c996b01cd1,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v15,4ad126abb6276131,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v15,0a971439c3c54550,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v15,ca55acd1b735dd29,1,GPT-6-LLM-only,"Preparativi Shuttle con trasporto di un modulo sulla ISS, non attività in stazione."
+v15,ad4887353fe0186c,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v16,c173f75847bd407e,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v16,89a1e341e4fa3879,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v16,fd982b1f175344be,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v16,d491c785fb4989aa,1,GPT-6-LLM-only,"Crack economico e giudiziario di società calcistica, calcio sportivo non al centro."
+v16,92c8b51878b5e285,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v16,f6589cafb585f607,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v16,a42e4f50468c28b5,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v16,c2690e3dd1a12e09,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v16,41408687f2c6a245,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v16,ac78aa4ae56552a3,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v16,f63b6e4018953125,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v16,eae2827a7ac1b62d,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v16,8f698f79da331e82,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v16,67de9bf8e9ae19f1,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v16,c4bd256b1b88d982,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v17,62efbce4e16b4027,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v17,a315a7de5f5fe4a0,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v17,d99dc905f3a4831a,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v17,44056001c04fa461,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v17,2b08f2464e0e31bc,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v17,3c6ac37df55bf5ee,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v17,ac67341edec9eb50,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v17,1a2e43362617143e,0,GPT-6-LLM-only,"Camera bassa del Giappone, non Camera dei deputati italiana."
+v17,cca784179505c53d,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v17,73a8c305e3dd3d5c,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v17,1628d9904c3393f8,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v17,1709d7edc39c3667,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v17,77711a46e2ebeaa3,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v17,974678594aacb087,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v17,772402e8b2a988be,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v18,885639ad16915f05,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v18,1bc662cbacccf329,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v18,c5a67f6a2389918e,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v18,61c6936ead1c148d,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v18,0e9e085ce7d33d46,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v18,2ea23b39c0974d1b,0,GPT-6-LLM-only,“Borsa” è usato come espressione idiomatica sulla spesa della regione Lazio.
+v18,3799274551e4118b,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v18,3b26f0c8396d8245,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v18,9efe361369ac1e2e,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v18,36e00e780884f4fa,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v18,19900a0617118d7a,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v18,00dfdb107fec8805,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v18,cd07e8639e3cb9c2,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.
+v18,9f5ec4086a330129,2,GPT-6-LLM-only,Argomento principale corrisponde all’intento.

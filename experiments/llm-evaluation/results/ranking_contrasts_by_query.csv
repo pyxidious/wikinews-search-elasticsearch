@@ -1,0 +1,73 @@
+judge,query_id,query,group,contrast,nDCG@10,P@5,MRR@10
+GPT-6,v01,Giorgio Napolitano,nomi_propri_0,B-A,-0.049836474315747115,0.0,0.0
+GPT-6,v01,Giorgio Napolitano,nomi_propri_0,C-B,0.0,0.0,0.0
+GPT-6,v02,Angela Merkel,nomi_propri_2,B-A,0.02610729437401016,0.0,0.0
+GPT-6,v02,Angela Merkel,nomi_propri_2,C-B,-0.02610729437401016,0.0,0.0
+GPT-6,v03,terremoto Haiti,eventi_0,B-A,0.0,0.0,0.0
+GPT-6,v03,terremoto Haiti,eventi_0,C-B,0.0,0.0,0.0
+GPT-6,v04,attentati Parigi,eventi_3,B-A,0.0,0.0,0.0
+GPT-6,v04,attentati Parigi,eventi_3,C-B,0.0,0.0,0.0
+GPT-6,v05,Brexit referendum,eventi_5,B-A,0.0,0.0,0.0
+GPT-6,v05,Brexit referendum,eventi_5,C-B,-1.0,-0.2,-1.0
+GPT-6,v06,disoccupazione,generiche_0,B-A,0.0,0.0,0.0
+GPT-6,v06,disoccupazione,generiche_0,C-B,0.0,0.0,0.0
+GPT-6,v07,cambiamento climatico,generiche_1,B-A,0.21098999659119522,0.0,0.0
+GPT-6,v07,cambiamento climatico,generiche_1,C-B,-0.06761846033991226,0.0,0.0
+GPT-6,v08,lavoratore,flessioni_0,B-A,0.36383253461348386,0.19999999999999996,0.0
+GPT-6,v08,lavoratore,flessioni_0,C-B,0.0,0.0,0.0
+GPT-6,v09,lavoratori,flessioni_0,B-A,0.039596743721103,0.0,0.0
+GPT-6,v09,lavoratori,flessioni_0,C-B,0.0,0.0,0.0
+GPT-6,v10,studente,flessioni_1,B-A,0.0,0.0,0.0
+GPT-6,v10,studente,flessioni_1,C-B,0.002621800108388417,0.0,0.0
+GPT-6,v11,studenti,flessioni_1,B-A,0.05202227933110004,0.0,0.0
+GPT-6,v11,studenti,flessioni_1,C-B,0.002621800108388417,0.0,0.0
+GPT-6,v12,università,accenti_0,B-A,-0.05438351164070898,0.0,0.0
+GPT-6,v12,università,accenti_0,C-B,-0.053340589059884924,0.0,0.0
+GPT-6,v13,universita,accenti_0,B-A,0.7459413326011392,0.8,0.0
+GPT-6,v13,universita,accenti_0,C-B,-0.05839677713372493,0.0,0.0
+GPT-6,v14,"""diritti umani""",frasi_3,B-A,0.002737926120255918,0.0,0.0
+GPT-6,v14,"""diritti umani""",frasi_3,C-B,0.0,0.0,0.0
+GPT-6,v15,"""stazione spaziale""",frasi_4,B-A,-0.04453185778755986,0.0,0.0
+GPT-6,v15,"""stazione spaziale""",frasi_4,C-B,0.04628748129118476,0.0,0.0
+GPT-6,v16,calcio,ambigue_0,B-A,0.0,0.0,0.0
+GPT-6,v16,calcio,ambigue_0,C-B,-0.04628748129118487,0.0,0.0
+GPT-6,v17,camera,ambigue_1,B-A,0.11004588314904007,0.0,0.5
+GPT-6,v17,camera,ambigue_1,C-B,0.04061466121226287,0.19999999999999996,0.0
+GPT-6,v18,borsa,ambigue_7,B-A,0.0,0.0,0.0
+GPT-6,v18,borsa,ambigue_7,C-B,-0.06625422345438903,0.0,0.0
+Claude-Opus-5.5,v01,Giorgio Napolitano,nomi_propri_0,B-A,0.0,0.0,0.0
+Claude-Opus-5.5,v01,Giorgio Napolitano,nomi_propri_0,C-B,0.0071111278045993265,0.0,0.0
+Claude-Opus-5.5,v02,Angela Merkel,nomi_propri_2,B-A,0.027709387514646133,0.0,0.0
+Claude-Opus-5.5,v02,Angela Merkel,nomi_propri_2,C-B,-0.027709387514646133,0.0,0.0
+Claude-Opus-5.5,v03,terremoto Haiti,eventi_0,B-A,0.0,0.0,0.0
+Claude-Opus-5.5,v03,terremoto Haiti,eventi_0,C-B,0.0,0.0,0.0
+Claude-Opus-5.5,v04,attentati Parigi,eventi_3,B-A,0.0,0.0,0.0
+Claude-Opus-5.5,v04,attentati Parigi,eventi_3,C-B,0.0,0.0,0.0
+Claude-Opus-5.5,v05,Brexit referendum,eventi_5,B-A,0.0,0.0,0.0
+Claude-Opus-5.5,v05,Brexit referendum,eventi_5,C-B,-1.0,-0.2,-1.0
+Claude-Opus-5.5,v06,disoccupazione,generiche_0,B-A,0.0,0.0,0.0
+Claude-Opus-5.5,v06,disoccupazione,generiche_0,C-B,0.0,0.0,0.0
+Claude-Opus-5.5,v07,cambiamento climatico,generiche_1,B-A,0.21360743080874067,0.0,0.0
+Claude-Opus-5.5,v07,cambiamento climatico,generiche_1,C-B,-0.05975238221554169,0.0,0.0
+Claude-Opus-5.5,v08,lavoratore,flessioni_0,B-A,0.12872337565745473,0.19999999999999996,0.0
+Claude-Opus-5.5,v08,lavoratore,flessioni_0,C-B,0.0,0.0,0.0
+Claude-Opus-5.5,v09,lavoratori,flessioni_0,B-A,0.05183674828235918,0.0,0.0
+Claude-Opus-5.5,v09,lavoratori,flessioni_0,C-B,0.0,0.0,0.0
+Claude-Opus-5.5,v10,studente,flessioni_1,B-A,0.18433258160713883,0.19999999999999996,0.0
+Claude-Opus-5.5,v10,studente,flessioni_1,C-B,0.06304659509246924,0.0,0.0
+Claude-Opus-5.5,v11,studenti,flessioni_1,B-A,-0.09232618281602589,0.19999999999999996,0.0
+Claude-Opus-5.5,v11,studenti,flessioni_1,C-B,0.06304659509246924,0.0,0.0
+Claude-Opus-5.5,v12,università,accenti_0,B-A,-0.10366000861252656,0.0,0.0
+Claude-Opus-5.5,v12,università,accenti_0,C-B,-0.05880395419017659,-0.19999999999999996,0.0
+Claude-Opus-5.5,v13,universita,accenti_0,B-A,0.7084418852303016,0.8,0.0
+Claude-Opus-5.5,v13,universita,accenti_0,C-B,-0.06590821893777643,-0.19999999999999996,0.0
+Claude-Opus-5.5,v14,"""diritti umani""",frasi_3,B-A,0.002737926120255918,0.0,0.0
+Claude-Opus-5.5,v14,"""diritti umani""",frasi_3,C-B,0.0,0.0,0.0
+Claude-Opus-5.5,v15,"""stazione spaziale""",frasi_4,B-A,-0.04650428391927475,0.0,0.0
+Claude-Opus-5.5,v15,"""stazione spaziale""",frasi_4,C-B,-0.028275723345603798,0.0,0.0
+Claude-Opus-5.5,v16,calcio,ambigue_0,B-A,0.04009572953829421,0.0,0.0
+Claude-Opus-5.5,v16,calcio,ambigue_0,C-B,-0.06154467034135003,0.0,0.0
+Claude-Opus-5.5,v17,camera,ambigue_1,B-A,0.11004588314904007,0.0,0.5
+Claude-Opus-5.5,v17,camera,ambigue_1,C-B,0.04061466121226287,0.19999999999999996,0.0
+Claude-Opus-5.5,v18,borsa,ambigue_7,B-A,0.07662401452527723,0.0,0.0
+Claude-Opus-5.5,v18,borsa,ambigue_7,C-B,-0.17303259362064916,0.0,0.0

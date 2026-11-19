@@ -1,0 +1,128 @@
+[
+  {
+    "id": "v01",
+    "query": "Giorgio Napolitano",
+    "category": "nomi_propri",
+    "group": "nomi_propri_0",
+    "intent": "Attività istituzionale e vicende politiche di Giorgio Napolitano."
+  },
+  {
+    "id": "v02",
+    "query": "Angela Merkel",
+    "category": "nomi_propri",
+    "group": "nomi_propri_2",
+    "intent": "Attività politica e decisioni di governo di Angela Merkel."
+  },
+  {
+    "id": "v03",
+    "query": "terremoto Haiti",
+    "category": "eventi",
+    "group": "eventi_0",
+    "intent": "Terremoto ad Haiti del 2010, soccorsi e conseguenze."
+  },
+  {
+    "id": "v04",
+    "query": "attentati Parigi",
+    "category": "eventi",
+    "group": "eventi_3",
+    "intent": "Attentati a Parigi del 2015, indagini e conseguenze."
+  },
+  {
+    "id": "v05",
+    "query": "Brexit referendum",
+    "category": "eventi",
+    "group": "eventi_5",
+    "intent": "Referendum britannico del 2016 sulla permanenza nella UE."
+  },
+  {
+    "id": "v06",
+    "query": "disoccupazione",
+    "category": "generiche",
+    "group": "generiche_0",
+    "intent": "Dati e politiche riguardanti la mancanza di lavoro."
+  },
+  {
+    "id": "v07",
+    "query": "cambiamento climatico",
+    "category": "generiche",
+    "group": "generiche_1",
+    "intent": "Cause, conseguenze e politiche sul cambiamento climatico."
+  },
+  {
+    "id": "v08",
+    "query": "lavoratore",
+    "category": "flessioni",
+    "group": "flessioni_0",
+    "intent": "Condizioni, diritti e sicurezza delle persone che lavorano."
+  },
+  {
+    "id": "v09",
+    "query": "lavoratori",
+    "category": "flessioni",
+    "group": "flessioni_0",
+    "intent": "Condizioni, diritti e sicurezza delle persone che lavorano."
+  },
+  {
+    "id": "v10",
+    "query": "studente",
+    "category": "flessioni",
+    "group": "flessioni_1",
+    "intent": "Condizioni, diritti e iniziative delle persone che studiano."
+  },
+  {
+    "id": "v11",
+    "query": "studenti",
+    "category": "flessioni",
+    "group": "flessioni_1",
+    "intent": "Condizioni, diritti e iniziative delle persone che studiano."
+  },
+  {
+    "id": "v12",
+    "query": "università",
+    "category": "accenti",
+    "group": "accenti_0",
+    "intent": "Istituzioni universitarie, ricerca, didattica e politiche accademiche."
+  },
+  {
+    "id": "v13",
+    "query": "universita",
+    "category": "accenti",
+    "group": "accenti_0",
+    "intent": "Istituzioni universitarie, ricerca, didattica e politiche accademiche."
+  },
+  {
+    "id": "v14",
+    "query": "\"diritti umani\"",
+    "category": "frasi",
+    "group": "frasi_3",
+    "intent": "Violazioni, tutela e politiche relative ai diritti umani."
+  },
+  {
+    "id": "v15",
+    "query": "\"stazione spaziale\"",
+    "category": "frasi",
+    "group": "frasi_4",
+    "intent": "Missioni, equipaggi e attività delle stazioni spaziali."
+  },
+  {
+    "id": "v16",
+    "query": "calcio",
+    "category": "ambigue",
+    "group": "ambigue_0",
+    "intent": "Sport del calcio: competizioni, squadre e risultati."
+  },
+  {
+    "id": "v17",
+    "query": "camera",
+    "category": "ambigue",
+    "group": "ambigue_1",
+    "intent": "Camera dei deputati italiana: lavori e decisioni parlamentari."
+  },
+  {
+    "id": "v18",
+    "query": "borsa",
+    "category": "ambigue",
+    "group": "ambigue_7",
+    "intent": "Mercati finanziari azionari e loro andamento."
+  }
+]

@@ -127,8 +127,18 @@ Gli errori bulk sono registrati e fanno terminare il comando `index` con exit co
 
 Il confronto Standard/BM25, italiano/BM25, italiano/BM25 con `title^3` usa gli indici separati
 `itwikinews_hw4_standard` e `itwikinews_hw4_italiano`. `prepare` ricrea solo questi due indici.
-Le 27 query, il pooling, i giudizi manuali e le metriche sono descritti in [TESTING.md](TESTING.md).
-Nessuna qualita' sul corpus reale viene dedotta dal benchmark sintetico o dai soli risultati recuperati.
+Le 27 query e il protocollo manuale in [TESTING.md](TESTING.md) appartengono alla fase esplorativa storica.
+La valutazione consolidata usa **18 query, 244 coppie query-documento e due giudici LLM**,
+GPT-6 e Claude Opus 5.5: **nessuna validazione umana**. Input congelati, annotazioni originali,
+provenienza e ricalcolo offline sono in [experiments/llm-evaluation/README.md](experiments/llm-evaluation/README.md).
+Il calcolo delle metriche non richiede Elasticsearch né chiamate ai modelli.
+
+I benchmark del 18 novembre 2026 sono separati dai giudizi di rilevanza:
+94 query sintetiche, 240 celle, cinque repliche per condizione, 1.336.275 richieste e 20 prove di indicizzazione.
+Vedere [experiments/performance-20261118/README.md](experiments/performance-20261118/README.md)
+per ambiente originale, dati grezzi, checksum e ricalcolo delle statistiche **senza rilanciare le prove**.
+Il [rapporto di consolidamento](experiments/llm-evaluation/FINAL_REPORT.md) distingue calcolo verificabile,
+annotazioni non completamente replicabili e limiti di generalizzabilità. L'accordo fra LLM non prova la correttezza umana.
 
 ## Test
 

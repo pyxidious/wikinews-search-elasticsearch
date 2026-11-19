@@ -1,0 +1,701 @@
+{
+  "seed": 20261118,
+  "synthetic": true,
+  "selection": "Selezione deliberata a quote, senza log utenti e senza consultare ranking. Nessuna rappresentatività empirica degli utenti. 14 query per sei categorie, 10 ambigue. Escluse corrispondenze esatte alle 27 diagnostiche; sovrapposizioni tematiche possibili.",
+  "queries": [
+    {
+      "id": "w078",
+      "query": "\"coppa del mondo\"",
+      "category": "frasi",
+      "group": "frasi_7"
+    },
+    {
+      "id": "w056",
+      "query": "migranti",
+      "category": "flessioni",
+      "group": "flessioni_6"
+    },
+    {
+      "id": "w086",
+      "query": "camera",
+      "category": "ambigue",
+      "group": "ambigue_1"
+    },
+    {
+      "id": "w016",
+      "query": "terremoto Nepal",
+      "category": "eventi",
+      "group": "eventi_1"
+    },
+    {
+      "id": "w079",
+      "query": "\"libertà di stampa\"",
+      "category": "frasi",
+      "group": "frasi_8"
+    },
+    {
+      "id": "w011",
+      "query": "Benedetto XVI",
+      "category": "nomi_propri",
+      "group": "nomi_propri_10"
+    },
+    {
+      "id": "w042",
+      "query": "giustizia penale",
+      "category": "generiche",
+      "group": "generiche_13"
+    },
+    {
+      "id": "w077",
+      "query": "\"cambiamento climatico\"",
+      "category": "frasi",
+      "group": "frasi_6"
+    },
+    {
+      "id": "w059",
+      "query": "perché",
+      "category": "accenti",
+      "group": "accenti_1"
+    },
+    {
+      "id": "w057",
+      "query": "università",
+      "category": "accenti",
+      "group": "accenti_0"
+    },
+    {
+      "id": "w090",
+      "query": "opera",
+      "category": "ambigue",
+      "group": "ambigue_5"
+    },
+    {
+      "id": "w045",
+      "query": "studente",
+      "category": "flessioni",
+      "group": "flessioni_1"
+    },
+    {
+      "id": "w087",
+      "query": "lega",
+      "category": "ambigue",
+      "group": "ambigue_2"
+    },
+    {
+      "id": "w054",
+      "query": "sindaci",
+      "category": "flessioni",
+      "group": "flessioni_5"
+    },
+    {
+      "id": "w002",
+      "query": "Romano Prodi",
+      "category": "nomi_propri",
+      "group": "nomi_propri_1"
+    },
+    {
+      "id": "w037",
+      "query": "trasporto pubblico",
+      "category": "generiche",
+      "group": "generiche_8"
+    },
+    {
+      "id": "w009",
+      "query": "Giorgia Meloni",
+      "category": "nomi_propri",
+      "group": "nomi_propri_8"
+    },
+    {
+      "id": "w076",
+      "query": "\"protezione civile\"",
+      "category": "frasi",
+      "group": "frasi_5"
+    },
+    {
+      "id": "w033",
+      "query": "istruzione scuola",
+      "category": "generiche",
+      "group": "generiche_4"
+    },
+    {
+      "id": "w062",
+      "query": "societa",
+      "category": "accenti",
+      "group": "accenti_2"
+    },
+    {
+      "id": "w015",
+      "query": "terremoto Haiti",
+      "category": "eventi",
+      "group": "eventi_0"
+    },
+    {
+      "id": "w035",
+      "query": "sicurezza stradale",
+      "category": "generiche",
+      "group": "generiche_6"
+    },
+    {
+      "id": "w060",
+      "query": "perche",
+      "category": "accenti",
+      "group": "accenti_1"
+    },
+    {
+      "id": "w020",
+      "query": "Brexit referendum",
+      "category": "eventi",
+      "group": "eventi_5"
+    },
+    {
+      "id": "w024",
+      "query": "Festival Sanremo",
+      "category": "eventi",
+      "group": "eventi_9"
+    },
+    {
+      "id": "w089",
+      "query": "ponte",
+      "category": "ambigue",
+      "group": "ambigue_4"
+    },
+    {
+      "id": "w032",
+      "query": "sanita pubblica",
+      "category": "generiche",
+      "group": "generiche_3"
+    },
+    {
+      "id": "w034",
+      "query": "ricerca scientifica",
+      "category": "generiche",
+      "group": "generiche_5"
+    },
+    {
+      "id": "w073",
+      "query": "\"corte costituzionale\"",
+      "category": "frasi",
+      "group": "frasi_2"
+    },
+    {
+      "id": "w021",
+      "query": "Mondiali Sudafrica",
+      "category": "eventi",
+      "group": "eventi_6"
+    },
+    {
+      "id": "w088",
+      "query": "stelle",
+      "category": "ambigue",
+      "group": "ambigue_3"
+    },
+    {
+      "id": "w031",
+      "query": "immigrazione",
+      "category": "generiche",
+      "group": "generiche_2"
+    },
+    {
+      "id": "w063",
+      "query": "libertà",
+      "category": "accenti",
+      "group": "accenti_3"
+    },
+    {
+      "id": "w038",
+      "query": "mercati finanziari",
+      "category": "generiche",
+      "group": "generiche_9"
+    },
+    {
+      "id": "w072",
+      "query": "\"consiglio dei ministri\"",
+      "category": "frasi",
+      "group": "frasi_1"
+    },
+    {
+      "id": "w008",
+      "query": "Mario Draghi",
+      "category": "nomi_propri",
+      "group": "nomi_propri_7"
+    },
+    {
+      "id": "w092",
+      "query": "borsa",
+      "category": "ambigue",
+      "group": "ambigue_7"
+    },
+    {
+      "id": "w018",
+      "query": "attentati Parigi",
+      "category": "eventi",
+      "group": "eventi_3"
+    },
+    {
+      "id": "w051",
+      "query": "incendio",
+      "category": "flessioni",
+      "group": "flessioni_4"
+    },
+    {
+      "id": "w052",
+      "query": "incendi",
+      "category": "flessioni",
+      "group": "flessioni_4"
+    },
+    {
+      "id": "w069",
+      "query": "comunità",
+      "category": "accenti",
+      "group": "accenti_6"
+    },
+    {
+      "id": "w043",
+      "query": "lavoratore",
+      "category": "flessioni",
+      "group": "flessioni_0"
+    },
+    {
+      "id": "w039",
+      "query": "inquinamento atmosferico",
+      "category": "generiche",
+      "group": "generiche_10"
+    },
+    {
+      "id": "w083",
+      "query": "\"pena di morte\"",
+      "category": "frasi",
+      "group": "frasi_12"
+    },
+    {
+      "id": "w068",
+      "query": "poverta",
+      "category": "accenti",
+      "group": "accenti_5"
+    },
+    {
+      "id": "w005",
+      "query": "Donald Trump",
+      "category": "nomi_propri",
+      "group": "nomi_propri_4"
+    },
+    {
+      "id": "w061",
+      "query": "società",
+      "category": "accenti",
+      "group": "accenti_2"
+    },
+    {
+      "id": "w023",
+      "query": "Giro Italia",
+      "category": "eventi",
+      "group": "eventi_8"
+    },
+    {
+      "id": "w047",
+      "query": "manifestante",
+      "category": "flessioni",
+      "group": "flessioni_2"
+    },
+    {
+      "id": "w025",
+      "query": "eruzione Etna",
+      "category": "eventi",
+      "group": "eventi_10"
+    },
+    {
+      "id": "w026",
+      "query": "incendio Notre Dame",
+      "category": "eventi",
+      "group": "eventi_11"
+    },
+    {
+      "id": "w091",
+      "query": "capitale",
+      "category": "ambigue",
+      "group": "ambigue_6"
+    },
+    {
+      "id": "w040",
+      "query": "criminalita organizzata",
+      "category": "generiche",
+      "group": "generiche_11"
+    },
+    {
+      "id": "w017",
+      "query": "tsunami Giappone",
+      "category": "eventi",
+      "group": "eventi_2"
+    },
+    {
+      "id": "w074",
+      "query": "\"diritti umani\"",
+      "category": "frasi",
+      "group": "frasi_3"
+    },
+    {
+      "id": "w053",
+      "query": "sindaco",
+      "category": "flessioni",
+      "group": "flessioni_5"
+    },
+    {
+      "id": "w012",
+      "query": "Nelson Mandela",
+      "category": "nomi_propri",
+      "group": "nomi_propri_11"
+    },
+    {
+      "id": "w066",
+      "query": "qualita",
+      "category": "accenti",
+      "group": "accenti_4"
+    },
+    {
+      "id": "w058",
+      "query": "universita",
+      "category": "accenti",
+      "group": "accenti_0"
+    },
+    {
+      "id": "w094",
+      "query": "corrente",
+      "category": "ambigue",
+      "group": "ambigue_9"
+    },
+    {
+      "id": "w004",
+      "query": "Vladimir Putin",
+      "category": "nomi_propri",
+      "group": "nomi_propri_3"
+    },
+    {
+      "id": "w065",
+      "query": "qualità",
+      "category": "accenti",
+      "group": "accenti_4"
+    },
+    {
+      "id": "w071",
+      "query": "\"unione europea\"",
+      "category": "frasi",
+      "group": "frasi_0"
+    },
+    {
+      "id": "w085",
+      "query": "calcio",
+      "category": "ambigue",
+      "group": "ambigue_0"
+    },
+    {
+      "id": "w014",
+      "query": "Michael Schumacher",
+      "category": "nomi_propri",
+      "group": "nomi_propri_13"
+    },
+    {
+      "id": "w080",
+      "query": "\"forze armate\"",
+      "category": "frasi",
+      "group": "frasi_9"
+    },
+    {
+      "id": "w082",
+      "query": "\"salute pubblica\"",
+      "category": "frasi",
+      "group": "frasi_11"
+    },
+    {
+      "id": "w019",
+      "query": "attentati Londra",
+      "category": "eventi",
+      "group": "eventi_4"
+    },
+    {
+      "id": "w050",
+      "query": "ospedali",
+      "category": "flessioni",
+      "group": "flessioni_3"
+    },
+    {
+      "id": "w075",
+      "query": "\"stazione spaziale\"",
+      "category": "frasi",
+      "group": "frasi_4"
+    },
+    {
+      "id": "w067",
+      "query": "povertà",
+      "category": "accenti",
+      "group": "accenti_5"
+    },
+    {
+      "id": "w013",
+      "query": "Fidel Castro",
+      "category": "nomi_propri",
+      "group": "nomi_propri_12"
+    },
+    {
+      "id": "w046",
+      "query": "studenti",
+      "category": "flessioni",
+      "group": "flessioni_1"
+    },
+    {
+      "id": "w036",
+      "query": "diritti civili",
+      "category": "generiche",
+      "group": "generiche_7"
+    },
+    {
+      "id": "w093",
+      "query": "marcia",
+      "category": "ambigue",
+      "group": "ambigue_8"
+    },
+    {
+      "id": "w081",
+      "query": "\"stato di emergenza\"",
+      "category": "frasi",
+      "group": "frasi_10"
+    },
+    {
+      "id": "w048",
+      "query": "manifestanti",
+      "category": "flessioni",
+      "group": "flessioni_2"
+    },
+    {
+      "id": "w007",
+      "query": "Giuseppe Conte",
+      "category": "nomi_propri",
+      "group": "nomi_propri_6"
+    },
+    {
+      "id": "w070",
+      "query": "comunita",
+      "category": "accenti",
+      "group": "accenti_6"
+    },
+    {
+      "id": "w030",
+      "query": "cambiamento climatico",
+      "category": "generiche",
+      "group": "generiche_1"
+    },
+    {
+      "id": "w001",
+      "query": "Giorgio Napolitano",
+      "category": "nomi_propri",
+      "group": "nomi_propri_0"
+    },
+    {
+      "id": "w028",
+      "query": "crisi Grecia",
+      "category": "eventi",
+      "group": "eventi_13"
+    },
+    {
+      "id": "w022",
+      "query": "Olimpiadi Londra",
+      "category": "eventi",
+      "group": "eventi_7"
+    },
+    {
+      "id": "w055",
+      "query": "migrante",
+      "category": "flessioni",
+      "group": "flessioni_6"
+    },
+    {
+      "id": "w064",
+      "query": "liberta",
+      "category": "accenti",
+      "group": "accenti_3"
+    },
+    {
+      "id": "w041",
+      "query": "telecomunicazioni",
+      "category": "generiche",
+      "group": "generiche_12"
+    },
+    {
+      "id": "w049",
+      "query": "ospedale",
+      "category": "flessioni",
+      "group": "flessioni_3"
+    },
+    {
+      "id": "w029",
+      "query": "disoccupazione",
+      "category": "generiche",
+      "group": "generiche_0"
+    },
+    {
+      "id": "w003",
+      "query": "Angela Merkel",
+      "category": "nomi_propri",
+      "group": "nomi_propri_2"
+    },
+    {
+      "id": "w006",
+      "query": "Matteo Renzi",
+      "category": "nomi_propri",
+      "group": "nomi_propri_5"
+    },
+    {
+      "id": "w010",
+      "query": "Luigi Di Maio",
+      "category": "nomi_propri",
+      "group": "nomi_propri_9"
+    },
+    {
+      "id": "w044",
+      "query": "lavoratori",
+      "category": "flessioni",
+      "group": "flessioni_0"
+    },
+    {
+      "id": "w027",
+      "query": "Expo Milano",
+      "category": "eventi",
+      "group": "eventi_12"
+    },
+    {
+      "id": "w084",
+      "query": "\"acqua potabile\"",
+      "category": "frasi",
+      "group": "frasi_13"
+    }
+  ],
+  "validation": [
+    {
+      "id": "v01",
+      "query": "Giorgio Napolitano",
+      "category": "nomi_propri",
+      "group": "nomi_propri_0",
+      "intent": "Attività istituzionale e vicende politiche di Giorgio Napolitano."
+    },
+    {
+      "id": "v02",
+      "query": "Angela Merkel",
+      "category": "nomi_propri",
+      "group": "nomi_propri_2",
+      "intent": "Attività politica e decisioni di governo di Angela Merkel."
+    },
+    {
+      "id": "v03",
+      "query": "terremoto Haiti",
+      "category": "eventi",
+      "group": "eventi_0",
+      "intent": "Terremoto ad Haiti del 2010, soccorsi e conseguenze."
+    },
+    {
+      "id": "v04",
+      "query": "attentati Parigi",
+      "category": "eventi",
+      "group": "eventi_3",
+      "intent": "Attentati a Parigi del 2015, indagini e conseguenze."
+    },
+    {
+      "id": "v05",
+      "query": "Brexit referendum",
+      "category": "eventi",
+      "group": "eventi_5",
+      "intent": "Referendum britannico del 2016 sulla permanenza nella UE."
+    },
+    {
+      "id": "v06",
+      "query": "disoccupazione",
+      "category": "generiche",
+      "group": "generiche_0",
+      "intent": "Dati e politiche riguardanti la mancanza di lavoro."
+    },
+    {
+      "id": "v07",
+      "query": "cambiamento climatico",
+      "category": "generiche",
+      "group": "generiche_1",
+      "intent": "Cause, conseguenze e politiche sul cambiamento climatico."
+    },
+    {
+      "id": "v08",
+      "query": "lavoratore",
+      "category": "flessioni",
+      "group": "flessioni_0",
+      "intent": "Condizioni, diritti e sicurezza delle persone che lavorano."
+    },
+    {
+      "id": "v09",
+      "query": "lavoratori",
+      "category": "flessioni",
+      "group": "flessioni_0",
+      "intent": "Condizioni, diritti e sicurezza delle persone che lavorano."
+    },
+    {
+      "id": "v10",
+      "query": "studente",
+      "category": "flessioni",
+      "group": "flessioni_1",
+      "intent": "Condizioni, diritti e iniziative delle persone che studiano."
+    },
+    {
+      "id": "v11",
+      "query": "studenti",
+      "category": "flessioni",
+      "group": "flessioni_1",
+      "intent": "Condizioni, diritti e iniziative delle persone che studiano."
+    },
+    {
+      "id": "v12",
+      "query": "università",
+      "category": "accenti",
+      "group": "accenti_0",
+      "intent": "Istituzioni universitarie, ricerca, didattica e politiche accademiche."
+    },
+    {
+      "id": "v13",
+      "query": "universita",
+      "category": "accenti",
+      "group": "accenti_0",
+      "intent": "Istituzioni universitarie, ricerca, didattica e politiche accademiche."
+    },
+    {
+      "id": "v14",
+      "query": "\"diritti umani\"",
+      "category": "frasi",
+      "group": "frasi_3",
+      "intent": "Violazioni, tutela e politiche relative ai diritti umani."
+    },
+    {
+      "id": "v15",
+      "query": "\"stazione spaziale\"",
+      "category": "frasi",
+      "group": "frasi_4",
+      "intent": "Missioni, equipaggi e attività delle stazioni spaziali."
+    },
+    {
+      "id": "v16",
+      "query": "calcio",
+      "category": "ambigue",
+      "group": "ambigue_0",
+      "intent": "Sport del calcio: competizioni, squadre e risultati."
+    },
+    {
+      "id": "v17",
+      "query": "camera",
+      "category": "ambigue",
+      "group": "ambigue_1",
+      "intent": "Camera dei deputati italiana: lavori e decisioni parlamentari."
+    },
+    {
+      "id": "v18",
+      "query": "borsa",
+      "category": "ambigue",
+      "group": "ambigue_7",
+      "intent": "Mercati finanziari azionari e loro andamento."
+    }
+  ],
+  "validation_disjoint_from_diagnostics": true,
+  "validation_overlaps_performance_by_design": true
+}

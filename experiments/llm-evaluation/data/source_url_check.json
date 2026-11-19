@@ -1,0 +1,11 @@
+{
+  "checked_on": "2026-11-19",
+  "method": "HEAD via curl.exe",
+  "url": "https://dumps.wikimedia.org/other/enterprise_html/runs/20250320/itwikinews-NS0-20250320-ENTERPRISE-HTML.json.tar.gz",
+  "http_status": 200,
+  "content_length": 72975193,
+  "last_modified_header": "Thu, 20 Mar 2025 14:53:45 GMT",
+  "server_date_header": "Thu, 19 Nov 2026 15:21:43 GMT",
+  "download_performed": false,
+  "future_availability_guaranteed": false
+}

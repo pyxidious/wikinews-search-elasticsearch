@@ -1,0 +1,6 @@
+﻿{
+    "timestamp":  "2026-11-18T14:23:23.6345189+01:00",
+    "loopback_time_wait":  6274,
+    "loopback_established":  25,
+    "note":  "Diagnostic after client socket error 10048; not an Elasticsearch error"
+}

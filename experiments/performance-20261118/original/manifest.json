@@ -1,0 +1,193 @@
+{
+  "seed": 20261118,
+  "created_local": "2026-11-18T12:54:38",
+  "timezone": "Europe/Rome",
+  "repo": "C:\\Users\\proti\\Desktop\\dev\\wikinews-search-elasticsearch",
+  "output": "C:\\Users\\proti\\AppData\\Local\\Temp\\wikinews-benchmark-20261118",
+  "python": "3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+  "logical_cpus": 8,
+  "packages": {
+    "elasticsearch": "8.19.3",
+    "Flask": "3.1.3",
+    "beautifulsoup4": "4.15.0",
+    "lxml": "6.1.3"
+  },
+  "dump": "C:\\Users\\proti\\Desktop\\dev\\wikinews-search-elasticsearch\\data\\itwikinews-NS0-20250320-ENTERPRISE-HTML.json.tar.gz",
+  "dump_sha256": "d2c00ef9d7c3db5a3f26adb85b07055673b30b2417653374ada52b7174df474d",
+  "source_sha256": {
+    "wikinews_search\\cli.py": "aaed32bcb8f5d9490c29a944cfde84170eec84aad1d84abfa6db6c5baab0ddf8",
+    "wikinews_search\\config.py": "15bf8f4799828c7dc90e76753f80f9e772c7c2cd16a684c9fe88bcb53117c865",
+    "wikinews_search\\dump.py": "ddc34ac8ea27cb168e8f4045fc201de2e6bc137e4e1d4367a26b755e6636d3c2",
+    "wikinews_search\\evaluation.py": "9b528388e954a2adcc7dc63fae508060800f98dca698612896e7753aa31628a3",
+    "wikinews_search\\indexer.py": "fb0d126983daa3a9f752ddbf688a8924aa64fe161386aa781fb8ab7ff13ce474",
+    "wikinews_search\\parsing.py": "d081f7c159f0120937fe5852de6aa7cda05eb6d81b6e340b4d98a6456178689e",
+    "wikinews_search\\searcher.py": "a438d960bfe9e9d6aa20edc0ddc05ffb2bf90324cbb0c3f25c38886e21969caa",
+    "wikinews_search\\statistics.py": "910674f8b167de7930f61bad7471f856a9f0ba3b14dfba77cc9b49ff027fa1ff",
+    "wikinews_search\\webapp.py": "53441add429f716b1fa32babb753cb2d18447faee50766e63abb54087ad58c65",
+    "wikinews_search\\__init__.py": "ed330dac9532e92a3289dd628701de9e4990e9592b50924f5eec4e6767e71d43",
+    "wikinews_search\\__main__.py": "102942c02cdbea1e98069b7486b9c6e21d2694d84d78fca0ff104d352566d68b",
+    "wikinews_search\\static\\style.css": "4a8ec352bb50cdec08d065b32b920185e293fe9feff22129165f95ef3087aecc",
+    "wikinews_search\\templates\\article.html": "0809c052c1c1ec4c8e008d7739ec8a33b113af231b38623debf5ea9b6252f3f0",
+    "wikinews_search\\templates\\base.html": "34b128f1f838dac9f58989ffb14413c01719ed33639286325bc9f265e4055e89",
+    "wikinews_search\\templates\\search.html": "247af1f99ae60e93b01a8a10ac9feae50aa8ac6e15302a7ca89073f0dede03f2"
+  },
+  "preserved_sha256": {
+    "experiments\\results-2026-11-17\\manifest.json": "4e80c542dd60f1c8f8d8d1b3dc1e26d0a131c5670f691365fcf9f4aca84c1fe3",
+    "experiments\\results-2026-11-17\\parser-audit.json": "f8d7ba36aca2b79322e6fbf1bbe02044f2654f25684fa10f7095bd1b64c34575",
+    "experiments\\results-2026-11-17\\qrels-template.csv": "12f05894eb9f7464c2dea92b8484132bb3e048b6d1908b573f632d2a6c7a9096",
+    "experiments\\results-2026-11-17\\runs.json": "4be99b7bd183d7989039919963902cd25a30f31b0e470b81a24fcde28d697538",
+    "data\\experiment-real\\candidates.jsonl": "fdfc34fff2c9f9fb2881d83f175ddadf5aa235ee0d0f60401f7b9c5b28b17dce",
+    "data\\experiment-real\\manifest.json": "4e80c542dd60f1c8f8d8d1b3dc1e26d0a131c5670f691365fcf9f4aca84c1fe3",
+    "data\\experiment-real\\qrels-template.csv": "12f05894eb9f7464c2dea92b8484132bb3e048b6d1908b573f632d2a6c7a9096",
+    "data\\experiment-real\\runs.json": "4be99b7bd183d7989039919963902cd25a30f31b0e470b81a24fcde28d697538"
+  },
+  "workload_sha256": "5cd4a571d485506ed27d9813f86cf78e3d7df00406ccf6dd7916c00eefd6a6c7",
+  "configs": {
+    "A": [
+      "standard",
+      [
+        "title",
+        "body"
+      ]
+    ],
+    "B": [
+      "italiano",
+      [
+        "title",
+        "body"
+      ]
+    ],
+    "C": [
+      "italiano",
+      [
+        "title^3",
+        "body"
+      ]
+    ]
+  },
+  "protocol": {
+    "replicates": 5,
+    "clients": [
+      1,
+      4,
+      8,
+      16
+    ],
+    "controlled_rps": 8,
+    "controlled_requests": 96,
+    "capacity_seconds": 30,
+    "warmup_requests": 32,
+    "warmup_excluded": true,
+    "bootstrap_resamples": 10000,
+    "capacity_slo_p95_ms": 500,
+    "capacity_max_error_rate": 0.01,
+    "capacity_window_throughput_cv": 0.15,
+    "capacity_windows": 3,
+    "capacity_interpretation": "Observed 30-second sustainable throughput envelope at tested concurrency; not proof of long-run maximum.",
+    "bulk_chunk_size": 500,
+    "independence": "Separate sequential runs and new indexing destinations; same host, warm filesystem, not independent hardware samples.",
+    "cache": "Natural warm cache. No cache clearing. Equal request_cache=false for direct ES and adapter Flask.",
+    "payload": "build_body page=1 size=10, normal Web source/highlight/facets; no full-body candidate source.",
+    "primary_ranking_metric": "nDCG@10",
+    "secondary_ranking_metrics": [
+      "P@5",
+      "MRR@10"
+    ],
+    "effective_es_endpoint": "http://127.0.0.1:9200",
+    "connections_per_node": 32,
+    "refresh_interval_during_indexing": "-1",
+    "indexing_timing": "create index + parse/read + Bulk + explicit refresh; flush measured separately and excluded; docs_s counts unique final documents",
+    "hostname_preflight": "New connection using localhost about 5.04s; 127.0.0.1 about 0.019s. Numeric loopback fixed before all measurements.",
+    "retention": "All newly created benchmark indices retained; close each after measurement and reopen only one per analyzer for search. No DELETE, no force merge."
+  },
+  "status": {
+    "elasticsearch": "reachable",
+    "online": "completed"
+  },
+  "harness_sha256": "daa33336e920fe9945b94de000d0131b628c1898514e436ba3be62b042fd9610",
+  "preprocessed_sha256": "05478325f03155e68eda84515b76e6610b77911eaa78aea9ac0e4870220396e9",
+  "benchmark_indices": {
+    "standard": "wnbench_20261118_189b17f4df22_standard",
+    "italiano": "wnbench_20261118_f95e789fb769_italiano"
+  },
+  "hardware": {
+    "cpu": {
+      "Name": "Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz",
+      "NumberOfCores": 8,
+      "NumberOfLogicalProcessors": 8
+    },
+    "computer": {
+      "Manufacturer": "To Be Filled By O.E.M.",
+      "Model": "To Be Filled By O.E.M.",
+      "TotalPhysicalMemory": 17106173952,
+      "NumberOfLogicalProcessors": 8
+    },
+    "os": {
+      "Caption": "Microsoft Windows 11 Pro",
+      "Version": "10.0.26300",
+      "BuildNumber": "26300",
+      "TotalVisibleMemorySize": 16705248,
+      "FreePhysicalMemory": 594612
+    }
+  },
+  "cluster_info": {
+    "name": "35f11e7ea42b",
+    "cluster_name": "docker-cluster",
+    "cluster_uuid": "D3l3RGCZQHmXbXQBpS_C2A",
+    "version": {
+      "number": "8.15.0",
+      "build_flavor": "default",
+      "build_type": "docker",
+      "build_hash": "1a77947f34deddb41af25e6f0ddb8e830159c179",
+      "build_date": "2024-08-05T10:05:34.233336849Z",
+      "build_snapshot": false,
+      "lucene_version": "9.11.1",
+      "minimum_wire_compatibility_version": "7.17.0",
+      "minimum_index_compatibility_version": "7.0.0"
+    },
+    "tagline": "You Know, for Search"
+  },
+  "node_heap_max_bytes": {
+    "M6WHuA92S5Su8hNcWcqKqw": 1073741824
+  },
+  "derived_seeds": {
+    "schedule": 20261118,
+    "bootstrap": 20261118,
+    "pool_presentation": 20261119,
+    "query_order": "20261118 + replicate"
+  },
+  "actual_counts": {
+    "measured_requests": 1336275,
+    "measured_errors": 2,
+    "index_runs": 20,
+    "validation_queries": 18,
+    "validation_groups": 15,
+    "pooled_pairs": 244
+  },
+  "human_validation": {
+    "labels_available": false,
+    "metrics_computed": false,
+    "status": "awaiting two independent human assessors"
+  },
+  "provenance_files": [
+    "hardware.json",
+    "environment_packages.json",
+    "plot_environment.json",
+    "docker_version.json",
+    "docker_image_identity.txt",
+    "shell_version.json",
+    "benchmark_index_metadata.json",
+    "all_index_corpus_verification.json",
+    "execution_status.json",
+    "audit.json"
+  ],
+  "postprocessing_script_sha256": {
+    "audit.py": "a183da7d18e07cb74e38811661416e6db41327a8b8b8417025462d3d157c3028",
+    "finalize.py": "399e774c3375ef5e1329e3815c7b5b3ae32282d4d2ef1057692bf9319287fce7",
+    "ranking_analysis.py": "460d3b120accee416f023a42175852c2f402fd1aef32531456d11a6385aa7be1",
+    "test_methods.py": "1b15f7e406e97ccbdb4d7b65c175bd776d1bc67325da36c68fc5121fb96fd734",
+    "write_report.py": "f484d8676693a77b0e79bc619ef4441939add5449e5b8b58907995bdabe66b74"
+  }
+}

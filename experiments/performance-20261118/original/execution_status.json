@@ -1,0 +1,8 @@
+{
+  "online_shell_exit_code": 1,
+  "online_manifest_status": "completed",
+  "completed_cells": 240,
+  "stderr_python_traceback_present": false,
+  "stderr_observation": "GeneralAvailabilityWarning on metadata API converted by PowerShell to NativeCommandError; output completeness requires audit.json",
+  "plot_install_exit_code": 0
+}
