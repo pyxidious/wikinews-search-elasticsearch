@@ -12,7 +12,9 @@ Questa versione usa **Elasticsearch 8** (basato su Lucene).
 * Ricerca full-text su titolo e testo con un **analizzatore italiano personalizzato**: tokenizer standard, elisione (`l'`, `dell'`...),
   minuscole, stopword italiane, rimozione degli accenti, stemmer `light_italian`. `elezione` trova `elezioni`, `citta` trova `città`,
   `Italia` trova `L'Italia`.
-* Ranking **BM25** con titolo pesato 3x (`title^3`).
+* Ranking **BM25** con pesi uniformi per `title` e `body`: configurazione **B**.
+  Nel pool sperimentale B ha la migliore nDCG@10 media per entrambi i giudici LLM; questo non costituisce
+  validazione umana né prova di superiorità generale. Le configurazioni storiche A/B/C restano invariate.
 * Sintassi tollerante agli errori con `simple_query_string`: spazi e `|` indicano OR; `Roma + Milano` indica AND;
   `"banca centrale"` cerca una frase analizzata, `-escluso` esclude un termine, `prefisso*` cerca un prefisso, `parola~1` ammette un errore.
 * Frammenti con parole evidenziate (highlighting di Elasticsearch, con escape dell'HTML), **filtri a faccette** (categoria, anno)
@@ -59,9 +61,44 @@ Il `docker-compose.yml` disattiva la sicurezza di Elasticsearch: va bene in loca
 
 ## Uso
 
+### Demo Web su Windows
+
+Prerequisiti: Python 3.10+, dipendenze in `.venv`, Docker Desktop avviato e un indice italiano già popolato.
+Dalla radice del repository:
+
+```powershell
+.\scripts\start_demo.ps1
+```
+
+Il launcher avvia Elasticsearch con `docker compose up -d --no-recreate`, attende il servizio, controlla
+l'indice e avvia Flask su **http://127.0.0.1:5000/**, aprendo il browser dopo la risposta di `/health`.
+Prova prima `itwikinews`, poi l'indice italiano esistente `itwikinews_hw4_italiano`; una scelta esplicita
+con `-IndexName` o `ES_INDEX` non viene sostituita. Non crea, cancella o ricostruisce indici.
+Con Elasticsearch già attivo: `-SkipDocker`; per aprire il browser manualmente: `-NoBrowser`.
+Per fermare il server nel terminale usare **Ctrl+C**.
+
+```powershell
+# Corpus italiano già disponibile sulla macchina della demo:
+.\scripts\start_demo.ps1 -IndexName itwikinews_hw4_italiano
+# In un secondo terminale: controlli in sola lettura, senza benchmark
+.venv\Scripts\python.exe -B scripts/demo_smoke.py --es-url http://127.0.0.1:9200 --index-name itwikinews_hw4_italiano --out .reproduction/demo/smoke.json
+```
+
+La [guida della demo](DEMO_GUIDE.md) contiene preparazione per una nuova installazione, **12 query
+misurate**, conteggi, primi tre titoli, limiti e una scaletta da cinque minuti. Esempi: `terremoto`,
+`elezione` / `elezioni`, `citta` / `città`, `"banca centrale"`, `Roma + Milano`, `Roma | Milano`,
+`elezioni -Roma`. In homepage sono disponibili esempi cliccabili e una guida alla sintassi.
+
+Per creare screenshot, aprire la homepage e una pagina di risultati su localhost; in Firefox usare
+**Ctrl+Shift+S**, poi salvare la parte visibile o l'intera pagina. Ripetere con un articolo aperto dalla
+ricerca per mostrare i termini evidenziati. Per il formato mobile usare **Ctrl+Shift+M**, larghezza 390 px.
+I dettagli delle verifiche visive disponibili sono nella guida; non sono inclusi screenshot simulati.
+
+### Comandi applicativi
+
 ```bash
 python -m wikinews_search download     # scarica il dump in data/
-python -m wikinews_search index        # crea l'indice "itwikinews" e carica gli articoli
+python -m wikinews_search index        # RICREA "itwikinews": solo per preparazione esplicita, non per avviare la demo
 python -m wikinews_search serve        # avvia http://127.0.0.1:5000
 ```
 
@@ -134,6 +171,8 @@ La valutazione consolidata usa **18 query, 244 coppie query-documento e due giud
 GPT-6 e Claude Opus 5.5: **nessuna validazione umana**. Input congelati, annotazioni originali,
 provenienza e ricalcolo offline sono in [experiments/llm-evaluation/README.md](experiments/llm-evaluation/README.md).
 Il calcolo delle metriche non richiede Elasticsearch né chiamate ai modelli.
+Il default dell'applicazione segue B (`title`, `body`); C conserva `title^3` nel confronto sperimentale.
+B e C usano lo stesso indice italiano: cambiare i pesi di ricerca non richiede reindicizzazione.
 
 ### Benchmark di prestazioni: latenza, capacità e indicizzazione
 

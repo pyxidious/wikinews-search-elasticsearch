@@ -6,7 +6,7 @@ e della comunicazione con Elasticsearch. La strategia e' una piramide: test velo
 | Livello | File | Richiede ES | Cosa verifica |
 |---|---|---|---|
 | Unitari (dati) | `tests/test_parsing.py` | no | pulizia HTML, date, categorie, scarto di record non validi, lettura di tar.gz / gz / NDJSON, righe corrotte |
-| Unitari (query DSL) | `tests/test_es_dsl.py` | no | forma della query (`simple_query_string`, boost del titolo, filtri `term`, ordinamento, offset di paginazione, limite di 10.000), parsing della risposta, snippet di riserva con escape, definizione di analizzatore e mapping |
+| Unitari (query DSL) | `tests/test_es_dsl.py` | no | forma della query (`simple_query_string`, pesi uniformi della configurazione B, filtri `term`, ordinamento, offset di paginazione, limite di 10.000), parsing della risposta, snippet di riserva con escape, definizione di analizzatore e mapping |
 | Sistema (web) | `tests/test_web_offline.py` | no | pagine, API, 404, parametri non validi, XSS, errori chiari se ES e' spento o manca l'indice, con un **client ES finto** (`tests/fakes.py`) |
 | Integrazione | `tests/test_es_integration.py` | **si** | indicizzazione (conteggio, ricostruzione, `--limit`), output dell'analizzatore (`_analyze`), stemming, elisione, accenti, stopword, boost del titolo, frasi, esclusioni, trattini, filtri, faccette, paginazione, query malformate, highlighting con escape |
 | Qualita' del ranking | `test_es_integration.py::test_gold_set_metrics` + `relevance_queries.json` | **si** | gold set di query con documento atteso: **Precision@1 >= 0.8** e **MRR >= 0.9** |
@@ -34,6 +34,25 @@ e della comunicazione con Elasticsearch. La strategia e' una piramide: test velo
 5. Confrontare 3-4 risultati con la ricerca di it.wikinews.org.
 
 ## Esecuzione
+
+Per verificare la demo senza modificare gli indici:
+
+```powershell
+.venv\Scripts\python.exe -B -m pytest -q -m "not elasticsearch and not realdump"
+.venv\Scripts\python.exe -B scripts/demo_smoke.py --es-url http://127.0.0.1:9200 --index-name itwikinews_hw4_italiano --out .reproduction/demo/smoke.json
+```
+
+Lo smoke test consulta l'indice e l'app Flask già avviata: verifica 12 query misurate, confronto tra API
+e ricerca diretta, token di stemming/accenti, AND/OR/NOT, filtri, ordinamento, paginazione e articolo.
+`PASS`, `FAIL` e `SKIP` distinguono esiti riusciti, fallimenti e prerequisiti non disponibili; exit code
+0 per tutti riusciti, 1 se ci sono fallimenti, 2 per soli controlli non eseguibili. Le aspettative in
+`scripts/demo_queries.json` appartengono al corpus completo e alla configurazione B: altri corpus
+possono fallire il confronto. Il file non alimenta la ricerca Web. I test in `tests/test_demo_smoke.py`
+verificano che filtri errati, ordine errato, variazioni di conteggi/titoli e servizi assenti siano rilevati.
+La procedura della presentazione è in [DEMO_GUIDE.md](DEMO_GUIDE.md).
+
+I comandi seguenti comprendono invece test che creano e cancellano indici di prova, oltre a un controllo
+di latenza. Non sono necessari per lo smoke test della demo e non sono stati eseguiti in questa preparazione.
 
 ```bash
 docker compose up -d

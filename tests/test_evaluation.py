@@ -33,6 +33,9 @@ def test_pool_and_manual_judgments_workflow(tmp_path):
     pool(es, queries, tmp_path, repeats=2)
     assert len(calls) == 9
     assert {c["index"] for c in calls} == set(INDICES.values())
+    # Il nuovo default Web B non deve alterare i campi del confronto storico A/B/C.
+    assert [c['query']['bool']['must'][0]['simple_query_string']['fields'] for c in calls] == [
+        CONFIGS[key][1] for order in [('A','B','C'), ('B','C','A'), ('C','A','B')] for key in order]
     assert all(name != "itwikinews" for name in INDICES.values())
     assert len((tmp_path / "candidates.jsonl").read_text(encoding="utf-8").splitlines()) == 1
     with pytest.raises(ValueError, match="incompleto"):

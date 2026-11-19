@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Ricerca temporaneamente non disponibile{% endblock %}
+{% block content %}
+<section class="intro">
+  <p class="eyebrow">Servizio non disponibile</p>
+  <h1>La ricerca è momentaneamente sospesa.</h1>
+  <p>Non riusciamo a consultare l'archivio. Verifica che Elasticsearch sia avviato e che l'indice sia disponibile, poi riprova.</p>
+  <a href="{{ url_for('home') }}">Riprova dalla pagina iniziale</a>
+</section>
+{% endblock %}

@@ -7,11 +7,16 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
   <header class="top">
-    <a class="brand" href="{{ url_for('home') }}">Wikinotizie</a>
-    <span class="tag">Ricerca nell'archivio delle notizie</span>
+    <a class="brand" href="{{ url_for('home') }}"><span class="brand-icon" aria-hidden="true">W.</span> Wikinotizie <span>Search</span></a>
+    <span class="tag">L'archivio delle notizie in italiano</span>
+    {% if doc_count is defined and doc_count is not none %}<span class="index-count"><span aria-hidden="true">●</span> {{ "{:,}".format(doc_count).replace(",", ".") }} documenti indicizzati</span>{% endif %}
   </header>
-  <main>{% block content %}{% endblock %}</main>
-  <footer>Testi tratti da <a href="https://it.wikinews.org/">it.wikinews.org</a>, disponibili con licenza CC BY 2.5.</footer>
+  <main id="contenuto">{% block content %}{% endblock %}</main>
+  <footer><p>Fonti e attribuzioni · Testi da <a href="https://it.wikinews.org/">Wikinotizie</a>, progetto Wikimedia.</p>
+    <p>Diritti, autori e condizioni di riuso dipendono dall'articolo e dalla versione del dump. Consulta la pagina originale e i suoi crediti; non si applica qui una licenza unica a tutti i testi.</p>
+    <p>Archivio dal dump del 20 marzo 2025. Le date usano la creazione o, se assente, l'ultima modifica: non sempre coincidono con la pubblicazione giornalistica.</p>
+  </footer>
 </body>
 </html>

@@ -2,12 +2,14 @@
 {% block title %}{{ doc.title }}{% endblock %}
 {% block content %}
 <article class="article">
-  <p class="back"><a href="javascript:history.back()">Torna ai risultati</a></p>
+  <p class="back"><a href="{{ back_url }}">← Torna ai risultati</a></p>
+  <p class="eyebrow">Dall'archivio Wikinotizie</p>
   <h1>{{ doc.title }}</h1>
   <p class="meta">{{ doc.date|data_it }}
     {% for c in doc.categories %}<a class="cat" href="{{ url_for('home', category=c) }}">{{ c }}</a>{% endfor %}</p>
-  {% for p in paragraphs %}{% if p.strip() %}<p>{{ p }}</p>{% endif %}{% endfor %}
+  {% if q %}<p class="reading-note">Termini evidenziati per «{{ q }}». L'evidenziazione usa l'analizzatore della ricerca; per documenti molto lunghi può essere parziale.</p>{% endif %}
+  <div class="article-body">{% for p in paragraphs %}{% if p.strip() %}<p>{{ p|safe }}</p>{% endif %}{% endfor %}</div>
   {% set source_url = doc.url|external_url %}
-  {% if source_url %}<p class="source"><a href="{{ source_url }}">Leggi l'originale su Wikinotizie</a></p>{% endif %}
+  {% if source_url %}<aside class="source"><h2>Fonte, autori e licenza</h2><a href="{{ source_url }}">Leggi l'originale su Wikinotizie</a><p>Testo estratto dal dump Wikimedia Enterprise HTML del 20 marzo 2025. Consulta crediti, cronologia e licenza della versione originale prima del riuso; le condizioni possono variare tra articoli e versioni.</p></aside>{% endif %}
 </article>
 {% endblock %}

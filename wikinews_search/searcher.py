@@ -13,7 +13,7 @@ from .config import DEFAULT_INDEX, MAX_PAGE_SIZE, MAX_WINDOW, PAGE_SIZE
 from .parsing import parse_date
 
 SORTS = ("relevance", "date")
-FIELDS = ["title^3", "body"]  # il titolo pesa 3 volte il testo
+FIELDS = ["title", "body"]  # configurazione B: BM25 con pesi uniformi
 
 
 @dataclass
@@ -164,19 +164,27 @@ def search(es, query_string: str = "", page: int = 1, page_size: int = PAGE_SIZE
     return result
 
 
-def get_article(es, article_id: str, index: str = DEFAULT_INDEX) -> dict | None:
-    response = es.search(
-        index=index, query={"ids": {"values": [str(article_id)]}}, size=1,
-        source=["title", "url", "date", "category", "body"],
-    )
+def get_article(es, article_id: str, index: str = DEFAULT_INDEX, query_string: str = "") -> dict | None:
+    options = {}
+    if query_string.strip():
+        # Stesso analyzer e stessa sintassi della ricerca; nessuna regex sui termini.
+        options["highlight"] = {
+            "encoder": "html", "pre_tags": ["<mark>"], "post_tags": ["</mark>"],
+            "fields": {"body": {"number_of_fragments": 0}},
+            "highlight_query": build_body(query_string, 1, 1)["query"],
+        }
+    response = es.search(index=index, query={"ids": {"values": [str(article_id)]}}, size=1,
+                         source=["title", "url", "date", "category", "body"], **options)
     hits = response["hits"]["hits"]
     if not hits:
         return None
     source = hits[0]["_source"]
+    fragments = hits[0].get("highlight", {}).get("body")
     return {
         "id": hits[0]["_id"], "title": source["title"], "url": source.get("url", ""),
         "body": source["body"], "date": parse_date(source.get("date")),
         "categories": list(source.get("category") or []),
+        "body_html": fragments[0] if fragments else str(escape(source["body"])),
     }
 
 

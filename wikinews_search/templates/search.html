@@ -1,82 +1,83 @@
 {% extends "base.html" %}
-{% block title %}{% if q %}{{ q }}{% else %}Cerca nelle notizie{% endif %}{% endblock %}
+{% block title %}{% if q %}{{ q }}{% else %}Esplora l'archivio{% endif %}{% endblock %}
 {% block content %}
+<section class="intro {% if searching %}intro-compact{% endif %}">
+  <p class="eyebrow">Notizie, contesto, memoria</p>
+  <h1>{% if searching %}Segui il filo delle notizie.{% else %}Una notizia è un punto di partenza.{% endif %}</h1>
+  {% if not searching %}<p class="intro-text">Esplora l'archivio italiano di Wikinotizie. Cerca un evento, ritrova una frase, collega luoghi e persone.</p>{% endif %}
+</section>
 <form class="search" action="{{ url_for('home') }}" method="get" role="search">
-  <label for="q">Cerca nelle notizie</label>
+  <label for="q">Cerca nell'archivio</label>
   <div class="field">
-    <input id="q" name="q" type="search" value="{{ q }}" autofocus autocomplete="off"
-           placeholder="Per esempio: terremoto, elezioni, campionato">
-    {% if sort != 'relevance' %}<input type="hidden" name="sort" value="{{ sort }}">{% endif %}
-    <button type="submit">Cerca</button>
+    <input id="q" name="q" type="search" value="{{ q }}" maxlength="300" autocomplete="off"
+           placeholder='Un evento, un luogo o "una frase"' aria-describedby="query-hint">
+    <button type="submit">Cerca <span aria-hidden="true">→</span></button>
+  </div>
+  <p class="hint" id="query-hint">Parole separate da spazi: OR. Usa <code>+</code> per AND e <code>-</code> per escludere.</p>
+  <div class="filter-fields">
+    <div><label for="category">Categoria</label><input id="category" name="category" value="{{ category or '' }}" maxlength="100" list="category-options" placeholder="Tutte le categorie">
+      <datalist id="category-options">{% if result %}{% for name, n in result.categories %}<option value="{{ name }}">{{ n }} corrispondenze</option>{% endfor %}{% endif %}</datalist></div>
+    <div><label for="year">Anno</label><input id="year" name="year" value="{{ year or '' }}" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="Tutti gli anni" list="year-options">
+      <datalist id="year-options">{% if result %}{% for name, n in result.years %}<option value="{{ name }}">{{ n }} corrispondenze</option>{% endfor %}{% endif %}</datalist></div>
+    <div><label for="sort">Ordina per</label><select id="sort" name="sort"><option value="relevance" {% if sort == 'relevance' %}selected{% endif %}>Rilevanza</option><option value="date" {% if sort == 'date' %}selected{% endif %}>Data più recente</option></select></div>
   </div>
 </form>
-
-{% if not_found %}
-  <p class="notice">Questa pagina non esiste. Cerca una notizia con il campo qui sopra.</p>
-{% endif %}
-
+<details class="syntax">
+  <summary>Guida alla sintassi di ricerca</summary>
+  <div class="syntax-grid">
+    <p><code>Roma | Milano</code><br>OR: almeno uno dei termini. Anche lo spazio indica OR.</p>
+    <p><code>Roma + Milano</code><br>AND: entrambi i termini.</p>
+    <p><code>elezioni -Roma</code><br>NOT: esclude Roma dalla ricerca.</p>
+    <p><code>"banca centrale"</code><br>Frase analizzata: ordine e posizioni, con stemming e stopword.</p>
+    <p><code>elezione</code> · <code>citta</code><br>Flessioni italiane e accenti vengono normalizzati.</p>
+    <p><code>elezion*</code> · <code>terremoto~1</code><br>Prefisso e tolleranza di un errore.</p>
+  </div>
+  <p class="hint">AND, OR e NOT sono descrizioni: digita i simboli, non queste parole. Per esclusioni obbligatorie dentro un gruppo usa <code>+-</code>, ad esempio <code>(elezioni +-Roma)</code>. La sintassi non valida può essere ignorata dal parser.</p>
+</details>
+{% if not_found %}<p class="notice" role="alert">Questa pagina non esiste. Cerca una notizia con il campo qui sopra.</p>{% endif %}
 {% if not searching %}
-  <section class="intro">
-    <p><strong>{{ "{:,}".format(doc_count).replace(",", ".") }}</strong> notizie indicizzate. Prova con
-      <a href="{{ link(q='terremoto') }}">terremoto</a>,
-      <a href="{{ link(q='elezioni') }}">elezioni</a> o
-      <a href="{{ link(q='calcio') }}">calcio</a>.</p>
-    <p class="hint">Si possono usare le virgolette per una frase esatta (<code>"banca centrale"</code>),
-      <code>Roma + Milano</code> per AND, <code>-parola</code> per escluderla e <code>|</code> per OR (anche implicito tra spazi).
-      Sono disponibili <code>prefisso*</code> e <code>parola~1</code>; la frase usa lo stesso analyzer dei documenti.</p>
+  <section class="examples" aria-labelledby="examples-title">
+    <div class="section-heading"><h2 id="examples-title">Da dove cominciare</h2><span>Prova una ricerca</span></div>
+    <div class="example-grid">
+      {% for query, label in [('terremoto', 'Esplora un evento'), ('elezione', 'Prova lo stemming'), ('citta', 'Cerca senza accenti'), ('"banca centrale"', 'Ritrova una frase'), ('Roma + Milano', 'Combina due termini'), ('elezioni -Roma', 'Escludi un termine')] %}
+      <a class="example" href="{{ link(q=query) }}"><span>{{ label }}</span><strong>{{ query }}</strong><span aria-hidden="true">↗</span></a>
+      {% endfor %}
+    </div>
   </section>
 {% else %}
+  <div class="active-filters">
+    {% if category %}<a class="chip" href="{{ link(category=None) }}" aria-label="Rimuovi filtro categoria {{ category }}">Categoria: {{ category }} ×</a>{% endif %}
+    {% if year %}<a class="chip" href="{{ link(year=None) }}" aria-label="Rimuovi filtro anno {{ year }}">Anno: {{ year }} ×</a>{% endif %}
+    {% if category or year %}<a href="{{ link(category=None, year=None) }}">Togli tutti i filtri</a>{% endif %}
+  </div>
   <div class="layout">
-    <section class="results" aria-live="polite">
+    <section class="results" aria-labelledby="results-heading">
+      <h2 class="summary" id="results-heading">{{ "{:,}".format(result.total).replace(",", ".") }} {{ "risultato" if result.total == 1 else "risultati" }}<span class="timing">{{ "%.0f"|format(result.elapsed_ms) }} ms</span></h2>
+      <p class="sort">{% if sort == 'date' %}Più recenti prima{% else %}In ordine di rilevanza{% endif %} · Pagina {{ result.page if result.total else 0 }} di {{ result.page_count }}</p>
       {% if result.total == 0 %}
-        <p class="notice">Nessun risultato{% if q %} per «{{ q }}»{% endif %}.
-          Prova con meno parole{% if category or year %} o <a href="{{ link(category=None, year=None) }}">togli i filtri</a>{% endif %}.</p>
+        <p class="notice">Nessun risultato{% if q %} per «{{ q }}»{% endif %}. Prova con meno parole{% if category or year %} o <a href="{{ link(category=None, year=None) }}">togli i filtri</a>{% endif %}.</p>
       {% else %}
-        <p class="summary">{{ "{:,}".format(result.total).replace(",", ".") }}
-          {{ "risultato" if result.total == 1 else "risultati" }}
-          <span class="muted">({{ "%.0f"|format(result.elapsed_ms) }} ms)</span>
-          {% if category %}· categoria <b>{{ category }}</b> <a href="{{ link(category=None) }}">rimuovi</a>{% endif %}
-          {% if year %}· anno <b>{{ year }}</b> <a href="{{ link(year=None) }}">rimuovi</a>{% endif %}
-        </p>
-        {% if result.total > result.page_count * result.page_size %}
-        <p class="hint">Sono navigabili solo le prime {{ result.page_count * result.page_size }} corrispondenze. Restringere la ricerca con parole o filtri.</p>
-        {% endif %}
-        <p class="sort">Ordina per
-          {% if sort == 'relevance' %}<b>rilevanza</b>{% else %}<a href="{{ link(sort=None) }}">rilevanza</a>{% endif %} |
-          {% if sort == 'date' %}<b>data</b>{% else %}<a href="{{ link(sort='date') }}">data</a>{% endif %}
-        </p>
-        <ol class="hits">
-          {% for hit in result.hits %}
-          <li>
-            <h2><a href="{{ url_for('article', article_id=hit.id) }}">{{ hit.title }}</a></h2>
-            <p class="meta">{{ hit.date|data_it }}
-              {% for c in hit.categories %}<a class="cat" href="{{ link(category=c) }}">{{ c }}</a>{% endfor %}</p>
+        {% if result.total > result.page_count * result.page_size %}<p class="hint">Sono navigabili solo le prime {{ result.page_count * result.page_size }} corrispondenze. Restringere la ricerca con parole o filtri.</p>{% endif %}
+        <ol class="hits" start="{{ (result.page - 1) * result.page_size + 1 }}">
+          {% for hit in result.hits %}<li>
+            <p class="meta">{% if hit.date %}<time datetime="{{ hit.date.isoformat() }}">{{ hit.date|data_it }}</time>{% else %}Data non disponibile{% endif %}</p>
+            <h3><a href="{{ url_for('article', article_id=hit.id, q=q or None, category=category, year=year, sort=sort, page=result.page) }}">{{ hit.title }}</a></h3>
             <p class="snippet">{{ hit.snippet|safe }}</p>
-          </li>
-          {% endfor %}
+            {% if hit.categories %}<div class="categories">{% for c in hit.categories %}<a class="cat" href="{{ link(category=c) }}">{{ c }}</a>{% endfor %}</div>{% endif %}
+          </li>{% endfor %}
         </ol>
-        {% if result.page_count > 1 %}
-        <nav class="pager" aria-label="Pagine dei risultati">
-          {% if result.page > 1 %}<a href="{{ link(page=result.page - 1) }}" rel="prev">Pagina precedente</a>{% endif %}
+        {% if result.page_count > 1 %}<nav class="pager" aria-label="Pagine dei risultati">
+          {% if result.page > 1 %}<a href="{{ link(page=result.page - 1) }}" rel="prev">← Pagina precedente</a>{% endif %}
           <span>Pagina {{ result.page }} di {{ result.page_count }}</span>
-          {% if result.page < result.page_count %}<a href="{{ link(page=result.page + 1) }}" rel="next">Pagina successiva</a>{% endif %}
-        </nav>
-        {% endif %}
+          {% if result.page < result.page_count %}<a href="{{ link(page=result.page + 1) }}" rel="next">Pagina successiva →</a>{% endif %}
+        </nav>{% endif %}
       {% endif %}
     </section>
-
-    {% if result.total > 0 %}
-    <aside class="facets" aria-label="Filtri">
-      {% if result.categories and not category %}
-      <h3>Categorie</h3>
-      <ul>{% for name, n in result.categories %}<li><a href="{{ link(category=name) }}">{{ name }}</a> <span class="muted">{{ n }}</span></li>{% endfor %}</ul>
-      {% endif %}
-      {% if result.years and not year %}
-      <h3>Anno</h3>
-      <ul>{% for name, n in result.years %}<li><a href="{{ link(year=name) }}">{{ name }}</a> <span class="muted">{{ n }}</span></li>{% endfor %}</ul>
-      {% endif %}
-    </aside>
-    {% endif %}
+    {% if result.total > 0 %}<aside class="facets" aria-label="Filtri per categoria e anno">
+      <h2>Affina la ricerca</h2><p class="hint">Conteggi nelle corrispondenze attuali. Le categorie mostrate sono le 12 più frequenti.</p>
+      {% if result.categories and not category %}<h3>Categorie</h3><ul>{% for name, n in result.categories %}<li><a href="{{ link(category=name) }}">{{ name }}</a><span>{{ n }}</span></li>{% endfor %}</ul>{% endif %}
+      {% if result.years and not year %}<details open><summary>Anno</summary><ul>{% for name, n in result.years %}<li><a href="{{ link(year=name) }}">{{ name }}</a><span>{{ n }}</span></li>{% endfor %}</ul></details>{% endif %}
+    </aside>{% endif %}
   </div>
 {% endif %}
 {% endblock %}

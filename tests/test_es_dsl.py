@@ -9,11 +9,11 @@ from .fakes import RESPONSE, FakeES
 from .sample_data import RECORDS
 
 
-def test_text_query_uses_simple_query_string_with_title_boost():
+def test_text_query_uses_configuration_b_with_uniform_weights():
     body = build_body("terremoto", 1, 10)
     sqs = body["query"]["bool"]["must"][0]["simple_query_string"]
     assert sqs["query"] == "terremoto"
-    assert sqs["fields"] == ["title^3", "body"]
+    assert sqs["fields"] == ["title", "body"]
     assert sqs["lenient"] is True
     assert body["query"]["bool"]["filter"] == []
 

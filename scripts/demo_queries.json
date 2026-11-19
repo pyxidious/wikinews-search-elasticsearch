@@ -1,0 +1,305 @@
+{
+  "provenance": {
+    "verified_on": "2026-11-19",
+    "index": "itwikinews_hw4_italiano",
+    "index_uuid": "HOHk1UTyS-q1PgetBbfaOQ",
+    "documents": 12209,
+    "configuration": "B: italiano/BM25; title, body",
+    "dump": "itwikinews-NS0-20250320-ENTERPRISE-HTML.json.tar.gz",
+    "dump_sha256": "d2c00ef9d7c3db5a3f26adb85b07055673b30b2417653374ada52b7174df474d",
+    "purpose": "Measured demo expectations; never used as live search results"
+  },
+  "cases": [
+    {
+      "id": "simple",
+      "feature": "Ricerca semplice",
+      "params": {
+        "q": "terremoto"
+      },
+      "expected": {
+        "total": 156,
+        "top3": [
+          {
+            "id": "5619",
+            "title": "Terremoto in Sicilia"
+          },
+          {
+            "id": "2579",
+            "title": "Terremoto nel salernitano"
+          },
+          {
+            "id": "49285",
+            "title": "Messico, terremoto di magnitudo 7.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "stemming",
+      "feature": "Stemming: singolare",
+      "params": {
+        "q": "elezione"
+      },
+      "expected": {
+        "total": 621,
+        "top3": [
+          {
+            "id": "991",
+            "title": "Rinviate le elezioni in Basilicata"
+          },
+          {
+            "id": "19632",
+            "title": "Elezioni italiane 2008, la DC rinuncia al rinvio delle elezioni"
+          },
+          {
+            "id": "5444",
+            "title": "Elezioni 2006: come si vota"
+          }
+        ]
+      }
+    },
+    {
+      "id": "stemming_plural",
+      "feature": "Stemming: plurale",
+      "params": {
+        "q": "elezioni"
+      },
+      "expected": {
+        "total": 621,
+        "top3": [
+          {
+            "id": "991",
+            "title": "Rinviate le elezioni in Basilicata"
+          },
+          {
+            "id": "19632",
+            "title": "Elezioni italiane 2008, la DC rinuncia al rinvio delle elezioni"
+          },
+          {
+            "id": "5444",
+            "title": "Elezioni 2006: come si vota"
+          }
+        ]
+      }
+    },
+    {
+      "id": "accents",
+      "feature": "Normalizzazione senza accento",
+      "params": {
+        "q": "citta"
+      },
+      "expected": {
+        "total": 1207,
+        "top3": [
+          {
+            "id": "47588",
+            "title": "Milano: Una città per tutti ? Il futuro di Città Studi si chiama Università"
+          },
+          {
+            "id": "38481",
+            "title": "Degrado nel parco della stazione \"La Rustica Città\""
+          },
+          {
+            "id": "50054",
+            "title": "Città del Messico: crolla viadotto della metropolitana"
+          }
+        ]
+      }
+    },
+    {
+      "id": "accents_unicode",
+      "feature": "Normalizzazione con accento",
+      "params": {
+        "q": "città"
+      },
+      "expected": {
+        "total": 1207,
+        "top3": [
+          {
+            "id": "47588",
+            "title": "Milano: Una città per tutti ? Il futuro di Città Studi si chiama Università"
+          },
+          {
+            "id": "38481",
+            "title": "Degrado nel parco della stazione \"La Rustica Città\""
+          },
+          {
+            "id": "50054",
+            "title": "Città del Messico: crolla viadotto della metropolitana"
+          }
+        ]
+      }
+    },
+    {
+      "id": "phrase",
+      "feature": "Frase analizzata",
+      "params": {
+        "q": "\"banca centrale\""
+      },
+      "expected": {
+        "total": 33,
+        "top3": [
+          {
+            "id": "23916",
+            "title": "Le banche centrali tagliano i tassi"
+          },
+          {
+            "id": "46378",
+            "title": "Nessuna sorpresa dal comunicato della BCE"
+          },
+          {
+            "id": "49218",
+            "title": "Libano in piena crisi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "and",
+      "feature": "AND",
+      "params": {
+        "q": "Roma + Milano"
+      },
+      "expected": {
+        "total": 1157,
+        "top3": [
+          {
+            "id": "20810",
+            "title": "Gay pride a Roma e Milano"
+          },
+          {
+            "id": "17112",
+            "title": "Omicidio Sandri: atti vandalici nelle caserme di Roma e Milano"
+          },
+          {
+            "id": "28756",
+            "title": "Roma: allarme bomba su un aereo proveniente da Milano"
+          }
+        ]
+      }
+    },
+    {
+      "id": "or",
+      "feature": "OR",
+      "params": {
+        "q": "Roma | Milano"
+      },
+      "expected": {
+        "total": 3292,
+        "top3": [
+          {
+            "id": "20810",
+            "title": "Gay pride a Roma e Milano"
+          },
+          {
+            "id": "17112",
+            "title": "Omicidio Sandri: atti vandalici nelle caserme di Roma e Milano"
+          },
+          {
+            "id": "28756",
+            "title": "Roma: allarme bomba su un aereo proveniente da Milano"
+          }
+        ]
+      }
+    },
+    {
+      "id": "not",
+      "feature": "NOT",
+      "params": {
+        "q": "elezioni -Roma"
+      },
+      "expected": {
+        "total": 536,
+        "top3": [
+          {
+            "id": "991",
+            "title": "Rinviate le elezioni in Basilicata"
+          },
+          {
+            "id": "19632",
+            "title": "Elezioni italiane 2008, la DC rinuncia al rinvio delle elezioni"
+          },
+          {
+            "id": "5444",
+            "title": "Elezioni 2006: come si vota"
+          }
+        ]
+      }
+    },
+    {
+      "id": "category",
+      "feature": "Filtro categoria",
+      "params": {
+        "q": "elezioni",
+        "category": "Italia"
+      },
+      "expected": {
+        "total": 303,
+        "top3": [
+          {
+            "id": "991",
+            "title": "Rinviate le elezioni in Basilicata"
+          },
+          {
+            "id": "19632",
+            "title": "Elezioni italiane 2008, la DC rinuncia al rinvio delle elezioni"
+          },
+          {
+            "id": "5444",
+            "title": "Elezioni 2006: come si vota"
+          }
+        ]
+      }
+    },
+    {
+      "id": "year",
+      "feature": "Filtro anno",
+      "params": {
+        "q": "elezioni",
+        "year": "2008"
+      },
+      "expected": {
+        "total": 117,
+        "top3": [
+          {
+            "id": "19632",
+            "title": "Elezioni italiane 2008, la DC rinuncia al rinvio delle elezioni"
+          },
+          {
+            "id": "5189",
+            "title": "Bielorussia: in 25mila contestano le elezioni"
+          },
+          {
+            "id": "18682",
+            "title": "Speciale Elezioni politiche italiane 2008"
+          }
+        ]
+      }
+    },
+    {
+      "id": "date",
+      "feature": "Ordinamento per data",
+      "params": {
+        "q": "terremoto",
+        "sort": "date"
+      },
+      "expected": {
+        "total": 156,
+        "top3": [
+          {
+            "id": "27597",
+            "title": "Milano: deragliato treno vuoto"
+          },
+          {
+            "id": "52481",
+            "title": "Forte scossa di terremoto nel Fiorentino"
+          },
+          {
+            "id": "52816",
+            "title": "Canale Monterano: esplosa una palazzina di due piani, 4 i feriti"
+          }
+        ]
+      }
+    }
+  ]
+}

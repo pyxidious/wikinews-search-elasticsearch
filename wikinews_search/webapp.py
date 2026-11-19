@@ -5,6 +5,8 @@ import re
 from urllib.parse import urlsplit
 
 from flask import Flask, abort, jsonify, render_template, request, url_for
+from elasticsearch import ApiError
+from elastic_transport import TransportError
 
 from .config import DEFAULT_ES_URL, DEFAULT_INDEX, MAX_PAGE_SIZE, PAGE_SIZE
 from .searcher import SORTS, count_documents, get_article, search
@@ -40,6 +42,11 @@ def create_app(client=None, index_name: str | None = None, es_url: str | None = 
 
     app = Flask(__name__)
 
+    def search_params(q, category, year, sort, page=1):
+        return {k: v for k, v in dict(q=q, category=category, year=year,
+                sort=sort if sort != "relevance" else None, page=page if page > 1 else None).items()
+                if v not in (None, "")}
+
     @app.template_filter("external_url")
     def external_url(value):
         # L'escape HTML da solo non blocca URL javascript: nei dati indicizzati.
@@ -69,15 +76,18 @@ def create_app(client=None, index_name: str | None = None, es_url: str | None = 
         return render_template(
             "search.html", q=q, category=category, year=year, sort=sort, result=result,
             searching=searching, link=link,
-            doc_count=None if searching else count_documents(es, index_name),
+            doc_count=count_documents(es, index_name),
         )
 
     @app.route("/article/<article_id>")
     def article(article_id):
-        doc = get_article(es, article_id, index_name)
+        q, category, year, sort, page = _parse_args()
+        doc = get_article(es, article_id, index_name, query_string=q)
         if doc is None:
             abort(404)
-        return render_template("article.html", doc=doc, paragraphs=doc["body"].split("\n"))
+        return render_template("article.html", doc=doc, paragraphs=doc["body_html"].split("\n"),
+                               q=q, back_url=url_for("home", **search_params(q, category, year, sort, page)),
+                               doc_count=count_documents(es, index_name))
 
     @app.route("/api/search")
     def api_search():
@@ -104,5 +114,14 @@ def create_app(client=None, index_name: str | None = None, es_url: str | None = 
         return render_template("search.html", q="", category=None, year=None, sort="relevance",
                                result=None, searching=False, doc_count=count_documents(es, index_name),
                                link=lambda **kw: url_for("home"), not_found=True), 404
+
+    def service_unavailable(error):
+        app.logger.warning("Elasticsearch non disponibile: %s", type(error).__name__)
+        if request.path == "/health" or request.path.startswith("/api/"):
+            return jsonify(status="unavailable", error="Elasticsearch o indice non disponibile"), 503
+        return render_template("unavailable.html"), 503
+
+    app.register_error_handler(ApiError, service_unavailable)
+    app.register_error_handler(TransportError, service_unavailable)
 
     return app

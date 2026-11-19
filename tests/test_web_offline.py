@@ -79,3 +79,62 @@ def test_web_page_limit_is_visible_and_has_no_unreachable_next_link(fake_client,
     html = fake_client.get("/?q=notizia&page=100000").get_data(as_text=True)
     assert "Pagina 1000 di 1000" in html and 'rel="next"' not in html
     assert "Sono navigabili solo le prime 10000" in html
+
+
+def test_filters_remain_editable_and_can_be_cleared_even_without_results(fake_client):
+    from bs4 import BeautifulSoup
+    page = BeautifulSoup(fake_client.get('/?q=xyzqwerty&category=Italia&year=2023&sort=date').data, 'html.parser')
+    assert page.select_one('#category')['value'] == 'Italia'
+    assert page.select_one('#year')['value'] == '2023'
+    assert page.select_one('#sort option[selected]')['value'] == 'date'
+    assert page.select_one('.active-filters a[aria-label="Rimuovi filtro categoria Italia"]')
+    assert '0 risultati' in page.select_one('#results-heading').get_text()
+    assert '11 documenti indicizzati' in page.select_one('.index-count').get_text()
+
+
+def test_article_preserves_search_context_and_escapes_body(fake_client, monkeypatch):
+    from bs4 import BeautifulSoup
+    from urllib.parse import parse_qs, urlsplit
+    monkeypatch.setitem(ARTICLE, 'body', '<img src=x onerror=alert(1)>\nTesto & caratteri')
+    page = BeautifulSoup(fake_client.get('/article/1002?q=terremoto&category=Turchia&year=2023&sort=date&page=2').data, 'html.parser')
+    assert page.select_one('.article-body img') is None
+    assert '<img src=x onerror=alert(1)>' in page.select_one('.article-body').get_text()
+    assert parse_qs(urlsplit(page.select_one('.back a')['href']).query) == {
+        'q': ['terremoto'], 'category': ['Turchia'], 'year': ['2023'], 'sort': ['date'], 'page': ['2']}
+    assert 'CC BY 2.5' not in page.get_text()
+    assert page.select_one('.source a')['href'] == ARTICLE['url']
+
+
+def test_result_article_links_keep_query_filters_and_page(fake_client):
+    from bs4 import BeautifulSoup
+    from urllib.parse import parse_qs, urlsplit
+    page = BeautifulSoup(fake_client.get('/?q=terremoto&category=Turchia&year=2023&sort=date&page=2').data, 'html.parser')
+    params = parse_qs(urlsplit(page.select_one('.hits h3 a')['href']).query)
+    assert params == {'q':['terremoto'], 'category':['Turchia'], 'year':['2023'], 'sort':['date'], 'page':['2']}
+
+
+def test_article_highlighting_uses_elasticsearch_html_encoder(fake_es, fake_client, monkeypatch):
+    def highlighted(**kwargs):
+        assert kwargs['highlight']['encoder'] == 'html'
+        assert kwargs['highlight']['fields']['body']['number_of_fragments'] == 0
+        return {'hits': {'hits': [{'_id': '1002', '_source': ARTICLE,
+                'highlight': {'body': ['Un <mark>terremoto</mark> &lt;script&gt;']}}]}}
+    monkeypatch.setattr(fake_es, 'search', highlighted)
+    html = fake_client.get('/article/1002?q=terremoto').get_data(as_text=True)
+    assert '<mark>terremoto</mark> &lt;script&gt;' in html
+    assert '<script>' not in html
+
+
+@pytest.mark.parametrize('path', ['/', '/?q=terremoto', '/article/1002', '/health', '/api/search?q=terremoto'])
+def test_runtime_elasticsearch_failure_returns_503(fake_es, fake_client, monkeypatch, path):
+    from elastic_transport import ConnectionError
+    def unavailable(*args, **kwargs):
+        raise ConnectionError('offline')
+    monkeypatch.setattr(fake_es, 'search', unavailable)
+    monkeypatch.setattr(fake_es, 'count', unavailable)
+    response = fake_client.get(path)
+    assert response.status_code == 503
+    if path.startswith(('/health', '/api/')):
+        assert response.get_json()['status'] == 'unavailable'
+    else:
+        assert 'La ricerca è momentaneamente sospesa' in response.get_data(as_text=True)
