@@ -618,9 +618,21 @@
       ]
     }
   ],
-  "standalone_qrels_second_llm_csv_found": false,
+  "standalone_qrels_second_llm_csv_found": true,
   "claude_csv_recovered_from": "wikinews_confronto_GPT6_Claude_Opus55.zip/qrels_Claude_Opus55.csv",
   "claude_hash_matches_historical_second_input": true,
   "original_archives_retained": true,
-  "exact_prompts_found": false
+  "exact_prompts_found": false,
+  "previous_collection_standalone_found": false,
+  "additional_original_files": [
+    {
+      "path": "experiments/reproducibility-inputs/qrels_second_llm.csv",
+      "bytes": 18781,
+      "sha256": "8001cd894c92cd34b4ed550fd7a92152f95397b5f5fe92a61e66c7ac808c344b",
+      "verified_on": "2026-11-19",
+      "canonical_path": "experiments/llm-evaluation/data/qrels_claude.original.csv",
+      "disposition": "additional byte-identical source; no duplicate published CSV",
+      "discovery_time_is_annotation_date": false
+    }
+  ]
 }

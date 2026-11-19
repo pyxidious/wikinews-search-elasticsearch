@@ -1,0 +1,26 @@
+test_claude_standalone_is_registered_without_duplicate (test_reproduction.Formulas) ... ok
+test_group_resampling_is_deterministic (test_reproduction.Formulas) ... ok
+test_human_guard_remains_active (test_reproduction.Formulas) ... ok
+test_metrics_known_example (test_reproduction.Formulas) ... ok
+test_no_relevant_and_short_ranking (test_reproduction.Formulas) ... ok
+test_original_annotations_immutable (test_reproduction.Formulas) ... ok
+test_quadratic_kappa (test_reproduction.Formulas) ... ok
+test_blank_grade_rejected (test_reproduction.Integrity) ... ok
+test_complete_frozen_inputs (test_reproduction.Integrity) ... ok
+test_duplicate_rejected (test_reproduction.Integrity) ... ok
+test_invalid_grade_rejected (test_reproduction.Integrity) ... ok
+test_manifest_tamper_rejected (test_reproduction.Integrity) ... ok
+test_missing_rejected (test_reproduction.Integrity) ... ok
+test_mixed_assessor_rejected (test_reproduction.Integrity) ... ok
+test_qualitative_audit_is_not_qrels (test_reproduction.Integrity) ... ok
+test_query_intent_mismatch_rejected (test_reproduction.Integrity) ... ok
+test_rank_duplicate_rejected (test_reproduction.Integrity) ... ok
+test_unknown_id_rejected (test_reproduction.Integrity) ... ok
+test_copy_refuses_overwrite (test_reproduction.Publication) ... ok
+test_null_python_source_snapshot_is_rejected (test_reproduction.Publication) ... ok
+test_verified_copy_preserves_bytes (test_reproduction.Publication) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.540s
+
+OK

@@ -55,10 +55,16 @@ consolidati e i riferimenti riutilizzati quando identici, evitando copie byte pe
 - [PROMPT_PROVENANCE.md](PROMPT_PROVENANCE.md) e `.json`: dati noti e informazioni non registrate.
 - [ANNOTATION_GUIDE.md](ANNOTATION_GUIDE.md): protocollo corrente AI-only.
 
-`qrels_second_llm.csv` non è stato trovato come file separato. Il CSV Claude nello ZIP di confronto ha
-lo stesso SHA-256 dell'input storico denominato così in `agreement.json`; la copia pubblicata è quella
-estratta, non un file ricostruito artificialmente. GPT-6 appare in due ZIP con contenuto identico:
-è conservata una sola copia canonica. Gli archivi originali non sono stati cancellati.
+Nella prima raccolta `qrels_second_llm.csv` non era stato trovato separatamente. Nell'audit successivo
+è presente in `experiments/reproducibility-inputs/`: il suo SHA-256 è
+`8001cd894c92cd34b4ed550fd7a92152f95397b5f5fe92a61e66c7ac808c344b`, identico al CSV Claude estratto
+dallo ZIP e all'hash storico in `agreement.json`. È registrato come ulteriore sorgente dello stesso
+file canonico, senza alterare o duplicare le annotazioni. GPT-6 compare in due ZIP con contenuto identico:
+anche qui è conservata una sola copia canonica. Gli originali nello staging non sono stati cancellati.
+
+Per il kit autonomo, l'asset grezzo e i checksum della consegna permanente vedere
+[RELEASE_ASSETS.md](../RELEASE_ASSETS.md). I prompt e i parametri storici mancanti restano mancanti:
+la verifica dei calcoli non rende replicabile la generazione originale delle etichette.
 
 ## 4. Definizioni statistiche
 

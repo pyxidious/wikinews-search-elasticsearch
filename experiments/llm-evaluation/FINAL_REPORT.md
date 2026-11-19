@@ -94,3 +94,11 @@ non giustifica validità universale o confronti di qualità certificati da esser
 
 Le istruzioni operative sono in README.md; prompt/modelli in PROMPT_PROVENANCE.md/.json; sorgenti e
 deduplicazioni in SOURCE_ARCHIVES.json; file correnti in manifest.json e RESULTS_INDEX.json.
+
+## Chiusura dopo l?interruzione di corrente
+
+Nuova copia indipendente da 171 file originali, tutti verificati SHA-256 prima di eseguire gli script. I tre file NUL della vecchia copia temporanea non sono stati modificati n? usati. Nuovo ambiente Python 3.10.0, NumPy 2.2.6: ricalcolo di tutti i 345 valori LLM e dei raw prestazionali senza discrepanze; ricostruzione integrale dell?input cieco con hash storico identico. Ambiente e prove in `results/clean_environment.json` e `results/recovery_verification.json`. Nessun nuovo esperimento fisico o giudizio.
+
+Il CSV Claude aggiuntivo ? stato ritrovato e verificato: SHA-256 `8001cd894c92cd34b4ed550fd7a92152f95397b5f5fe92a61e66c7ac808c344b`. ? identico all?originale gi? incluso: nessun duplicato aggiunto. La scoperta non recupera la data dell?annotazione.
+
+Consegna permanente: `C:\Users\proti\Desktop\wikinews-benchmark-publication\`. Due ZIP curati, `SHA256SUMS` e `RELEASE_MANIFEST.json`; niente caricamento automatico. Procedura e comandi esterni in [RELEASE_ASSETS.md](../RELEASE_ASSETS.md). Sono esclusi staging, archivi originali ridondanti, testi integrali e ambienti. Una vista Markdown del rapporto storico corregge cinque percorsi relativi; l?originale byte per byte resta disponibile e la trasformazione ? registrata in `../performance-20261118/SOURCE.json`.

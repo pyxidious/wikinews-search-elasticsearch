@@ -1,3 +1,5 @@
+> Vista consultabile: soltanto i cinque collegamenti alle figure sono stati adattati al nuovo percorso. Originale immutato: [EXPERIMENT_REPORT_20261118.original.txt](EXPERIMENT_REPORT_20261118.original.txt). Provenienza in `../SOURCE.json`.
+
 # Benchmark sperimentale Wikinews Elasticsearch
 
 Data: 18 novembre 2026, Europe/Rome. Seed: **20261118**. Output esterno al repository: `C:\Users\proti\AppData\Local\Temp\wikinews-benchmark-20261118`.
@@ -248,11 +250,11 @@ Il wrapper PowerShell della campagna online restituisce codice 1 e registra un `
 
 Grafici (anche in SVG nella stessa cartella):
 
-![Indicizzazione: repliche e IC](figures/indexing.png)
+![Indicizzazione: repliche e IC](../figures/indexing.png)
 
-![Latenza effettiva e ritardo di dispatch](figures/latency_components.png)
+![Latenza effettiva e ritardo di dispatch](../figures/latency_components.png)
 
-[Ricerca diretta](figures/elasticsearch.png), [Flask HTML](figures/flask_html.png), [differenze appaiate delle latenze corrette](figures/controlled_effects.png).
+[Ricerca diretta](../figures/elasticsearch.png), [Flask HTML](../figures/flask_html.png), [differenze appaiate delle latenze corrette](../figures/controlled_effects.png).
 
 ## Analisi statistica e limiti interpretativi
 

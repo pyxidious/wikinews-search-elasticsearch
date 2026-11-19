@@ -4,10 +4,6 @@
   "scope": "original physical measurements; offline recomputation",
   "human_confirmed": null,
   "files": {
-    "RAW_DATA.json": "1a936caffdf8d575f71e0f4a4b5c2a28fc31ab6fa0036df64f389c5633091299",
-    "README.md": "df8d54c2c77fede9c4ff706f18e22a8037d18e1558367bd144f0a482beaaf0f9",
-    "recompute.py": "48f352175122f02a206230fae7fb3a8338f86025b636405740446aec13df8c9c",
-    "SOURCE.json": "5309683b16e34977869341298bc15632b1efd87f08d50f964d38b9c3fed0f53f",
     "figures/controlled_effects.png": "b55f4b5fe908af64bbfebe9935f4dee040508dc0157286aae2e6aaf73662c81a",
     "figures/controlled_effects.svg": "ef93e1465334d6a95f34d6b0ad799af7094ddfa1ced76f034455e08ebd0d66b4",
     "figures/elasticsearch.png": "0d9121933b624d016d5b6185a8356abd1a25a0ac6dfbeb01ec44b769cb9520dd",
@@ -20,7 +16,8 @@
     "figures/latency_components.svg": "39212c844962f1034e397bb4f7e63174299eed6ee3f1e2bfc788f8fb4869d9d6",
     "historical/audit.py": "a183da7d18e07cb74e38811661416e6db41327a8b8b8417025462d3d157c3028",
     "historical/benchmark.py": "daa33336e920fe9945b94de000d0131b628c1898514e436ba3be62b042fd9610",
-    "historical/EXPERIMENT_REPORT_20261118.md": "e09163959f61e80732f5d4f72ad453df041346c72208075e9b026fe59fc9d98d",
+    "historical/EXPERIMENT_REPORT_20261118.md": "cf88db742ef564cdefa2834387a0166830f487b650c0ae0990961f695b012a63",
+    "historical/EXPERIMENT_REPORT_20261118.original.txt": "e09163959f61e80732f5d4f72ad453df041346c72208075e9b026fe59fc9d98d",
     "historical/finalize.py": "399e774c3375ef5e1329e3815c7b5b3ae32282d4d2ef1057692bf9319287fce7",
     "historical/test_methods.py": "1b15f7e406e97ccbdb4d7b65c175bd776d1bc67325da36c68fc5121fb96fd734",
     "historical/write_report.py": "f484d8676693a77b0e79bc619ef4441939add5449e5b8b58907995bdabe66b74",
@@ -40,11 +37,11 @@
     "original/execution_status.json": "90595efb2ebbe571497cb15edccc3b24249a2812e26a2ff0921e0e4ad179440d",
     "original/hardware.json": "dd964f19d15b11c0bf7e9b0d12d7ab2420e7830a7f8d0b4fa9e0582ccf6286da",
     "original/host_preflight_cpu.json": "774c27ca855ee8b316ac98d52e845a2f8c4031e9094495879ffff8003d6bd14c",
+    "original/index_state_restoration.json": "981d3e312b8ef592c548ad513b11a8c9a284f75a1dd53e2af733d82a83e65a7a",
     "original/indexing_effects.csv": "4787f1a643b7a0cfdb3e3c99f8853df9a5e98e32c556cedacdf0364cf2e03b56",
     "original/indexing_raw.csv": "054531474f43d291aeb773f19eba376ae1f95d9711bcb25fa02d6b7a18aa64ad",
     "original/indexing_schedule.json": "52ed0a3ea5c5ec58ad85991cc6a4e3fa5ae61134212abccca95aa5d73f539f73",
     "original/indexing_summary.csv": "9df0fa08968aadcfc7cd08026ab8c1e26ee3c59ecd12a90ffe062bc612611cd5",
-    "original/index_state_restoration.json": "981d3e312b8ef592c548ad513b11a8c9a284f75a1dd53e2af733d82a83e65a7a",
     "original/manifest.json": "f3e78979a4f904457f8f7752c55ff4acb9a6fe9e25fbb635c84b99ebb70cabf2",
     "original/method_tests.txt": "57cc18bd1dffb81f7d0ec02c9ea862471941bf22dc6487b9e9f8333f4e5545a9",
     "original/online.log": "dcd7bab7f11bc436ce5e15498327bfc1692e051a83a222a5e137f2819be9ab4c",
@@ -71,6 +68,10 @@
     "original/tcp_dynamic_port_range.txt": "82239d31d619ca4910696219de700baa5dad9c99278b2a9a9d6b6b545abb046f",
     "original/telemetry_summary.csv": "88fc0f2e04fbb5fc835c57261cce52dc37952004d6eeb1a515b402b41ab7bbdf",
     "original/workload.json": "5cd4a571d485506ed27d9813f86cf78e3d7df00406ccf6dd7916c00eefd6a6c7",
-    "results/verification.json": "e554f9e3df4df8bae9d918ded97ab7b24d2a025ed8e687cbd21d09047ebad332"
+    "RAW_DATA.json": "0db594c09965a40b5fa1ee0fdec477bdb916fa10928c66684e4eac57541fb068",
+    "README.md": "969f1a7725cd747afaa53ff3b28415b5cbf17380cd8440efb91fd5dcd0cb0ce5",
+    "recompute.py": "48f352175122f02a206230fae7fb3a8338f86025b636405740446aec13df8c9c",
+    "results/verification.json": "e554f9e3df4df8bae9d918ded97ab7b24d2a025ed8e687cbd21d09047ebad332",
+    "SOURCE.json": "6efada5a28bb64bc9d6663be44c9ed033ab8518a0ac59af33d57439c0eeb76cc"
   }
 }

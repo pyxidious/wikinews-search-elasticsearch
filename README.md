@@ -139,6 +139,8 @@ Vedere [experiments/performance-20261118/README.md](experiments/performance-2026
 per ambiente originale, dati grezzi, checksum e ricalcolo delle statistiche **senza rilanciare le prove**.
 Il [rapporto di consolidamento](experiments/llm-evaluation/FINAL_REPORT.md) distingue calcolo verificabile,
 annotazioni non completamente replicabili e limiti di generalizzabilità. L'accordo fra LLM non prova la correttezza umana.
+Il [kit e gli asset per la pubblicazione manuale](experiments/RELEASE_ASSETS.md) permettono il ricalcolo
+anche senza una copia Git del progetto. La consegna è locale: nessun caricamento remoto automatico.
 
 ## Test
 

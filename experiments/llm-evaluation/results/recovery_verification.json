@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-19",
+  "new_clean_snapshot_files_verified": 171,
+  "sha256_verified_before_execution": true,
+  "python_sources_ast_checked": true,
+  "fresh_venv": true,
+  "llm": {
+    "numeric_values_checked": 345,
+    "absolute_tolerance": 1e-12,
+    "relative_tolerance": 1e-12,
+    "mismatches": [],
+    "passed": true,
+    "references_used_as_inputs_to_metrics": false
+  },
+  "performance": {
+    "recomputed_from_raw": true,
+    "measured_requests": 1336275,
+    "errors": 2,
+    "cells": 240,
+    "indexing_runs": 20,
+    "sustainable_cells": 113,
+    "mismatches": [],
+    "passed": true,
+    "absolute_tolerance": 1e-09,
+    "relative_tolerance": 1e-12,
+    "bootstrap_resamples": 10000,
+    "seed": 20261118,
+    "bootstrap_unit": "five experimental replicates, not requests",
+    "elasticsearch_calls": 0
+  },
+  "unit_tests_passed": 21,
+  "reconstructed_blind_sha256": "5a8e255c6028f73e5aa9092b7ebd8c6191743d8b14134f883de59d46c6aa6d4e",
+  "unchanged": {
+    "application": true,
+    "damaged_copy": true,
+    "original_inputs": true
+  },
+  "original_input_checksums": {
+    "qrels_second_llm.csv": "8001cd894c92cd34b4ed550fd7a92152f95397b5f5fe92a61e66c7ac808c344b",
+    "wikinews_audit_qualitativo_53_disaccordi.zip": "4cc48b170e7e897a4959e7c7d1ed189d5f8348f7663ea023b5e484c6230502a7",
+    "wikinews_confronto_GPT6_Claude_Opus55.zip": "37656a37cd81c3a2cdf953ea6efb4b809abc6a8728c4bca944cd2bb1074e52ab",
+    "wikinews_ground_truth_LLM_only_18query.zip": "f886b3d79d88cbd031630cdb5998aebf03bb8cd35fcc89e4e974109a2320815c"
+  },
+  "damaged_copy_checksums_preserved": {
+    "statistics.py": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+    "__init__.py": "f616b0d54e78571a9611f343c9f8e022e859e920381ab0e4d3da01e193a7bd7e",
+    "__main__.py": "98ce42deef51d40269d542f5314bef2c7468d401ad5d85168bfab4c0108f75f7"
+  },
+  "llm_calls": 0,
+  "elasticsearch_calls": 0,
+  "new_performance_experiments": 0,
+  "remote_link_checks": [
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "http_code": "200",
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "url": "https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository",
+      "http_code": "200",
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "url": "https://dumps.wikimedia.org/other/enterprise_html/runs/20250320/itwikinews-NS0-20250320-ENTERPRISE-HTML.json.tar.gz",
+      "http_code": "200",
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use#7._Licensing_of_Content",
+      "http_code": "200",
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "url": "https://it.wikinews.org/",
+      "http_code": "200",
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "url": "https://it.wikinews.org/wiki/Wikinotizie:Copyright",
+      "http_code": "200",
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "url": "https://www.elastic.co/guide/en/elasticsearch/reference/8.15/query-dsl-simple-query-string-query.html",
+      "http_code": "200",
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "url": "https://www.mediawiki.org/wiki/Wikimedia_Enterprise/Documentation",
+      "http_code": "200",
+      "exit_code": 0,
+      "error": ""
+    }
+  ]
+}

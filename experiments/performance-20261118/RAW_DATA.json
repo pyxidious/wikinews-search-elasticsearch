@@ -3,7 +3,7 @@
   "archive_sha256": "464c3438507d53de3c4f430ea42b03271de3843ca667827afc5bd007d11f97c9",
   "archive_bytes": 58175169,
   "download_url": null,
-  "distribution_status": "prepared locally; not uploaded",
+  "distribution_status": "prepared for permanent local delivery; not uploaded",
   "recommended_distribution": "manual GitHub Release asset or archival repository deposit; do not add raw CSV to ordinary repository files",
   "raw_files": {
     "search_raw.csv": {
@@ -16,5 +16,6 @@
     }
   },
   "source_original_archive_sha256": "411aad94a24efeea17f08057c9d2bf82eb12a39dc72c71b7eadc0ce7009bd973",
-  "contains_full_article_texts": false
+  "contains_full_article_texts": false,
+  "local_delivery_directory": "C:\\Users\\proti\\Desktop\\wikinews-benchmark-publication"
 }

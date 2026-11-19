@@ -66,4 +66,25 @@ class Formulas(unittest.TestCase):
   sources=calc.read(ROOT/'SOURCE_ARCHIVES.json');records=[m for z in sources['sources'] for m in z['members'] if m['name'] in ['qrels_llm_only.csv','qrels_GPT6.csv','qrels_Claude_Opus55.csv']]
   self.assertEqual(len(records),3)
   for row in records:self.assertEqual(calc.sha(ROOT.parents[1]/row['published_path']),row['sha256'])
+ def test_claude_standalone_is_registered_without_duplicate(self):
+  sources=calc.read(ROOT/'SOURCE_ARCHIVES.json');self.assertTrue(sources['standalone_qrels_second_llm_csv_found'])
+  entry=sources['additional_original_files'][0]
+  self.assertEqual(entry['sha256'],calc.sha(ROOT/'data/qrels_claude.original.csv'))
+  self.assertEqual(entry['canonical_path'],'experiments/llm-evaluation/data/qrels_claude.original.csv')
+class Publication(unittest.TestCase):
+ @classmethod
+ def setUpClass(cls):
+  spec=importlib.util.spec_from_file_location('publication_tools',ROOT.parent/'prepare_publication.py');cls.tool=importlib.util.module_from_spec(spec);spec.loader.exec_module(cls.tool)
+ def setUp(self):self.temp=tempfile.TemporaryDirectory(prefix='wikinews-copy-test-');self.base=Path(self.temp.name)
+ def tearDown(self):self.temp.cleanup()
+ def test_verified_copy_preserves_bytes(self):
+  source=self.base/'source';source.write_bytes(b'original\r\n');dest=self.base/'copy'
+  self.tool.copy_verified(source,dest,self.tool.sha(source));self.assertEqual(source.read_bytes(),dest.read_bytes())
+ def test_copy_refuses_overwrite(self):
+  source=self.base/'source';source.write_bytes(b'original');dest=self.base/'copy';dest.write_bytes(b'keep')
+  with self.assertRaises(FileExistsError):self.tool.copy_verified(source,dest,self.tool.sha(source))
+  self.assertEqual(dest.read_bytes(),b'keep')
+ def test_null_python_source_snapshot_is_rejected(self):
+  repo=self.base/'repo';(repo/'wikinews_search').mkdir(parents=True);(repo/'wikinews_search/bad.py').write_bytes(b'\0'*64)
+  with self.assertRaises((ValueError,SyntaxError)):self.tool.snapshot(repo,self.base/'invalid-snapshot')
 if __name__=='__main__':unittest.main()

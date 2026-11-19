@@ -21,5 +21,13 @@
     "blind_assessor_package.zip",
     "preserved/*/candidates.jsonl"
   ],
-  "original_checksum_registry_scope": "original/artifact_checksums.json describes the original 92-file archive, not this curated directory"
+  "original_checksum_registry_scope": "original/artifact_checksums.json describes the original 92-file archive, not this curated directory",
+  "document_views": [
+    {
+      "original_path": "historical/EXPERIMENT_REPORT_20261118.original.txt",
+      "original_sha256": "e09163959f61e80732f5d4f72ad453df041346c72208075e9b026fe59fc9d98d",
+      "view_path": "historical/EXPERIMENT_REPORT_20261118.md",
+      "transformation": "Five relative figure links adapted from figures/ to ../figures/; provenance notice prepended; UTF-8 view. No results edited."
+    }
+  ]
 }

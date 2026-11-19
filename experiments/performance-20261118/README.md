@@ -14,9 +14,14 @@ il registro corrente è `manifest.json`.
 `search_raw.csv` (223.634.590 byte) e `telemetry.jsonl` (30.870.892 byte) sono in un **nuovo asset curato**
 `performance-raw-20261118.zip`. Contiene solo questi due file immutati e i loro checksum, senza testi integrali.
 Il nome, SHA-256 e dimensione dell'asset sono in `RAW_DATA.json`. L'asset è preparato localmente per il deposito
-come allegato a una release o in un archivio scientifico; **non è stato caricato** e `download_url` resta `null`.
+come allegato a una release o in un archivio scientifico, con consegna permanente in
+`C:\Users\proti\Desktop\wikinews-benchmark-publication\`; **non è stato caricato** e `download_url` resta `null`.
 Il pubblicatore dovrà fornire un URL reale/DOI e mantenere esattamente quei byte. Gli ZIP sorgente delle
 annotazioni non sono asset di pubblicazione e restano ignorati nello staging.
+
+Il kit autonomo e la procedura di allegato manuale sono descritti in
+[RELEASE_ASSETS.md](../RELEASE_ASSETS.md). Il kit include i file pubblicabili e i sorgenti applicativi
+originali invariati; non include dump, testi ricostruiti, ambiente Python, archivi sorgente o dati grezzi grandi.
 
 I file grezzi grandi non vanno copiati nei normali file del repository. Non si è configurato Git LFS né eseguita
 alcuna operazione Git. Il ricalcolo della rilevanza non dipende da questo asset, dai testi o dal dump.

@@ -81,6 +81,10 @@ Questi comandi non invocano LLM e non accedono agli indici. Il secondo ricalcolo
 non esegue un nuovo benchmark. Per dipendenze, recupero dell'archivio e verifica dei risultati:
 [valutazione AI](experiments/llm-evaluation/README.md), [prestazioni](experiments/performance-20261118/README.md).
 Non eseguire i test di integrazione sopra durante un consolidamento che richiede indici immutati.
+La verifica conclusiva usa inoltre una nuova copia dei soli file pubblicabili, controllata integralmente
+con SHA-256 prima dell'esecuzione, e un ambiente Python separato. La vecchia copia temporanea con tre
+file applicativi riempiti di byte nulli è conservata come evidenza e non è una sorgente per il kit finale.
+Preparazione senza Git o caricamenti: [experiments/RELEASE_ASSETS.md](experiments/RELEASE_ASSETS.md).
 
 ## Protocollo storico esplorativo sul corpus reale (27 query)
 
